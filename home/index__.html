@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogado Laboral en Montevideo | Asesoría Legal Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #1a3a5f, #2c5282);
+            color: white;
+            padding: 1rem 5%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #ffd700;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            color: #ffd700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 58, 95, 0.85);
+        }
+
+        .hero-content {
+            position: relative;
+            color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            max-width: 800px;
+        }
+
+        .hero-content h1 span {
+            color: #ffd700;
+            border-bottom: 3px solid #ffd700;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a3a5f;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid #ffd700;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #ffd700;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .services {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #1a3a5f;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            background: #1a3a5f;
+            color: #ffd700;
+            font-size: 2.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .service-content {
+            padding: 2rem;
+        }
+
+        .service-content h3 {
+            color: #1a3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-content p {
+            color: #555;
+            margin-bottom: 1.5rem;
+            min-height: 100px;
+        }
+
+        .laboral-section {
+            background: linear-gradient(to right, #1a3a5f, #2c5282);
+            color: white;
+            padding: 5rem 5%;
+            margin-top: 4rem;
+        }
+
+        .laboral-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .laboral-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .laboral-content h1 span {
+            color: #ffd700;
+        }
+
+        .laboral-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .laboral-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .laboral-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .laboral-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+        }
+
+        .procedure {
+            /* border: solid 1px red; */
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scroll-snap-type: x mandarory;
+            gap: 1rem;
+        }
+
+        .procedure>div {
+            border: solid 1px #ffd700;
+            border-radius: 10px;
+            min-width: 300px;
+            position: relative;
+            padding: 1.5rem 1rem;
+            margin: 0.25rem;
+        }
+
+        .procedure>div:before {
+            content: "";
+            width: 100%;
+            background-color: #ffd700;
+            height: 5px;
+            position: absolute;
+            left: calc(50% + 1rem);
+            top: 2.75rem;
+            z-index: 0;
+        }
+
+
+        .procedure .step {
+            border: solid 1px;
+            width: 3rem;
+            height: 3rem;
+            display: grid;
+            border: solid 2px;
+            background-color: #ffd700;
+            color: #1a3a5f;
+            font-size: 1.25rem;
+            place-items: center;
+            border-radius: 50%;
+            padding: 0;
+            text-align: center;
+            font-weight: 900;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .procedure .step .num {
+            position: absolute;
+            inset: 0;
+            max-width: max-content;
+            max-height: min-content;
+            margin: auto auto;
+        }
+
+        .procedure .title-step {
+            color: #fff;
+            position: relative;
+            width: 100%;
+            /* border: solid 1px; */
+            display: block;
+            min-width: 100%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin: 0.25rem auto 1rem;
+        }
+
+
+
+
+
+        .contact {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            padding: 3rem;
+            background: #1a3a5f;
+            color: white;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+        }
+
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+
+        .contact-form {
+            padding: 3rem;
+        }
+
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1a3a5f;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1a3a5f;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        footer {
+            background: #0f253f;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo span {
+            color: #ffd700;
+        }
+
+        .footer-about p {
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            color: #ffd700;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffd700;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: #ffd700;
+            color: #1a3a5f;
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+
+
+
+        @media (max-width: 992px) {
+            .laboral-container {
+                grid-template-columns: 1fr;
+            }
+
+            .laboral-image {
+                order: -1;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-balance-scale logo-icon"></i>
+                <div class="logo-text">Estudio <span>Jurídico</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#laboral">Laboral</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Defendemos tus <span>derechos laborales</span> en Montevideo y Ciudad de la Costa</h1>
+            <p>Expertos en derecho laboral con más de 15 años de experiencia. Brindamos soluciones legales efectivas y
+                personalizadas para proteger tus derechos como trabajador.</p>
+            <a href="#contacto" class="btn">Consultar mi caso gratis</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="section-title">
+            <h2>Nuestros Servicios Legales</h2>
+            <p>Brindamos asesoramiento especializado en todas las áreas del derecho para proteger sus intereses</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Derecho Laboral -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Derecho Laboral</h3>
+                    <p>Defensa de derechos laborales, despidos injustificados, liquidaciones y conflictos contractuales.
+                        Asesoramiento integral para empleadores y trabajadores.</p>
+                    <a href="../servicios/abogado-laboral/" class="btn"><i class="fa fa-share"></i> Conoce más</a>
+                </div>
+            </div>
+
+            <!-- Derecho de Familia -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Derecho de Familia</h3>
+                    <p>Solución legal en divorcios, custodia de hijos, pensiones alimenticias y procesos de adopción.
+                        Protección de derechos familiares con empatía.</p>
+                    <a href="derecho-familia.html" class="btn"><i class="fa fa-share"></i> Conoce más</a>
+                </div>
+            </div>
+
+            <!-- Derecho Civil -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Derecho Civil</h3>
+                    <p>Gestión de contratos, responsabilidad civil, sucesiones y reclamaciones patrimoniales.
+                        Representación en litigios civiles complejos.</p>
+                    <a href="derecho-civil.html" class="btn"><i class="fa fa-share"></i> Conoce más</a>
+                </div>
+            </div>
+
+            <!-- Arrendamientos -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Arrendamientos</h3>
+                    <p>Elaboración de contratos de alquiler, solución de conflictos inquilinos-propietarios, desahucios
+                        legales y renegociaciones.</p>
+                    <a href="arrendamientos.html" class="btn"> <i class="fa fa-share"></i> Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laboral Section -->
+    <section class="laboral-section" id="laboral">
+        <div class="section-title">
+            <h2>¿Cómo es el procedimiento?</h2>
+
+        </div>
+        <div class="procedure">
+            <div>
+                <article class="step">
+                    <span class="num">1</span>
+                </article>
+                <div class="title-step">Envíanos tu consulta</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, numquam commodi illum nemo
+                    accusamus, earum, reiciendis rem eveniet modi aspernatur accusantium. Animi aperiam perspiciatis
+                    at. Nemo debitis quos eligendi placeat?</p>
+            </div>
+            <div>
+                <article class="step">
+                    <span class="num">2</span>
+                </article>
+                <div class="title-step">Análisis documental</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, numquam commodi illum nemo
+                    accusamus, earum, reiciendis rem eveniet modi aspernatur accusantium. Animi aperiam perspiciatis
+                    at. Nemo debitis quos eligendi placeat?</p>
+            </div>
+            <div>
+                <article class="step">
+                    <span class="num">3</span>
+                </article>
+                <div class="title-step">Plan de Acción</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, tempore? Fugit dolorem eveniet,
+                    officiis architecto, perferendis recusandae eius, et rem quidem odio molestias iste officia aliquam
+                    repellendus praesentium saepe harum.</p>
+            </div>
+            <div>
+                <article class="step">
+                    <span class="num">4</span>
+                </article>
+                <div class="title-step">Resolucion Rápìda</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, tempore? Fugit dolorem eveniet,
+                    officiis architecto, perferendis recusandae eius, et rem quidem odio molestias iste officia aliquam
+                    repellendus praesentium saepe harum.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="section-title">
+            <h2>Contacto</h2>
+            <p>Estamos para asesorarte. Completa el formulario y te responderemos a la brevedad</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. 18 de Julio 1234, Montevideo</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+598 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@estudiojuridico.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun-Vie: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form action="../consultas/guardar.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" name="save" class="btn">Enviar mensaje</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">Estudio <span>Jurídico</span></div>
+                <p>Especialistas en derecho laboral, familiar, civil y arrendamientos. Brindamos soluciones legales
+                    efectivas con profesionalismo y compromiso.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#laboral">Abogado laboral</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Áreas de práctica</h4>
+                <ul>
+                    <li><a href="derecho-laboral.html">Derecho laboral</a></li>
+                    <li><a href="derecho-familia.html">Derecho de familia</a></li>
+                    <li><a href="derecho-civil.html">Derecho civil</a></li>
+                    <li><a href="arrendamientos.html">Arrendamientos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Estudio Jurídico. Todos los derechos reservados. Montevideo, Uruguay.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

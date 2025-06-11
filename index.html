@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bufete Laboral Montevideo | Defensa de Derechos Laborales</title>
+    <meta name="description"
+        content="Abogado laboral en Montevideo especializado en despidos injustificados, acoso laboral y liquidaciones. Consulta gratuita. +50 casos resueltos en 2025.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Paleta de colores */
+            --azul-oscuro: #0B3C5D;
+            --bordo: #8E1B1B;
+            --dorado: #D9B310;
+            --gris-claro: #F5F5F5;
+            --blanco: #FFFFFF;
+            --negro: #333333;
+            --sombra: rgba(0, 0, 0, 0.1);
+            --transicion: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--negro);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--gris-claro);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transicion);
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--bordo);
+            color: var(--blanco);
+            box-shadow: 0 4px 15px rgba(142, 27, 27, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #7a1616;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(142, 27, 27, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--dorado);
+            color: var(--azul-oscuro);
+            box-shadow: 0 4px 15px rgba(217, 179, 16, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: #c9a30e;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(217, 179, 16, 0.4);
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 20px;
+        }
+
+        .section-title .subtitle {
+            font-size: 1.2rem;
+            color: var(--bordo);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--dorado);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--blanco);
+            box-shadow: 0 2px 15px var(--sombra);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--azul-oscuro);
+        }
+
+        .logo-text span {
+            color: var(--bordo);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--azul-oscuro);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transicion);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--bordo);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--bordo);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(11, 60, 93, 0.85), rgba(11, 60, 93, 0.9)), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            color: var(--blanco);
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .seo-tag {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Problemas Section */
+        #problemas {
+            background-color: var(--blanco);
+        }
+
+        .problemas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .problema-card {
+            background: var(--gris-claro);
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transicion);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .problema-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: transparent;
+        }
+
+        .problema-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            right: 1rem;
+            top: -2.5rem;
+            position: absolute;
+            font-size: 2rem;
+        }
+
+        .problema-card h3 {
+            margin-bottom: 15px;
+            color: var(--azul-oscuro);
+            font-size: 1.6rem;
+        }
+
+        .problema-card p {
+            margin-bottom: 20px;
+        }
+
+        .problema-card .highlight {
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Proceso Section */
+        #proceso {
+            background: linear-gradient(to bottom, var(--azul-oscuro), #0a3250);
+            color: var(--blanco);
+        }
+
+        .proceso-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .proceso-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .proceso-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: var(--dorado);
+            border-radius: 2px;
+        }
+
+        .proceso-paso {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 40px;
+        }
+
+        .proceso-paso:last-child {
+            margin-bottom: 0;
+        }
+
+        .paso-number {
+            position: absolute;
+            left: -15px;
+            top: 0;
+            width: 34px;
+            height: 34px;
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 3px solid var(--blanco);
+        }
+
+        .paso-content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 25px 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .paso-content h3 {
+            color: var(--dorado);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        .garantia-box {
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 60px;
+            font-weight: 700;
+            font-size: 1.4rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Testimonios Section */
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonio-card {
+            background: var(--blanco);
+            padding: 35px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: var(--transicion);
+            border-left: 4px solid var(--bordo);
+        }
+
+        .testimonio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonio-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(142, 27, 27, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonio-text {
+            margin-bottom: 25px;
+            font-style: italic;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonio-author {
+            font-weight: 700;
+            color: var(--bordo);
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonio-author::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background: var(--bordo);
+            margin-right: 15px;
+        }
+
+        .medios-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .medio-logo {
+            background: var(--gris-claro);
+            width: 150px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--azul-oscuro);
+            opacity: 0.8;
+        }
+
+        /* Contacto Section */
+        #contacto {
+            background: linear-gradient(to right, var(--azul-oscuro), #0a3250);
+            color: var(--blanco);
+        }
+
+        .contacto-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .contacto-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .contacto-info p {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            max-width: 500px;
+        }
+
+        .contacto-datos {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .contacto-datos li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contacto-datos i {
+            width: 40px;
+            height: 40px;
+            background: var(--dorado);
+            color: var(--azul-oscuro);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contacto-form {
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .contacto-form h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--azul-oscuro);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: var(--transicion);
+        }
+
+        .form-control:focus {
+            border-color: var(--bordo);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(142, 27, 27, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 10px;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transicion);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--negro);
+            color: var(--blanco);
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .footer-logo span {
+            color: var(--bordo);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .footer-links li {
+            margin: 0 15px;
+        }
+
+        .footer-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            transition: var(--transicion);
+        }
+
+        .footer-links a:hover {
+            color: var(--dorado);
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .contacto-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/598XXXXXXXXX" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-text">Mi<span>Abogado</span></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#problemas">Servicios</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">+50 casos de <b>éxito</b> en 2025</div>
+                <h1>Defendemos Tus Derechos </h1>
+                <p>
+                    <span>Derecho Laboral</span>
+                    <span>Derecho Civil</span>
+                    <span>Derecho de Familia</span>
+                    <span>Arrendamientos</span>
+
+
+                    Asesoría legal con resultados comprobados
+                </p>
+                <a href="#contacto" class="btn btn-primary">Evaluar mi caso GRATIS</a>
+            </div>
+        </div>
+        <div class="seo-tag fade-in">Abogado laboralista especializado - Montevideo, Uruguay</div>
+    </section>
+
+    <!-- Problemas Section -->
+    <section id="problemas">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>¿Qué Problemas Laborales Resolvemos?</h2>
+                <p class="subtitle">Protección legal especializada para trabajadores en Uruguay</p>
+            </div>
+
+            <div class="problemas-grid">
+                <div class="problema-card fade-in">
+                    <div class="problema-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Despidos Injustificados</h3>
+                    <p>¿Te despidieron sin causa justa? Recupera lo que te corresponde por ley.</p>
+                    <div class="highlight">Hasta 12 meses de salario + indemnización</div>
+                </div>
+
+                <div class="problema-card fade-in">
+                    <div class="problema-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horas Extras No Pagadas</h3>
+                    <p>Reclama el pago de horas extras y recibe lo que te corresponde.</p>
+                    <div class="highlight">Recuperación retroactiva hasta 5 años</div>
+                </div>
+
+                <div class="problema-card fade-in">
+                    <div class="problema-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>Acoso Laboral</h3>
+                    <p>Defendemos tu integridad y derecho a un ambiente de trabajo digno.</p>
+                    <div class="highlight">Indemnizaciones por daño moral</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso Section -->
+    <section id="proceso">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Nuestro Proceso de Trabajo</h2>
+                <p class="subtitle">Transparencia y resultados desde el primer contacto</p>
+            </div>
+
+            <div class="proceso-container">
+                <div class="proceso-timeline">
+                    <div class="proceso-paso fade-in">
+                        <div class="paso-number">1</div>
+                        <div class="paso-content">
+                            <h3>Consulta Inicial GRATIS</h3>
+                            <p>Analizamos tu caso sin costo y te explicamos tus opciones legales con claridad. Sin
+                                compromiso.</p>
+                        </div>
+                    </div>
+
+                    <div class="proceso-paso fade-in">
+                        <div class="paso-number">2</div>
+                        <div class="paso-content">
+                            <h3>Análisis Documental (48h)</h3>
+                            <p>Revisamos tus documentos (contrato, despidos, comunicaciones) para construir tu caso.</p>
+                        </div>
+                    </div>
+
+                    <div class="proceso-paso fade-in">
+                        <div class="paso-number">3</div>
+                        <div class="paso-content">
+                            <h3>Plan de Acción Personalizado</h3>
+                            <p>Te presentamos una estrategia legal clara con pasos a seguir y resultados esperados.</p>
+                        </div>
+                    </div>
+
+                    <div class="proceso-paso fade-in">
+                        <div class="paso-number">4</div>
+                        <div class="paso-content">
+                            <h3>Resolución Rápida</h3>
+                            <p>Actuamos con agresividad legal para resolver tu caso en el menor tiempo posible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="garantia-box fade-in">
+                    <p>¡Sin costo inicial! Solo pagas al obtener resultados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Lo que Dicen Nuestros Clientes</h2>
+                <p class="subtitle">Experiencias reales de trabajadores en Montevideo</p>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card fade-in">
+                    <p class="testimonio-text">"Tras mi despido injustificado, recuperé 8 meses de salario en solo 20
+                        días. El equipo fue profesional, transparente y resolutivo en todo momento. ¡Totalmente
+                        recomendados!"</p>
+                    <p class="testimonio-author">Carlos R. - Administrativo</p>
+                </div>
+
+                <div class="testimonio-card fade-in">
+                    <p class="testimonio-text">"Sufrí acoso laboral durante meses. Gracias a su intervención, no solo
+                        resolvimos el caso favorablemente, sino que recibí una indemnización que me permitió recomenzar
+                        profesionalmente."</p>
+                    <p class="testimonio-author">María L. - Docente</p>
+                </div>
+
+                <div class="testimonio-card fade-in">
+                    <p class="testimonio-text">"Mi empleador no me pagaba horas extras. Con su ayuda, recuperé más de
+                        $120,000 en pagos adeudados. El proceso fue claro y sin sorpresas. Excelente servicio."</p>
+                    <p class="testimonio-author">Juan M. - Supervisor</p>
+                </div>
+            </div>
+
+            <div class="medios-container fade-in">
+                <div class="medio-logo">El País</div>
+                <div class="medio-logo">TV Ciudad</div>
+                <div class="medio-logo">Radio Uruguay</div>
+                <div class="medio-logo">La Diaria</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto">
+        <div class="container">
+            <div class="contacto-container">
+                <div class="contacto-info fade-in">
+                    <h2>¿Listo para Defender Tus Derechos?</h2>
+                    <p>Contáctanos hoy mismo para una consulta gratuita. Estamos aquí para ayudarte a resolver tu
+                        problema laboral con la máxima eficacia.</p>
+
+                    <ul class="contacto-datos">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. 18 de Julio 1234, Montevideo, Uruguay</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(598) 2400 1234</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contacto@drley.uy</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lunes a Viernes: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+
+                    <a href="tel:+59824001234" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Llamar ahora
+                    </a>
+                </div>
+
+                <div class="contacto-form fade-in">
+                    <h3>Evaluación Gratuita de tu Caso</h3>
+                    <form id="form-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problema">Describe tu problema</label>
+                            <textarea id="problema" class="form-control" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Bufete<span>Laboral</span></div>
+            <p>Defendiendo los derechos de los trabajadores en Montevideo desde 2010</p>
+
+            <ul class="footer-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#problemas">Servicios</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="copyright">
+                &copy; 2025 Bufete Laboral - Montevideo, Uruguay. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animación al hacer scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const fadeInOnScroll = () => {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+
+            // Ejecutar al cargar y al hacer scroll
+            fadeInOnScroll();
+            window.addEventListener('scroll', fadeInOnScroll);
+
+            // Smooth scrolling para enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Manejo del formulario
+            const form = document.getElementById('form-contacto');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    // Aquí iría la lógica de envío del formulario
+                    alert('¡Gracias por tu consulta! Te contactaremos en las próximas horas.');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

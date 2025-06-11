@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Abogado</title>
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pattaya&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --blue: rgb(0, 0, 82);
+            --yellow: #ffd700;
+            --gray: #eee;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: var(--blue);
+            padding: 1rem;
+            font-size: 18px;
+            color: gold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9;
+        }
+
+        header a {
+            /* border: solid 1px; */
+            display: grid;
+            grid-template-columns: 3rem max-content;
+            align-content: center;
+            place-items: center;
+            grid-gap: 1rem;
+        }
+
+        header a .logo {
+            /* border: solid 1px red; */
+            width: 3rem;
+            height: 3rem;
+        }
+
+        header a .brandname {
+            font-weight: 700;
+            font-size: 2rem;
+            font-family: "Young Serif", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .contain-service {
+            background-image: url(../../assets/img/laboral.jpg);
+            min-height: 100vh;
+            background-size: cover;
+            display: grid;
+            align-content: center;
+            padding: 0 2rem;
+        }
+
+        .contain-service:before {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background-color: #0009;
+            z-index: 0;
+        }
+
+        .contain-service>* {
+            color: #fff;
+            z-index: 1;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: min-content;
+        }
+
+        .services>* {
+            color: var(--yellow);
+            min-width: max-content;
+            padding: 0.25rem 1rem;
+            font-weight: 600;
+            border-left: solid 1px;
+            font-size: 1.15rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a3a5f;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid #ffd700;
+            max-width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img src="" alt="" class="logo">
+            <span class="brandname">MiAbogado</span>
+        </a>
+    </header>
+    <div class="contain-service">
+        <h1>ABOGADO LABORAL en Montevideo y Ciudad de la Costa
+
+            <span style="display:block;font-size:80%;">Defender tus derechos, es nuestro trabajo.</span>
+        </h1>
+        <div class="services">
+            <span>Despidos injustificados</span>
+            <span>Cálculo de Liquidaciones</span>
+            <span>Haberes Impagos</span>
+            <span>Acoso Laboral</span>
+        </div>
+        <p>Envianos tu caso y nos pondremos en contacto contigo para encontrar la mejor solución.</p>
+        <p>+20 años de trayectoria en defensa laboral.</p>
+
+
+
+        <button class="btn"><i class="fa fa-share"></i> Evaluar mi caso ahora</button>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
