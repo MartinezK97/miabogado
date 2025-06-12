@@ -1,7 +1,26 @@
 :root {
     --blue: #1a3a5f;
-    --yellow: #ffd700;
+    --yellow: #ffcd00;
     --gray: #eee;
+}
+
+.rule {
+    width: 1px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.rule.left {
+    left: calc((100vw - 1200px) / 2);
+    background-color: red;
+}
+
+.rule.right {
+    right: calc((100vw - 1200px) / 2);
+    background-color: fuchsia;
 }
 
 body {
@@ -10,6 +29,11 @@ body {
     background-color: #eee;
     overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 * {
     box-sizing: border-box;
@@ -37,6 +61,7 @@ header {
     left: 0;
     right: 0;
     z-index: 9;
+
 }
 
 header a {
@@ -46,6 +71,9 @@ header a {
     align-content: center;
     place-items: center;
     grid-gap: 1rem;
+    /* border: solid 1px; */
+    max-width: max-content;
+    margin: 0 auto;
 }
 
 header a .logo {
@@ -73,15 +101,19 @@ header a .brandname {
     /* border: solid 1px red; */
     z-index: 2;
     width: 100vw;
+    max-width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     background-image: url(../img/portada.jpg);
     background-size: cover;
     background-position: 50%;
     display: grid;
     align-content: center;
     padding: 5rem 2rem 0;
+    /* padding: 5rem 2rem 0 23.5rem; */
     position: relative;
     background-attachment: fixed;
+    /* border: solid 2px cyan; */
 }
 
 .portada:before {
@@ -113,14 +145,20 @@ header a .brandname {
     /* border: solid 1px; */
     display: block;
     line-height: 1.5;
+    border-top: solid 1px #fff2;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+    /* border-radius: 10px; */
+    /* width: max-content; */
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 100%;
+    display: block;
 
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    box-shadow: -1px -1px 15px 0px #fff7, 1px 1px 15px 0px #000;
-    max-width: max-content;
-    backdrop-filter: blur(10px);
+    width: max-content;
+    /* backdrop-filter: blur(10px); */
     font-size: 75%;
-    margin: 2rem 0 0;
+    /* margin: 2rem 0 0; */
     display: block;
     color: #eee;
 
@@ -136,6 +174,16 @@ header a .brandname {
     font-size: clamp(1rem, 1.25vw, 1.75rem);
     margin: 0;
     pad: 0;
+    width: 100%;
+    max-width: max-content;
+    margin-top: 1.25rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: solid 1px #fff; */
+    width: 100%;
 }
 
 .services {
@@ -175,6 +223,7 @@ header a .brandname {
     border: solid 1px;
     margin-top: 2rem;
     font-weight: 600;
+    display: block;
 }
 
 .color-green {
@@ -212,7 +261,9 @@ header a .brandname {
     grid-gap: 1rem;
     padding: 2rem 2rem 5rem;
     max-width: max-content;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    max-width: 1200px;
+    /* border: solid 1px; */
 }
 
 .content-all-services>h2 {
@@ -259,7 +310,7 @@ header a .brandname {
 .content-service {
     position: relative;
     height: max-content;
-    max-width: 450px;
+    width: 100%;
 }
 
 .service-header {
@@ -287,8 +338,8 @@ header a .brandname {
     align-content: center;
     text-align: center;
     z-index: 0;
-    top: 5rem;
-    left: 1rem;
+    inset: 0;
+    margin: auto auto;
 }
 
 .service-header h3 {
@@ -332,7 +383,7 @@ header a .brandname {
     background-image: url(../img/laboral.jpg);
     background-attachment: fixed;
     background-position: 50%;
-    padding: 3rem;
+    padding: 3rem 3rem 7rem;
     position: relative;
     display: grid;
     place-content: center;
@@ -346,25 +397,27 @@ header a .brandname {
 }
 
 .sdf p {
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: clamp(3rem, 4vw, 5rem);
     color: #fff;
     z-index: 1;
     position: relative;
     /* backdrop-filter: blur(15px); */
     /* background-image: linear-gradient(to bottom right, #0002, #fff2, #0002); */
-    padding: 2rem 5rem;
+    /* padding: 2rem 5rem; */
     border-radius: 20px;
     /* box-shadow: -1px -1px 10px #fff3, 1px 1px 10px #0005; */
     font-weight: 600;
 }
 
-.sdf div {
+
+.sdf .statistics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    max-width: max-content;
 }
 
-.sdf div article {
+.sdf .statistics article {
     backdrop-filter: blur(10px);
     background-color: #fff1;
     display: block;
@@ -372,8 +425,9 @@ header a .brandname {
     border-radius: 15px;
     color: #fff;
     text-align: center;
-    /* box-shadow: -1px -1px 10px #fff3, 1px 1px 10px #0005; */
-    background-image: linear-gradient(to bottom right, #0002, #fff2, #0002);
+    max-width: max-content;
+    box-shadow: 0 0 12px #0007;
+    background-image: linear-gradient(to bottom right, #fff2, #0002, #fff2);
 }
 
 .sdf div article .num {
@@ -393,7 +447,10 @@ header a .brandname {
 
 
 
-
+.max-size {
+    max-width: 1200px;
+    margin: auto auto;
+}
 
 
 
@@ -417,12 +474,12 @@ header a .brandname {
 
 
 .content-process .btn {
-    color: var(--yellow);
-    background: var(--blue);
+    background: var(--yellow);
+    color: var(--blue);
     display: block;
     max-width: 100%;
     border-radius: 10px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0 2rem;
     height: min-content;
@@ -497,7 +554,7 @@ header a .brandname {
 .step i {
     color: #fff;
     position: absolute;
-    font-size: clamp(5rem, 10vw, 10rem);
+    font-size: clamp(5rem, 10vw, 8rem);
     z-index: 0;
     margin: auto 0 auto auto;
     right: 0;
@@ -544,25 +601,6 @@ header a .brandname {
     border: solid 1px var(--yellow);
 }
 
-.step:nth-child(1) {
-    border-radius: 25px 25px 0 25px;
-    margin: 0 0 auto auto;
-}
-
-.step:nth-child(2) {
-    border-radius: 25px 25px 25px 0;
-    margin: 0 0 auto auto;
-}
-
-.step:nth-child(3) {
-    border-radius: 25px 0 25px 25px;
-    margin: 0 0 auto auto;
-}
-
-.step:nth-child(4) {
-    border-radius: 0 25px 25px 25px;
-    margin: 0 0 auto auto;
-}
 
 .step:nth-child(2):after {
     content: "2";
@@ -590,8 +628,8 @@ header a .brandname {
     max-width: 0;
     display: grid;
     /* grid-template-columns: 2rem max-content; */
-    color: var(--blue);
-    background-color: var(--yellow);
+    color: var(--yellow);
+    background-color: var(--blue);
     min-width: calc(100%);
     padding: 1rem 2rem;
     clip-path: polygon(0 1rem, calc(50% - 1rem) 1rem, 50% 0%, calc(50% + 1rem) 1rem, 100% 1rem, 100% 100%, 0 100%);
@@ -609,22 +647,30 @@ header a .brandname {
 }
 
 .step p {
-    padding: 0 2rem;
-    min-height: 20vh;
+    padding: 0.5rem;
+    min-height: 140px;
     padding-top: 2rem;
     margin-top: 0rem;
+    text-align: justify;
 }
 
 .testimonios {
-    border-radius: 50px 50px 0 0;
+    /* border-radius: 50px 50px 0 0; */
     padding: 2rem;
+    background-color: var(--blue);
+    padding-bottom: 5rem;
 }
 
+.testimonios .title-section {
+    color: #fff;
+}
 
 
 .testimonios>p {
     font-size: 1.25rem;
     text-align: center;
+    color: #fff;
+    margin: 0 auto 3rem;
 }
 
 .comments {
@@ -637,19 +683,19 @@ header a .brandname {
 }
 
 .comments::-webkit-scrollbar {
-    background-color: #0001;
+    background-color: #fff2;
     border-radius: 15px;
     margin-top: 1.5rem;
     height: 10px;
 }
 
 .comments::-webkit-scrollbar-thumb {
-    background-color: #0002;
+    background-color: #fff2;
     border-radius: 10px;
 }
 
 .comments::-webkit-scrollbar-thumb:hover {
-    background-color: #787878;
+    background-color: #fff5;
 }
 
 .comment {
@@ -740,8 +786,8 @@ header a .brandname {
 }
 
 .contact-form .btn {
-    color: var(--yellow);
-    background: var(--blue);
+    background: var(--yellow);
+    color: var(--blue);
     display: block;
     max-width: 100%;
     border-radius: 10px;
@@ -830,6 +876,7 @@ footer {
     color: #ffd700;
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .footer-links ul {
@@ -883,6 +930,10 @@ footer {
 }
 
 @media (width < 760px) {
+
+    .container {
+        max-width: calc(100vw - 4rem);
+    }
 
     .services {
         grid-template-columns: repeat(2, 1fr);
