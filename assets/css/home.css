@@ -96,6 +96,26 @@ header a .brandname {
     background-image: url(../img/logo.svg);
 }
 
+
+#fixed-wpp-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: green;
+    display: block;
+    z-index: 9;
+    color: #fff;
+    min-width: clamp(4rem, 5vw, 5rem);
+    max-width: clamp(4rem, 5vw, 5rem);
+    min-height: clamp(4rem, 5vw, 5rem);
+    max-height: clamp(4rem, 5vw, 5rem);
+    display: grid;
+    place-items: center;
+    font-size: clamp(2.5rem, 2.5vw, 3rem);
+    border-radius: 150px;
+
+}
+
 /* Portada */
 .portada {
     /* border: solid 1px red; */
@@ -1102,8 +1122,8 @@ footer {
         max-width: 0;
         display: grid;
         /* grid-template-columns: 2rem max-content; */
-        color: var(--blue);
-        background-color: var(--yellow);
+        background-color: var(--blue);
+        color: var(--yellow);
         min-width: calc(100%);
         padding: 1rem 2rem;
         clip-path: polygon(1.5rem 0, 100% 0, 100% 100%, 1.5rem 100%, 0 50%);
