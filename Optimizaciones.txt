@@ -1,0 +1,48 @@
+1. Convertir imagenes a webp                ✔
+2. Crear kit de iconos como fuente.         ✔
+3. Crear kit de favicons                    
+4. Crear site.webmanifiest                  ✔                  
+
+5. Optimizar etiquetas <a>                  x
+6. Optimizar etiquetas <i>                  x
+
+7. Precargar css y js                       x
+8. Crear css crítico                        x
+
+
+9. Crear meta keywords para:
+    • Inicio                                x
+    • Servicios:                            
+        → derecho laboral                   x
+        → derecho civil                     x
+        → derecho de familia                x
+        → arrendamientos                    x
+
+    • ./agobado-en-ciudad-de-la-costa       x
+    • ./agobado-en-montevideo               x
+
+    
+10. Crear meta titles para:
+    • Inicio
+    • Servicios:
+        → derecho laboral
+        → derecho civil
+        → derecho de familia
+        → arrendamientos
+
+    • ./agobado-en-ciudad-de-la-costa
+    • ./agobado-en-montevideo  
+
+
+11. Crear meta descriptions para:
+    • Inicio
+    • Servicios:
+        → derecho laboral
+        → derecho civil
+        → derecho de familia
+        → arrendamientos
+
+    • ./agobado-en-ciudad-de-la-costa
+    • ./agobado-en-montevideo 
+
+12. Crear animaciones y efectos de scroll

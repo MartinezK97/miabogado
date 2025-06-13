@@ -4,6 +4,7 @@
     --gray: #eee;
 }
 
+
 .rule {
     width: 1px;
     position: fixed;
@@ -28,6 +29,8 @@ body {
     padding: 0;
     background-color: #eee;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease;
 }
 
 body::-webkit-scrollbar {
@@ -55,7 +58,7 @@ header {
     background-color: var(--blue);
     padding: 1rem;
     font-size: 18px;
-    color: gold;
+    color: var(--yellow);
     position: fixed;
     top: 0;
     left: 0;
@@ -124,7 +127,7 @@ header a .brandname {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(../img/portada.jpg);
+    background-image: url(../img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -152,7 +155,7 @@ header a .brandname {
     max-width: max-content;
     box-shadow: 1px 1px 8px -1px #000, -1px -1px 10px -3px #fff;
     font-size: clamp(1rem, 1vw, 1.5rem);
-    background-color: #00005240;
+    background-color: #0002;
 }
 
 .portada h1 {
@@ -217,12 +220,10 @@ header a .brandname {
 .services span {
     display: inline-block;
     padding: 0.125rem 1.25rem;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.25vw, 1.45rem);
     border-radius: 0px;
     font-weight: 600;
     border-left: solid 1px;
-    /* box-shadow: 1px 1px 10px #0007, -1px -1px 5px #fff5; */
-    /* backdrop-filter: blur(5px); */
     color: #fff;
     color: var(--yellow);
 }
@@ -400,7 +401,7 @@ header a .brandname {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(../img/laboral.jpg);
+    background-image: url(../img/bg_1.webp);
     background-attachment: fixed;
     background-position: 50%;
     padding: 3rem 3rem 7rem;
@@ -892,11 +893,12 @@ footer {
     line-height: 1.7;
 }
 
-.footer-links h4 {
+.footer-links>p {
     color: #ffd700;
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     margin: 0;
+    font-weight: 600;
 }
 
 .footer-links ul {

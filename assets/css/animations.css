@@ -1,0 +1,133 @@
+.sdf {
+    animation: parallax linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+.portada {
+    animation: parallax_portada linear;
+    animation-timeline: view();
+    animation-range: entry 90% cover 200%;
+}
+
+@keyframes parallax {
+    from {
+        background-position: 50% 0;
+    }
+
+    to {
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes parallax_portada {
+    from {
+        background-position: 60% 0;
+    }
+
+    to {
+        background-position: 60% -80vh;
+    }
+}
+
+
+
+
+
+
+.content-service.one,
+.content-service.three {
+    animation: showToTopRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.content-service.two,
+.content-service.fourt {
+    animation: showToTopLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+@keyframes showToTopRight {
+    from {
+        opacity: 0.7;
+        transform: translate(-100px, 100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes showToTopLeft {
+    from {
+        opacity: 0.7;
+        transform: translate(100px, 100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes showToTop {
+    from {
+        opacity: 0.7;
+        transform: translate(0, 100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.sdf .container>p {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.7)
+    }
+}
+
+.statistics article:nth-child(1) {
+    animation: showToTopRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+
+.statistics article:nth-child(2) {
+    animation: showToTop linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+
+.statistics article:nth-child(3) {
+    animation: showToTopLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
