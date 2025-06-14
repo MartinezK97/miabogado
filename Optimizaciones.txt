@@ -46,3 +46,59 @@
     • ./agobado-en-montevideo 
 
 12. Crear animaciones y efectos de scroll
+
+
+------------------------------------
+    CREAR
+------------------------------------
+
+• Blog de contenido
+• Nuevas paginas para posicionamiento:
+    En Montevideo:
+        • Abogado en Montevideo
+        • Abogado laboral en Montevideo
+        • Abogado civil en Montevideo
+        • Abogado de Familia en Montevideo
+        • Abogado de Arrendamientos en Montevideo
+    En Ciudad de la Costa:
+        • Abogado en Ciudad de la Costa
+        • Abogado laboral en Ciudad de la Costa
+        • Abogado civil en Ciudad de la Costa
+        • Abogado de Familia en Ciudad de la Costa
+        • Abogado de Arrendamientos en Ciudad de la Costa
+
+Servicios:
+    • Derecho laboral
+    • Derecho civil
+    • Derecho de familia
+    • Arrendamientos
+
+
+
+--------------------------------
+    TODAS LAS URLS:
+-------------------------------
+URL: miabogado.uy
+
+  Blog
+→ https://miabogado.uy/blog
+
+  Servicios
+→ https://miabogado.uy/servicios/
+→ https://miabogado.uy/servicios/derecho-laboral/
+→ https://miabogado.uy/servicios/derecho-civil/
+→ https://miabogado.uy/servicios/derecho-de-familia/
+→ https://miabogado.uy/servicios/arrendamientos/
+
+  URLs para posicionamiernto
+→ https://miabogado.uy/abogado-en-montevideo/
+→ https://miabogado.uy/abogado-laboral-en-montevideo/
+→ https://miabogado.uy/abogado-civil-en-montevideo/
+→ https://miabogado.uy/abogado-de-familia-en-montevideo/
+→ https://miabogado.uy/arrendamientos-en-montevideo/
+
+→ https://miabogado.uy/abogado-en-ciudad-de-la-costa/
+→ https://miabogado.uy/abogado-laboral-en-ciudad-de-la-costa/
+→ https://miabogado.uy/abogado-civil-en-ciudad-de-la-costa/
+→ https://miabogado.uy/abogado-de-familia-en-ciudad-de-la-costa/
+→ https://miabogado.uy/abogado-de-familia-en-ciudad-de-la-costa/

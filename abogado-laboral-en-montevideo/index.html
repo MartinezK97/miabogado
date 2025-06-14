@@ -1,40 +1,39 @@
-
-
 <!DOCTYPE html>
 <html lang="es-uy">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a3a5f">
-    
+
     <!-- Precarga de CSS crítico -->
-    <link rel="preload" href="./assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="./assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="./assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="./assets/css/icons.css">
-        <link rel="stylesheet" href="./assets/css/home.css">
-        <link rel="stylesheet" href="./assets/css/animations.css">
+        <link rel="stylesheet" href="../assets/css/icons.css">
+        <link rel="stylesheet" href="../assets/css/home.css">
+        <link rel="stylesheet" href="../assets/css/animations.css">
     </noscript>
-    
+
     <!-- Carga diferida de CSS no crítico -->
-    <link rel="preload" href="./assets/css/icons.css" as="style" media="print" onload="this.media='all'">
-    
+    <link rel="preload" href="../assets/css/icons.css" as="style" media="print" onload="this.media='all'">
+
     <!--  -->
-    <link rel="preload" href="./assets/img/logo.svg" as="image">
-    <link rel="preload" href="./assets/img/portada.webp" as="image">
-    <link rel="preload" href="./assets/img/bg_1.webp" as="image">
-    
+    <link rel="preload" href="../assets/img/logo.svg" as="image">
+    <link rel="preload" href="../assets/img/portada.webp" as="image">
+    <link rel="preload" href="../assets/img/bg_1.webp" as="image">
+
     <!-- Configuración básica -->
     <title>Abogado Laboral en Montevideo | MiAbogado.uy</title>
     <meta name="description"
-    content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
+        content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
     <meta name="keywords"
-    content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
+        content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
     <meta name="author" content="Kevin Martínez">
     <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
-    
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+
+    <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
     <!-- Open Graph (Redes Sociales) -->
     <meta property="og:title" content="Abogado Laboral en Montevideo | MiAbogado.uy">
     <meta property="og:description"
@@ -68,9 +67,9 @@
             "openingHours": "Mo-Fr 10:00-18:00"
           }
           </script>
-   
-   <!-- Css Crítico -->
-   <style>
+
+    <!-- Css Crítico -->
+    <style>
         :root {
             --blue: #1a3a5f;
             --yellow: #ffcd00;
@@ -148,11 +147,11 @@
 
 
         .iso {
-            background-image: url(./assets/img/logo.svg);
+            background-image: url(../assets/img/logo.svg);
         }
 
 
-        /* #fixed-wpp-btn {
+        #fixed-wpp-btn {
             position: fixed;
             bottom: 1rem;
             right: 1rem;
@@ -169,7 +168,7 @@
             font-size: clamp(2.5rem, 2.5vw, 3rem);
             border-radius: 150px;
 
-        } */
+        }
 
         /* Portada */
         .portada {
@@ -179,7 +178,7 @@
             max-width: 100vw;
             height: 100vh;
             overflow-x: hidden;
-            background-image: url(./assets/img/portada.webp);
+            background-image: url(../assets/img/portada.webp);
             background-size: cover;
             background-position: 50%;
             display: grid;
@@ -266,8 +265,8 @@
 <body>
     <!-- Cabecera del sitio -->
     <header>
-        <a href="./" title="Volver al inicio" aria-label="Volver al inicio">
-            <img src="./assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy">
+        <a href="../" title="Volver al inicio" aria-label="Volver al inicio">
+            <img src="../assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy">
             <span class="brandname">Mi Abogado</span>
         </a>
     </header>
@@ -276,14 +275,14 @@
         <div class="container">
             <div class="tag">+90 casos de éxito en 2025</div>
             <h1>
-                <span>ABOGADO ESPECIALISTA <br>en Montevideo y Ciudad de la Costa</span>
+                <span>ABOGADO LABORAL <br>en Montevideo</span>
                 <!-- <span class="blur">Defendé tus derechos HOY MISMO</span> -->
             </h1>
             <div class="services">
-                <span>Derecho Laboral</span>
-                <span>Derecho Civil</span>
-                <span>Derecho de Familia</span>
-                <span>Arrendamientos</span>
+                <span>Despidos</span>
+                <span>Indemizaciones</span>
+                <span>Accidentes</span>
+                <span>Acoso</span>
             </div>
             <p style="font-size: 1.5rem;font-weight: 600;">+20 años de trayectoria, avalan nuestro trabajo.</p>
             <!-- Call to action -->
@@ -295,20 +294,20 @@
     <!-- Servicios prestados -->
     <div class="content-all-services">
         <h2 class="title-section">Nuestros Servicios</h2>
+        <p>Nos encargamos de realizar toda la gestión ante el Ministerio de Trabajo y Seguridad Social</p>
         <!-- Derecho Laboral -->
         <div class="content-service one">
             <i class="icon-briefcase service-icon"></i>
             <div class="service-header">
-                <h3>Derecho laboral</h3>
+                <h3>Despidos </h3>
             </div>
-            <p>Nuestros abogados especialistas en derecho laboral ofrecen asesoramiento y representación efectiva para
-                conflictos colectivos e individuales</p>
+            <p>Realizamos la gestión antes el Ministerio de Trabajo y Seguridad Social, </p>
             <div class="benefits">
-                <p><i class="icon-check"></i> Despido injustificado o indirecto</p>
+                <p><i class="icon-check"></i> Demandas</p>
                 <p><i class="icon-check"></i> Pagos atrasados</p>
                 <p><i class="icon-check"></i> Cálculo de Liquidacion</p>
             </div>
-            <a href="./servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
+            <a href="../servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
             </a>
         </div>
@@ -328,8 +327,8 @@
                 <p><i class="icon-check"></i> Disputas de propiedad</p>
                 <p><i class="icon-check"></i> Reclamaciones</p>
             </div>
-            <a href="./servicios/derecho-civil/" title="Abogado Civil" class="conocemas">
-                <i class="icon-plus"></i> Conocé más
+            <a href="../servicios/derecho-civil/" title="Abogado Civil" class="conocemas">
+                <i class="icon-plus"></i>Conocé más
             </a>
         </div>
 
@@ -348,7 +347,7 @@
                 <p><i class="icon-check"></i> Custodia de hijos</p>
                 <p><i class="icon-check"></i> Divorcios</p>
             </div>
-            <a href="./servicios/derecho-de-familia/" title="Abogado de Familia" class="conocemas">
+            <a href="../servicios/derecho-de-familia/" title="Abogado de Familia" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
             </a>
         </div>
@@ -368,7 +367,7 @@
                 <p><i class="icon-check"></i> Asesoramiento en gestión de propiedades</p>
                 <p><i class="icon-check"></i> Soluciones de Garantías y Seguros</p>
             </div>
-            <a href="./servicios/arrendamientos/" title="Abogado para Arrendamientos" class="conocemas">
+            <a href="../servicios/arrendamientos/" title="Abogado para Arrendamientos" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
             </a>
         </div>
@@ -423,7 +422,8 @@
                 <h3>Resolución Rápida</h3>
                 <p>
                     <i class="icon-gavel"></i>
-                    Implementamos acciones legales efectivas para resolver tu caso en el menor tiempo posible.</p>
+                    Implementamos acciones legales efectivas para resolver tu caso en el menor tiempo posible.
+                </p>
             </div>
         </div>
         <a href="#formulario-de-contacto" title="Envíanos tu consulta" class="btn"><i class="icon-share"></i> Evaluar mi
@@ -522,7 +522,7 @@
             <!-- Formulario de contacto -->
             <div class="contact-form" id="formulario-de-contacto">
                 <h3>Envíanos un mensaje</h3>
-                <form action="./consultas/guardar.php" method="post">
+                <form action="../consultas/guardar.php" method="post">
                     <div class="form-group">
                         <label for="name">Nombre completo</label>
                         <input type="text" id="name" name="name" required>
@@ -576,13 +576,13 @@
             <div class="footer-links">
                 <p>Áreas de práctica</p>
                 <ul>
-                    <li><a title="Ir a la página: Derecho Laboral" href="./servicios/derecho-laboral/">Derecho
+                    <li><a title="Ir a la página: Derecho Laboral" href="../servicios/derecho-laboral/">Derecho
                             laboral</a></li>
-                    <li><a title="Ir a la página: Derecho de Familia" href="./servicios/derecho-familia/">Derecho de
+                    <li><a title="Ir a la página: Derecho de Familia" href="../servicios/derecho-familia/">Derecho de
                             familia</a></li>
-                    <li><a title="Ir a la página: Derecho Civil" href="./servicios/derecho-civil/">Derecho civil</a>
+                    <li><a title="Ir a la página: Derecho Civil" href="../servicios/derecho-civil/">Derecho civil</a>
                     </li>
-                    <li><a title="Ir a la página: Arrendamientos" href="./servicios/arrendamientos/">Arrendamientos</a>
+                    <li><a title="Ir a la página: Arrendamientos" href="../servicios/arrendamientos/">Arrendamientos</a>
                     </li>
                 </ul>
             </div>
@@ -594,10 +594,8 @@
                         href="mailto:kevinmartinez08.97@hotmail.com">Mart Solutions</a></b></p>
         </div>
     </footer>
-    <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank" rel="noopener noreferer">
-        <span>¿En que podemos ayudarte?</span>
-        <i class="icon-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank"
+        rel="noopener noreferer"><i class="icon-whatsapp"></i></a>
 </body>
 
 </html>

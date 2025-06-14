@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a3a5f">
+
+    <!-- Precarga de CSS crítico -->
+    <link rel="preload" href="../assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/icons.css">
+    </noscript>
+
+    <!-- Carga diferida de CSS no crítico -->
+    <link rel="preload" href="../assets/css/icons.css" as="style" media="print" onload="this.media='all'">
+
+    <!-- Precarga de imagen de logo -->
+    <link rel="preload" href="../assets/img/logo.svg" as="image">
+
+    <!-- Configuración básica -->
+    <title>Abogado Laboral en Montevideo | MiAbogado.uy</title>
+    <meta name="description"
+        content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
+    <meta name="keywords"
+        content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
+    <meta name="author" content="Kevin Martínez">
+    <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
+
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <!-- Open Graph (Redes Sociales) -->
+    <meta property="og:title" content="Abogado Laboral en Montevideo | MiAbogado.uy">
+    <meta property="og:description"
+        content="Defensa legal en conflicos laborales, civiles y familiares en Montevideo y Ciudad de la Costa">
+    <meta property="og:url" content="https://martinezk97.github.io/miabogado/">
+    <meta property="og:image" content="https://martinezk97.github.io/miabogado/assets/images/logo-social.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_UY">
+
+    <!-- Robots y Viewport -->
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Crítico -->
+    <style>
+        :root {
+            --blue: #1a3a5f;
+            --yellow: #ffcd00;
+            --gray: #eee;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: scroll 0.3s ease;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .young-serif-regular {
+            font-family: "Young Serif", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header {
+            background-color: var(--blue);
+            padding: 1rem;
+            font-size: 18px;
+            color: var(--yellow);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9;
+
+        }
+
+        header a {
+            /* border: solid 1px; */
+            display: grid;
+            grid-template-columns: 3rem max-content;
+            align-content: center;
+            place-items: center;
+            grid-gap: 1rem;
+            /* border: solid 1px; */
+            max-width: max-content;
+            margin: 0 auto;
+        }
+
+        header a .logo {
+            /* border: solid 1px red; */
+            width: 3rem;
+            height: 3rem;
+
+        }
+
+        header a .brandname {
+            font-weight: 700;
+            font-size: 2rem;
+            font-family: "Zen Antique Soft", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .iso {
+            background-image: url(./assets/img/logo.svg);
+        }
+
+
+        #fixed-wpp-btn {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: green;
+            display: block;
+            z-index: 9;
+            color: #fff;
+            min-width: clamp(4rem, 5vw, 5rem);
+            max-width: clamp(4rem, 5vw, 5rem);
+            min-height: clamp(4rem, 5vw, 5rem);
+            max-height: clamp(4rem, 5vw, 5rem);
+            display: grid;
+            place-items: center;
+            font-size: clamp(2.5rem, 2.5vw, 3rem);
+            border-radius: 150px;
+
+        }
+    </style>
+</head>

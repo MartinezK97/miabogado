@@ -133,115 +133,82 @@
 }
 
 
-.step:nth-child(1) {
+.step:nth-child(1) h3 {
     animation: abc linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 100%;
 }
 
-.step:nth-child(2) {
-    animation: abc2 linear;
+.step:nth-child(2) h3{
+    transform-origin: 50% 0;
+    animation: abc linear;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    animation-range: entry 0% cover 15%;
 }
 
 
-.step:nth-child(3) {
-    animation: abc3 linear;
+.step:nth-child(3) h3 {
+    animation: abc linear;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    animation-range: entry 0% cover 15%;
 }
 
-.step:nth-child(4) {
-    animation: abc4 linear;
+.step:nth-child(4) h3 {
+    animation: abc linear;
     animation-timeline: view();
-    animation-range: entry 5% cover 30%;
+    animation-range: entry 0% cover 15%;
 }
 
 @keyframes abc {
-    from {
-        opacity: 0.7;
-        transform: translate(200px, 0) scaleX(0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate(0, 0) scaleX(1);
-    }
-}
-
-@keyframes abc2 {
     0% {
-        opacity: 0;
-        transform: translate(-50px, 0) scaleX(0);
+        margin-top:10rem;
     }
 
-    50% {
-        opacity: 0.7;
-        transform: translate(50px, 0) scaleX(0.25);
+    10%{
+        margin-top:1rem ;
     }
-
+        80% {
+            margin-top: 1rem;
+        }
     100% {
-        opacity: 1;
-        transform: translate(0, 0) scaleX(1);
+        margin-top: 0rem;
     }
 }
 
-@keyframes abc4 {
-    from {
-        opacity: 0.7;
-        transform: translate(-200px, 0) scaleX(0);
-    }
 
-    to {
-        opacity: 1;
-        transform: translate(0, 0) scaleX(1);
-    }
+.contact-info{
+    animation: showToTopRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
 }
 
-@keyframes abc3 {
-    0% {
-        opacity: 0;
-        transform: translate(-100px, 0) scaleX(0);
-    }
-
-    50% {
-        opacity: 0.7;
-        transform: translate(-50px, 0) scaleX(0.25);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0, 0) scaleX(1);
-    }
+.contact-form{
+    animation: showToTopLeft linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
 }
 
 
 
 
 
-
-
-
-#fixed-wpp-btn:after {
-    content: "";
-    position: absolute;
-    background-color: green;
-    inset: -1.25rem;
-    border-radius: 100px;
-    /* opacity: 0.3; */
+#fixed-wpp-btn i {
+    position: relative;
+}
+    #fixed-wpp-btn i:after{
+   
     animation: wpp infinite 4s ease;
     z-index: -1;
 }
 
 @keyframes wpp {
     from {
-        opacity: 0.7;
+        opacity: 1;
         scale: 0.2;
     }
 
     to {
-        opacity: 1;
+        opacity: 0;
         scale: 1;
     }
 }
@@ -250,7 +217,6 @@
     animation: comment linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
-        border: solid 1px red;
 }
 
 @keyframes comment {
@@ -280,23 +246,15 @@
         animation-range: entry 10% cover 30%;
     }
 
-        .step:nth-child(1n) {
-            animation: abcx linear;
-            animation-timeline: view();
-            animation-range: entry 20% cover 50%;   }
 
-        @keyframes abcx {
-            from {
-                transform-origin: 0 50%;
-                opacity: 0.2;
-                transform: translateY(-2rem) skew(0, 15deg);
-            }
-    
-            to {
-                opacity: 1;
-                transform: skew(0, 0);
-                transform: translateY(0);
-            }   
-        }
 
+                #fixed-wpp-btn:after {
+                    content: "";
+                    position: absolute;
+                    /* background-color: green; */
+                    inset: -1.25rem;
+                    border-radius: 100px;
+                    /* opacity: 0.3; */
+                    animation: wpp infinite 4s ease;
+                    z-index: -1;       }
 }
