@@ -245,3 +245,20 @@
         scale: 1;
     }
 }
+
+
+@media (width < 760px) {
+
+    .statistics article:nth-child(2) {
+        animation: showToTopLeft linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 30%;
+    }
+
+    .statistics article:nth-child(3) {
+        animation: showToTop linear;
+        animation-timeline: view();
+        animation-range: entry 10% cover 30%;
+    }
+
+}
