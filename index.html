@@ -4,45 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a3a5f">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <!-- Precarga de CSS crítico -->
     <link rel="preload" href="./assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
     <noscript>
         <link rel="stylesheet" href="./assets/css/icons.css">
         <link rel="stylesheet" href="./assets/css/home.css">
         <link rel="stylesheet" href="./assets/css/animations.css">
     </noscript>
-
+    
     <!-- Carga diferida de CSS no crítico -->
     <link rel="preload" href="./assets/css/icons.css" as="style" media="print" onload="this.media='all'">
-
+    
     <!--  -->
+    <link rel="preload" href="./assets/img/logo.svg" as="image">
     <link rel="preload" href="./assets/img/portada.webp" as="image">
     <link rel="preload" href="./assets/img/bg_1.webp" as="image">
-
+    
     <!-- Configuración básica -->
-    <title>Abogado Especialista en Montevideo | Derecho Laboral, Civil y Familia</title>
+    <title>Abogado Laboral en Montevideo | MiAbogado.uy</title>
     <meta name="description"
-        content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
+    content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
     <meta name="keywords"
-        content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
+    content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
     <meta name="author" content="Kevin Martínez">
     <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
-
+    
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
     <!-- Open Graph (Redes Sociales) -->
-    <meta property="og:title" content="Abogado Especialista en Montevideo | Defensa Legal Efectiva">
+    <meta property="og:title" content="Abogado Laboral en Montevideo | MiAbogado.uy">
     <meta property="og:description"
-        content="Servicios legales en derecho laboral, civil y familia. Consulta gratuita en Montevideo y Ciudad de la Costa">
+        content="Defensa legal en conflicos laborales, civiles y familiares en Montevideo y Ciudad de la Costa">
     <meta property="og:url" content="https://martinezk97.github.io/miabogado/">
     <meta property="og:image" content="https://martinezk97.github.io/miabogado/assets/images/logo-social.jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_UY">
-
 
     <!-- Robots y Viewport -->
     <meta name="robots" content="index, follow">
@@ -54,8 +52,8 @@
             "@type": "LegalService",
             "name": "Mi Abogado",
             "url": "https://martinezk97.github.io/miabogado/",
-            "logo": "https://martinezk97.github.io/miabogado/assets/img/logo.png",
-            "description": "Estudio especializado en derecho laboral, civil, familiar y arrendamientos en Montevideo y Ciudad de la Costa.",
+            "logo": "https://martinezk97.github.io/miabogado/assets/img/logo.svg",
+            "description": "Abogado laboral, civil, familiar y arrendamientos en Montevideo y Ciudad de la Costa.",
             "telephone": "+59812345678",
             "address": {
               "@type": "PostalAddress",
@@ -68,7 +66,9 @@
             "openingHours": "Mo-Fr 10:00-18:00"
           }
           </script>
-    <style>
+   
+   <!-- Css Crítico -->
+   <style>
         :root {
             --blue: #1a3a5f;
             --yellow: #ffcd00;
@@ -87,7 +87,6 @@
         body::-webkit-scrollbar {
             display: none;
         }
-
 
         * {
             box-sizing: border-box;

@@ -1,8 +1,8 @@
-/assets/img/*
-Cache-Control: public, max-age=2592000
+/assets/img/portada.webp
+  Cache-Control: public, max-age=31536000
 
-/assets/css/*
-Cache-Control: public, max-age=2592000
+/assets/img/bg_1.webp
+  Cache-Control: public, max-age=31536000
 
-/assets/fonts/icons/*
-  Cache-Control: public, max-age=2592000
+/assets/img/logo.svg
+  Cache-Control: public, max-age=31536000
