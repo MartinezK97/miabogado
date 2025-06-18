@@ -1,0 +1,248 @@
+.contact {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--gray);
+    z-index: 8;
+    position: relative;
+}
+.contact .title{
+    font-size: clamp(1.75rem, 3vw, 4rem);
+    margin: 0 auto;
+    max-width: max-content;
+    color: var(--blue);
+}
+.contact>p {
+    /* border: solid 1px; */
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    border-radius: 15px;
+    /* overflow: hidden; */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    padding: 3rem;
+    background: var(--blue);
+    color: white;
+    border-radius: 15px 0 0 15px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.contact-item h4,
+.contact-item p {
+    margin: 0;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--yellow);
+}
+
+.contact-form {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--blue);
+}
+
+.contact-form .btn {
+    background: var(--yellow);
+    color: var(--blue);
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    height: min-content;
+    padding: 0;
+    max-width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 2rem auto;
+    padding: 0.75rem 2rem;
+    grid-gap: 1rem;
+    place-items: center;
+    margin-bottom: 2rem;
+    min-width: max-content;
+    margin: 0 auto;
+    border: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+footer {
+    background: #0f253f;
+    color: white;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-logo span {
+    color: #ffd700;
+}
+
+.footer-about p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.footer-links>p {
+    color: #ffd700;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--yellow);
+    color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+@media(width < 760px){
+    .contact-info{
+        border-radius: 10px 10px 0 0;
+    }
+        .contact-form {
+            border-radius: 0 0 10px 10px;
+            z-index: 8;
+            position: relative;
+        }
+
+    #fixed-wpp-btn:after {
+        content: "";
+        position: absolute;
+        inset: -1.25rem;
+        border-radius: 100px;
+        animation: wpp infinite 4s ease;
+        z-index: -1;
+    }
+
+    #fixed-wpp-btn {
+        grid-template-columns: 1fr;
+    }
+
+    #fixed-wpp-btn span {
+        display: none;
+    }
+}

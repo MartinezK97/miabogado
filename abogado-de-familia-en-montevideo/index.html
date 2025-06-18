@@ -169,97 +169,6 @@
             place-items: center;
             font-size: clamp(2.5rem, 2.5vw, 3rem);
             border-radius: 150px;
-
-        }
-
-        /* Portada */
-        .portada {
-            /* border: solid 1px red; */
-            z-index: 2;
-            width: 100vw;
-            max-width: 100vw;
-            height: 100vh;
-            overflow-x: hidden;
-            background-image: url(../assets/img/portada.webp);
-            background-size: cover;
-            background-position: 50%;
-            display: grid;
-            align-content: center;
-            padding: 5rem 2rem 0;
-            /* padding: 5rem 2rem 0 23.5rem; */
-            position: relative;
-            background-attachment: fixed;
-            /* border: solid 2px cyan; */
-        }
-
-        .portada:before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            background-color: rgba(0, 1, 61, 0.661);
-        }
-
-        .portada .tag {
-            backdrop-filter: blur(5px);
-            color: #fff;
-            padding: 0.75rem 2rem;
-            border-radius: 10px;
-            max-width: max-content;
-            box-shadow: 1px 1px 8px -1px #000, -1px -1px 10px -3px #fff;
-            font-size: clamp(1rem, 1vw, 1.5rem);
-            background-color: #0002;
-        }
-
-        .portada h1 {
-            font-size: clamp(1.5rem, 2.75vw, 4rem);
-            margin: 0;
-            margin-top: 1rem;
-        }
-
-        .portada h1 .blur {
-            /* border: solid 1px; */
-            display: block;
-            line-height: 1.5;
-            border-top: solid 1px #fff2;
-            padding: 0.5rem 0;
-            margin-top: 1rem;
-            /* border-radius: 10px; */
-            /* width: max-content; */
-            width: 100%;
-            max-width: 100%;
-            box-shadow: 100%;
-            display: block;
-
-            width: max-content;
-            /* backdrop-filter: blur(10px); */
-            font-size: 75%;
-            /* margin: 2rem 0 0; */
-            display: block;
-            color: #eee;
-
-        }
-
-        .portada h1,
-        .portada p {
-            color: #fff;
-            line-height: 1.5;
-        }
-
-        .portada p {
-            font-size: clamp(1rem, 1.25vw, 1.75rem);
-            margin: 0;
-            pad: 0;
-            width: 100%;
-            max-width: max-content;
-            margin-top: 1.25rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            /* border: solid 1px #fff; */
-            width: 100%;
         }
     </style>
 </head>
@@ -277,14 +186,14 @@
         <div class="container">
             <div class="tag">+50 casos de éxito en 2025</div>
             <h1>
-                <span>ABOGADO LABORAL en Montevideo y Ciudad de la Costa</span>
+                <span>ABOGADO DE FAMILIA en Montevideo</span>
                 <!-- <span class="blur">Defendé tus derechos HOY MISMO</span> -->
             </h1>
             <div class="services">
-                <span>Despidos</span>
-                <span>Liquidaciónes</span>
-                <span>Accidentes</span>
-                <span>Acoso Laboral</span>
+                <span>Sucesiones / Herencias</span>
+                <span>Divorcio o Separacion</span>
+                <span>Pensiones Alimenticias</span>
+                <span>Tenencia y ciudados</span>
             </div>
             <p style="font-size: 1.5rem;font-weight: 600;"></p>
             <!-- Call to action -->
@@ -303,7 +212,8 @@
             <div class="service-header">
                 <h3>Indemización por Despido</h3>
             </div>
-            <p>Brindamos asesoramiento y representación ante el Ministerio de Trabajo y Seguridad Social en casos de despido, ya
+            <p>Brindamos asesoramiento y representación ante el Ministerio de Trabajo y Seguridad Social en casos de
+                despido, ya
                 sea con o sin causa. Protegemos tus derechos laborales y gestionamos reclamos de forma eficaz.</p>
             <div class="benefits">
                 <p><i class="icon-check"></i> Reclamos por despido injustificado</p>
@@ -312,7 +222,8 @@
             </div>
             <a href="../servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
-            </a>  </div>
+            </a>
+        </div>
 
         <!-- Liquidaciones y Haberes -->
         <div class="content-service two">
@@ -320,7 +231,8 @@
             <div class="service-header">
                 <h3>Liquidaciones y Haberes</h3>
             </div>
-            <p>Te ayudamos a calcular correctamente tu liquidación laboral y verificar que hayas cobrado lo que te corresponde.
+            <p>Te ayudamos a calcular correctamente tu liquidación laboral y verificar que hayas cobrado lo que te
+                corresponde.
                 Defendemos tus derechos ante irregularidades en pagos o diferencias salariales.</p>
             <div class="benefits">
                 <p><i class="icon-check"></i> Cálculo de aguinaldos y licencias</p>
@@ -329,7 +241,8 @@
             </div>
             <a href="../servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
-            </a>  </div>
+            </a>
+        </div>
 
         <!-- Accidentes Laborales -->
         <div class="content-service three">
@@ -337,7 +250,8 @@
             <div class="service-header">
                 <h3>Accidentes laborales</h3>
             </div>
-            <p>Si sufriste un accidente en el trabajo o desarrollaste una enfermedad profesional, te asesoramos para que recibas
+            <p>Si sufriste un accidente en el trabajo o desarrollaste una enfermedad profesional, te asesoramos para que
+                recibas
                 la compensación justa. Evaluamos responsabilidades y gestionamos reclamos ante el BSE.</p>
             <div class="benefits">
                 <p><i class="icon-check"></i> Reclamos por accidentes laborales</p>
@@ -346,7 +260,8 @@
             </div>
             <a href="../servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
-            </a>  </div>
+            </a>
+        </div>
 
         <!-- Acoso laboral -->
         <div class="content-service fourt">
@@ -354,7 +269,8 @@
             <div class="service-header">
                 <h3>Acoso laboral</h3>
             </div>
-            <p>Te acompañamos si estás atravesando una situación de maltrato, hostigamiento o presión psicológica en el ámbito
+            <p>Te acompañamos si estás atravesando una situación de maltrato, hostigamiento o presión psicológica en el
+                ámbito
                 laboral. Reunimos pruebas, realizamos las denuncias correspondientes y protegemos tus derechos.</p>
             <div class="benefits">
                 <p><i class="icon-check"></i> Denuncias por acoso y hostigamiento</p>
@@ -363,7 +279,8 @@
             </div>
             <a href="../servicios/derecho-laboral/" title="Abogado laboral" class="conocemas">
                 <i class="icon-plus"></i> Conocé más
-            </a>  </div>
+            </a>
+        </div>
     </div>
 
 
@@ -371,10 +288,10 @@
         <div class="container">
             <p>
                 <span style="color:var(--yellow);">¿Sabías que..?</span><br>
-                <span>En juicios laborales, los honorarios se abonan únicamente si el trabajador 
+                <span>En juicios laborales, los honorarios se abonan únicamente si el trabajador
                     <span style="color:var(--yellow);">recibe una compensación económica. </span>
-                    </span>
-               
+                </span>
+
             </p>
             <div class="max-size statistics">
                 <article><span class="num">+50</span>
@@ -432,14 +349,16 @@
         <div class="comments max-size">
             <div class="comment">
                 <p>
-                    Me despidieron sin explicaciones y no sabía qué pasos seguir. El abogado me ayudó a entender mis derechos y logró que me
+                    Me despidieron sin explicaciones y no sabía qué pasos seguir. El abogado me ayudó a entender mis
+                    derechos y logró que me
                     pagaran toda la indemnización que me correspondía. Me sentí acompañado en todo momento</p>
                 <div class="name">Martín J.</div>
                 <span>- Guardia de seguridad</span>
             </div>
             <div class="comment">
                 <p>
-                    Tuve un accidente en obra y el seguro no me quería cubrir todo lo que debía. El abogado gestionó todo el trámite con el
+                    Tuve un accidente en obra y el seguro no me quería cubrir todo lo que debía. El abogado gestionó
+                    todo el trámite con el
                     BSE y al final recibí una compensación justa. No tuve que pagar nada hasta que cobramos
                 </p>
                 <div class="name">Juan Carlos M.</div>
@@ -447,7 +366,8 @@
             </div>
             <div class="comment">
                 <p>
-                    Me fui de la empresa luego de muchos años, sin saber que me estaban pagando de menos. Consulté al abogado y descubrió varios errores en la
+                    Me fui de la empresa luego de muchos años, sin saber que me estaban pagando de menos. Consulté al
+                    abogado y descubrió varios errores en la
                     liquidación. Hicimos el reclamo y recuperé mas de $60.000
                 </p>
                 <div class="name">Ana R.</div>
@@ -456,8 +376,10 @@
             </div>
             <div class="comment">
                 <p>
-                    Trabajé muchos años como empleada doméstica y un día me dijeron que ya no me necesitaban, sin pagarme lo que me
-                    correspondía. No sabía que tenía derechos. El abogado me explicó todo con paciencia, hizo el reclamo y pude cobrar mi
+                    Trabajé muchos años como empleada doméstica y un día me dijeron que ya no me necesitaban, sin
+                    pagarme lo que me
+                    correspondía. No sabía que tenía derechos. El abogado me explicó todo con paciencia, hizo el reclamo
+                    y pude cobrar mi
                     liquidación completa. Me sentí respetada.
                 </p>
                 <div class="name">María T.</div>

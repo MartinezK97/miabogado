@@ -7,22 +7,24 @@
     <meta name="theme-color" content="#1a3a5f">
 
     <!-- Precarga de CSS crítico -->
-    <link rel="preload" href="../assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="../assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="../assets/css/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="../assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../../assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../../assets/css/parts/header.css" as="style"onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../../assets/css/parts/simulator.css" as="style"onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../../assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="../assets/css/icons.css">
-        <link rel="stylesheet" href="../assets/css/blog.css">
-        <link rel="stylesheet" href="../assets/css/parts/header.css">
-        <link rel="stylesheet" href="../assets/css/parts/footer.css">
+        <link rel="stylesheet" href="../../assets/css/icons.css">
+        <link rel="stylesheet" href="../../assets/css/parts/header.css">
+        <link rel="stylesheet" href="../../assets/css/parts/simulator.css">
+        <link rel="stylesheet" href="../../assets/css/parts/footer.css">
     </noscript>
 
+    <script src="../../assets/js/calculators.js"></script>
+
     <!-- Carga diferida de CSS no crítico -->
-    <link rel="preload" href="../assets/css/icons.css" as="style" media="print" onload="this.media='all'">
+    <link rel="preload" href="../../assets/css/icons.css" as="style" media="print" onload="this.media='all'">
 
     <!-- Precarga de imagen de logo -->
-    <link rel="preload" href="../assets/img/logo.svg" as="image">
+    <link rel="preload" href="../../assets/img/logo.svg" as="image">
 
     <!-- Configuración básica -->
     <title>Abogado Laboral en Montevideo | MiAbogado.uy</title>
@@ -33,7 +35,7 @@
     <meta name="author" content="Kevin Martínez">
     <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
 
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/img/logo.svg" type="image/x-icon">
     <!-- Open Graph (Redes Sociales) -->
     <meta property="og:title" content="Abogado Laboral en Montevideo | MiAbogado.uy">
     <meta property="og:description"
@@ -144,11 +146,12 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <a href="../" title="Volver al inicio" aria-label="Volver al inicio">
-                <img src="../assets/img/logo.svg" alt="logo" title="Logo de Mi Abogado" class="logo iso" loading="lazy">
+                <img src="../../assets/img/logo.svg" alt="logo" title="Logo de Mi Abogado" class="logo iso" loading="lazy">
                 <span class="brandname">Mi Abogado</span>
             </a>
             <nav>
@@ -161,67 +164,82 @@
         </div>
     </header>
 
-    <h1>Blog</h1>
+    <h1>Simulador de aguinaldo</h1>
 
-    <!-- Navbar -->
-    <div class="categorys">
-       <a href="#" class="selected">Derecho Laboral</a>
-        <a href="#">Derecho Civil</a>
-        <a href="#">Derecho de Familia</a>
-        <a href="#">Arrendamientos</a>
+    <div class="content-simulator">
+        <div>
+            <p>Calculadora</p>
+            <div>Calcula un monto aproximado de tu aguinaldo en segundos, con nuestro simulador de aguinaldos.</div>
+            <div>Los montos que ingrese deben ser nominales (sin descuentos)</div>
+            <div class="important">
+                <p>Importante</p>
+                <div>Los resultados no son cifras oficiales, deben ser corroboradas por un profesional.</div>
+                <div>Los cálculos no contemplan horas extras ni faltas mensuales.</div>
+
+            </div>
+        </div>
+        <form class="calculator" id="calculadoraDeAguinaldo">
+            <section class="inputs">
+                <div>
+                    <input type="date" id="date">
+                    <span>Fecha de ingreso</span>
+                </div>
+                <div>
+                    <span>Ultimo cobro ($)</span>
+                    <input type="number" id="salario">
+                </div>
+                <div class="hasChild">
+                    <span>Tiene menores a cargo</span>
+                    <div>
+                        <input type="radio" name="hasChilds" value="0" id="noHasChild" checked>
+                        <label for="noHasChild">No tengo</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="1" name="hasChilds" id="hasChild">
+                        <label for="hasChild">Si, tengo.</label>
+                    </div>
+                </div>
+            </section>
+            <div class="discount">
+                <span>Montepío (BPS)</span>
+                <span>15%</span>
+                <span id="montepio">$</span>
+            </div>
+            <div class="discount">
+                <span>Seguro por Enfermedad</span>
+                <span>3%</span>
+                <span id="fonasa">$</span>
+            </div>
+            <div class="discount">
+                <span>Adic. Sist. Nac. Int. de Salud</span>
+                <span id="asnis_percent">1.5%</span>
+                <span id="asnis_amount">$</span>
+            </div>
+            <div class="discount">
+                <span>F.R.L.:</span>
+                <span>0.125%</span>
+                <span id="frl">$</span>
+            </div>
+            <div class="discount">
+                <span>I.R.P.F.:</span>
+                <span id="irpf_percent">0%</span>
+                <span id="irpf_amount">$</span>
+            </div>
+            <div class="content-results">
+                <div>
+                    <span>Aguinaldo nominal</span>
+                    <p id="aguinaldo_nominal">$0</p>
+                </div>
+                <div>
+                    <span>Aguinaldo líquido</span>
+                    <p id="aguinaldo_liquido">$0</p>
+                </div>
+            </div>
+           <button class="cta"><i class="icon-calculator"></i> Calcular mi aguinaldo</button>
+        </form>
     </div>
-
-    <!-- Contenedor de posts -->
-    <div class="grid">
-        <!-- Post 1 -->
-        <div class="new">
-            <img src="../assets/img/blog/derecho-laboral/mi-aguinaldo.jpg" alt="Persona calculando su aguinaldo">
-            <h2 class="title">
-                <a href="../derecho-laboral/cuando-se-paga-el-aguinaldo-en-uruguay/">¿Cuando se paga el aguinaldo en Uruguay?</a>
-                <span class="date">16/05/2025</span>
-            </h2>
-            <p>Se aproxima el pago de los aguinaldos en junio 2025. Esto es todo lo que tenés que saber... </p>
-            <a href="../derecho-laboral/cuando-se-paga-el-aguinaldo-en-uruguay/" class="more"><i class="icon-plus"></i> Leer más </a>
-        </div>
-
-        <!-- Post 2 -->
-        <div class="new">
-            <img src="../assets/img/mtss.jpg" alt="">
-            <h2 class="title">
-                <a href="#">¿Cómo calcular mi aguinaldo?</a>
-                <span class="date">16/05/2025</span>
-            </h2>
-            <p>Guía práctica sobre como calcular tu aguinaldo. Anticipa el monto que debes percibir el dia del pago.</p>
-            <a href="../derecho-laboral/como-calcular-mi-aguinaldo/" class="more"><i class="icon-plus"></i> Leer más</a>
-        </div>
-
-        <!-- Post 3 -->
-        <div class="new">
-            <img src="../assets/img/mtss.jpg" alt="">
-            <h2 class="title">
-                <a href="#">Diferencias entre Licencia y Salario Vacacional</a>
-                <span class="date">16/05/2025</span>
-            </h2>
-            <p>Se suele pensar que salario vacacional y licencia es lo mismo, pero nada mas lejos de la realidad. Te explicamos las diferencias.</p>
-            <a href="#" class="more"><i class="icon-plus"></i> Leer más </a>
-        </div>
-
-        <!-- Post 4 -->
-        <div class="new">
-            <img src="../assets/img/blog/derecho-laboral/como-calcular-mi-licencia.webp" alt="">
-            <h2 class="title">
-                <a href="#">¿Cómo calcular mi licencia?</a>
-                <span class="date">16/05/2025</span>
-            </h2>
-            <p>El aguinaldo, en Uruguay, es es decimotercer sueldo que se abona semestralmente en los meses de...</p>
-            <a href="#" class="more"><i class="icon-plus"></i> Leer más </a>
-        </div>
-    </div>
-    
-
 
     <!-- Contactos -->
-    <!-- Contact Section -->
     <section class="contact" id="contacto">
         <h2 class="title">Contacto</h2>
         <p>Estamos para asesorarte. Completa el formulario y te responderemos a la brevedad</p>
@@ -286,7 +304,7 @@
                     <button type="submit" name="save" class="btn"><i class="icon-plane"></i> Enviar mensaje</button>
                 </form>
             </div>
-
+    
         </div>
     </section>
     
@@ -319,8 +337,10 @@
             <div class="footer-links">
                 <p>Áreas de práctica</p>
                 <ul>
-                    <li><a title="Ir a la página: Derecho Laboral" href="./servicios/derecho-laboral/">DerechoLaboral</a></li>
-                    <li><a title="Ir a la página: Derecho de Familia" href="./servicios/derecho-familia/">Derecho de Familia</a></li>
+                    <li><a title="Ir a la página: Derecho Laboral" href="./servicios/derecho-laboral/">DerechoLaboral</a>
+                    </li>
+                    <li><a title="Ir a la página: Derecho de Familia" href="./servicios/derecho-familia/">Derecho de
+                            Familia</a></li>
                     <li><a title="Ir a la página: Derecho Civil" href="./servicios/derecho-civil/">Derecho Civil</a></li>
                     <li><a title="Ir a la página: Arrendamientos" href="./servicios/arrendamientos/">Arrendamientos</a>
                     </li>
@@ -334,7 +354,9 @@
                         href="mailto:kevinmartinez08.97@hotmail.com">Mart Solutions</a></b></p>
         </div>
     </footer>
-    <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank" rel="noopener noreferer">
+    <!-- Boton fijo de wpp -->
+    <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank"
+        rel="noopener noreferer">
         <span>¿En que podemos ayudarte?</span>
         <i class="icon-whatsapp"></i>
     </a>
