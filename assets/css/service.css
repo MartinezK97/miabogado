@@ -46,53 +46,6 @@ a {
     text-decoration: none;
 }
 
-
-header {
-    background-color: var(--blue);
-    padding: 1rem;
-    font-size: 18px;
-    color: gold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-
-}
-
-header a {
-    /* border: solid 1px; */
-    display: grid;
-    grid-template-columns: 3rem max-content;
-    align-content: center;
-    place-items: center;
-    grid-gap: 1rem;
-    /* border: solid 1px; */
-    max-width: max-content;
-    margin: 0 auto;
-}
-
-header a .logo {
-    /* border: solid 1px red; */
-    width: 3rem;
-    height: 3rem;
-
-}
-
-header a .brandname {
-    font-weight: 700;
-    font-size: 2rem;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-.iso {
-    background-image: url(../img/logo.svg);
-}
-
-
 .content-all h1 {
     padding: 1rem 0;
     margin-top: 5rem;

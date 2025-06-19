@@ -1,3 +1,19 @@
+#fixed-wpp-btn{
+    position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        display: grid;
+        grid-template-columns: max-content 5rem;
+        padding: 0.5rem;
+        filter: drop-shadow(2px 4px 6px #000);
+}
+
+#fixed-wpp-btn span {
+    font-weight: 600;
+
+}
+
+
 .contact {
     padding: 5rem 5%;
     max-width: 1200px;
@@ -148,12 +164,25 @@ footer {
 
 .footer-logo {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    align-content: center;
+    grid-gap: 10px;
+}
+
+.footer-logo i {
+    font-size: 2.25rem;
+    color: var(--yellow);
+    display: block;
+    align-self: center;
+    margin: 0 auto;
 }
 
 .footer-logo span {
-    color: #ffd700;
+    color: var(--yellow);
+    font-family: "Kanit";
 }
 
 .footer-about p {

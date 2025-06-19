@@ -1,0 +1,41 @@
+menu{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 9999;
+    width: max-content;
+    display: grid;
+    bottom: 0;
+    height: 100vh;
+    margin-top: 0;
+    align-content: center;
+    grid-gap: 1rem;
+    background-color: var(--blue);
+    padding: 2rem;
+    min-width: 240px;
+    max-width: calc(100vw - 2rem);
+    transform: translateX(100%);
+    transition:0.25s ease-in-out;
+    display: grid;
+}
+
+menu button{
+    position: absolute;
+    top: 1rem;
+    left: -3.5rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+menu a{
+    color: #fff;
+
+}
+
+

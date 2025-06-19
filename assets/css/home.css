@@ -65,35 +65,7 @@ header {
     right: 0;
     z-index: 9;
 
-}
-
-header a {
-    /* border: solid 1px; */
-    display: grid;
-    grid-template-columns: 3rem max-content;
-    align-content: center;
-    place-items: center;
-    grid-gap: 1rem;
-    /* border: solid 1px; */
-    max-width: max-content;
-    margin: 0 auto;
-}
-
-header a .logo {
-    /* border: solid 1px red; */
-    width: 3rem;
-    height: 3rem;
-
-}
-
-header a .brandname {
-    font-weight: 700;
-    font-size: 2rem;
-    font-family: "Zen Antique Soft", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
+}*/
 
 .iso {
     background-image: url(../img/logo.svg);
@@ -544,8 +516,71 @@ header a .brandname {
 
 
 
+.knowSimulators{
+    background-image: url(../img/calc.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+.knowSimulators:after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0008;
+    z-index: 0;
+}
+
+.knowSimulators .container{
+    border: solid 1px #fff3;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+    margin: 2rem auto ;
+    max-height: max-content;
+    /* background-image: linear-gradient(to bottom right, #0004, #0001, #0004); */
+    background-color: #0002;
+    border-radius: 15px;
+    box-shadow: 0 0 15px -5px #000;
+    position: relative;
+    z-index: 1;
+    max-width: calc(100vw - 2rem);
+}
 
 
+.knowSimulators h2{
+    color: var(--yellow);
+    font-size: clamp(2rem, 2.5vw, 2.75rem);
+    position: relative;
+}
+
+.knowSimulators p{
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.75;
+    color: #fff;
+}
+
+.knowSimulators div {
+    font-size: clamp(1.1rem, 1.25vw, 1.25rem);
+    color: #fff;
+}
+
+.knowSimulators a {
+    background:var(--yellow);
+    color: var(--blue);
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    max-width: max-content;
+    margin:2rem  0 0 ;
+    font-weight: 500;
+
+
+}
 
 
 .content-process {
@@ -555,7 +590,7 @@ header a .brandname {
     margin-top: -50px;
     background-color: #eee;
     padding-bottom: 4rem;
-
+    min-height: 100vh;
 }
 
 
@@ -884,218 +919,6 @@ transition: .3s ease;
     color: #444;
 }
 
-.contact {
-    padding: 5rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact>p {
-    /* border: solid 1px; */
-    font-size: 1.25rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-    border-radius: 15px;
-    /* overflow: hidden; */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-    padding: 3rem;
-    background: var(--blue);
-    color: white;
-    border-radius: 15px 0 0 15px;
-}
-
-.contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #ffd700;
-}
-
-.contact-details {
-    margin-bottom: 2rem;
-}
-
-.contact-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 1.5rem;
-    align-items: center;
-}
-
-.contact-item h4,
-.contact-item p {
-    margin: 0;
-}
-
-.contact-icon {
-    font-size: 1.5rem;
-    color: var(--yellow);
-}
-
-.contact-form {
-    padding: 3rem;
-    background-color: #fff;
-    border-radius: 0 15px 15px 0;
-}
-
-.contact-form h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--blue);
-}
-
-.contact-form .btn {
-    background: var(--yellow);
-    color: var(--blue);
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 2rem;
-    height: min-content;
-    padding: 0;
-    max-width: 100%;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 2rem auto;
-    padding: 0.75rem 2rem;
-    grid-gap: 1rem;
-    place-items: center;
-    margin-bottom: 2rem;
-    min-width: max-content;
-    margin: 0 auto;
-    border: none;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #444;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--blue);
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-footer {
-    background: #0f253f;
-    color: white;
-    padding: 3rem 5%;
-    text-align: center;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    text-align: left;
-}
-
-.footer-logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.footer-logo span {
-    color: #ffd700;
-}
-
-.footer-about p {
-    color: #aaa;
-    line-height: 1.7;
-}
-
-.footer-links>p {
-    color: #ffd700;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    margin: 0;
-    font-weight: 600;
-}
-
-.footer-links ul {
-    list-style: none;
-}
-
-.footer-links li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-links a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffd700;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 1.5rem;
-}
-
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background: var(--yellow);
-    color: var(--blue);
-    transform: translateY(-5px);
-}
-
-.copyright {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #aaa;
-    font-size: 0.9rem;
-}
 
 @media (width < 760px) {
 

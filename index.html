@@ -9,11 +9,20 @@
     
     <!-- Precarga de CSS crítico -->
     <link rel="preload" href="./assets/css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/parts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/parts/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="./assets/css/icons.css">
+        <link rel="stylesheet" href="./assets/css/parts/fonts.css">
         <link rel="stylesheet" href="./assets/css/home.css">
+        <link rel="stylesheet" href="./assets/css/parts/header.css">
+        <link rel="stylesheet" href="./assets/css/parts/.css">
+        <link rel="stylesheet" href="./assets/css/parts/footer.css">
+        <!-- Animaciones de scroll driven -->
         <link rel="stylesheet" href="./assets/css/animations.css">
     </noscript>
     
@@ -27,18 +36,15 @@
     
     <!-- Configuración básica -->
     <title>Abogado Laboral en Montevideo | MiAbogado.uy</title>
-    <meta name="description"
-    content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
-    <meta name="keywords"
-    content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
+    <meta name="description" content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
+    <meta name="keywords" content="abogado en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
     <meta name="author" content="Kevin Martínez">
     <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
     
     <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
     <!-- Open Graph (Redes Sociales) -->
     <meta property="og:title" content="Abogado Laboral en Montevideo | MiAbogado.uy">
-    <meta property="og:description"
-        content="Defensa legal en conflicos laborales, civiles y familiares en Montevideo y Ciudad de la Costa">
+    <meta property="og:description" content="Defensa legal en conflicos laborales, civiles y familiares en Montevideo y Ciudad de la Costa">
     <meta property="og:url" content="https://martinezk97.github.io/miabogado/">
     <meta property="og:image" content="https://martinezk97.github.io/miabogado/assets/images/logo-social.jpg">
     <meta property="og:type" content="website">
@@ -67,7 +73,7 @@
             "priceRange": "$$",
             "openingHours": "Mo-Fr 10:00-18:00"
           }
-          </script>
+    </script>
    
    <!-- Css Crítico -->
    <style>
@@ -100,11 +106,7 @@
             text-decoration: none;
         }
 
-        .young-serif-regular {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+        
 
         header {
             background-color: var(--blue);
@@ -140,36 +142,17 @@
 
         header a .brandname {
             font-weight: 700;
-            font-size: 2rem;
-            font-family: "Zen Antique Soft", serif;
+            font-size: 2.75rem;
+            font-family: "Kanit";
             font-weight: 400;
             font-style: normal;
+            max-height: min-content;
         }
 
 
         .iso {
             background-image: url(./assets/img/logo.svg);
         }
-
-
-        /* #fixed-wpp-btn {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            background-color: green;
-            display: block;
-            z-index: 9;
-            color: #fff;
-            min-width: clamp(4rem, 5vw, 5rem);
-            max-width: clamp(4rem, 5vw, 5rem);
-            min-height: clamp(4rem, 5vw, 5rem);
-            max-height: clamp(4rem, 5vw, 5rem);
-            display: grid;
-            place-items: center;
-            font-size: clamp(2.5rem, 2.5vw, 3rem);
-            border-radius: 150px;
-
-        } */
 
         /* Portada */
         .portada {
@@ -266,11 +249,32 @@
 <body>
     <!-- Cabecera del sitio -->
     <header>
-        <a href="./" title="Volver al inicio" aria-label="Volver al inicio">
-            <img src="./assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy">
-            <span class="brandname">Mi Abogado</span>
-        </a>
+        <div class="container">
+            <a href="./" title="Volver al inicio" aria-label="Volver al inicio">
+                <i class="icon-logo logo"></i>
+                <!-- <img src="./assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy"> -->
+                <span class="brandname">Mi Abogado</span>
+            </a>
+            <nav id="menu">
+                <a href="#home">Inicio</a>
+                <a href="#home">Servicios</a>
+                <a href="#home">Operativa</a>
+                <a href="#home">Testimonios</a>
+                <a href="#home">Simuladores</a>
+                <a href="#home">Contactos</a>
+            </nav>
+        </div>
     </header>
+    <menu>
+        <button class="btn-menu"><i class="icon-bars"></i></button>
+        <a href="" title="Ir al inicio">Inicio</a>
+        <a href="" title="Ver Servicios">Servicios</a>
+        <a href="" title="Conocé Nuestra Operativa">Operativa</a>
+        <a href="" title="Ver Reseñas de Clientes Satisfechos">Testimonios</a>
+        <a href="" title="Simulá un pago laboral">Simulador</a>
+        <a href="" title="Blog de Noticias y Novedades">Blog</a>
+        <a href="" title="Ver Información De Contacto">Contactos</a>
+    </menu>
     <!-- Portada principal -->
     <div class="portada">
         <div class="container">
@@ -429,6 +433,23 @@
         <a href="#formulario-de-contacto" title="Envíanos tu consulta" class="btn"><i class="icon-share"></i> Evaluar mi
             caso ahora</a>
     </div>
+
+    <section class="knowSimulators">
+        <div class="container">
+            <h2>Simulador de Pagos Laborales</h2>
+            <p>Ponemos a tu disposición una herramienta simple y eficaz para que puedas estimar tus pagos laborales de forma rápida y
+            precisa.</p>
+            <div class="benefits">
+                <div><i class="icon-check color-green"></i> Calculadora de sueldos</div>
+                <div><i class="icon-check color-green"></i> Calculadora de Aguinaldo</div>
+                <div><i class="icon-check color-green"></i> Calculadora de Licencia</div>
+                <div><i class="icon-check color-green"></i> Calculadora de Despidos</div>
+            </div>
+            <a href="./simulador/" title="Ir al simulador">Conocé nuestro simulador</a>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
     <div class="testimonios">
         <h2 class="title-section">¿Qué dicen nuestros clientes?</h2>
         <p>Ellos ya confiaron en nosotros, conocé los testimonios de nuestros clientes satisfechos</p>
@@ -513,7 +534,7 @@
                         <i class="icon-clock contact-icon"></i>
                         <div>
                             <h4>Horario</h4>
-                            <p>Lun-Vie: 9:00 - 18:00</p>
+                            <p>Lunes a Viernes<br>de 10:00 a 18:00hs</p>
                         </div>
                     </div>
                 </div>
@@ -551,7 +572,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">Mi Abogado</div>
+                <div class="footer-logo"><i class="icon-logo"></i><span>Mi Abogado</span></div>
                 <p>Especialistas en derecho laboral, familiar, civil y arrendamientos. Brindamos soluciones legales
                     efectivas con profesionalismo y compromiso.</p>
                 <div class="social-icons">
@@ -605,7 +626,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-Q00GG6Y576');
     </script>
 </body>

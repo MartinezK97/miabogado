@@ -30,6 +30,15 @@
     }
 }
 
+@keyframes parallax_simulator {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: 0% -80vh;
+    }
+}
 
 
 
@@ -214,7 +223,12 @@
         animation-range: entry 0% cover 20%;
 }
 
-
+.knowSimulators{
+    background-size: auto 150% !important;
+    animation: parallax_simulator linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 100%;
+}
 
 
 
