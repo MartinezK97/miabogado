@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?saj4iv');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?saj4iv#iefix') format('embedded-opentype'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf?saj4iv') format('truetype'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff?saj4iv') format('woff'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg?saj4iv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-accident:before {
+    content: "\e900";
+}
+
+.icon-angles-right:before {
+    content: "\e901";
+}
+
+.icon-ban:before {
+    content: "\e902";
+}
+
+.icon-bars:before {
+    content: "\e903";
+}
+
+.icon-bars-staggered:before {
+    content: "\e904";
+}
+
+.icon-briefcase:before {
+    content: "\e905";
+}
+
+.icon-calc:before {
+    content: "\e906";
+}
+
+.icon-check:before {
+    content: "\e907";
+}
+
+.icon-clock:before {
+    content: "\e908";
+}
+
+.icon-comments:before {
+    content: "\e909";
+}
+
+.icon-danger:before {
+    content: "\e90a";
+}
+
+.icon-email:before {
+    content: "\e916";
+}
+
+.icon-facebook:before {
+    content: "\e917";
+}
+
+.icon-gavel:before {
+    content: "\e918";
+}
+
+.icon-hand:before {
+    content: "\e919";
+}
+
+.icon-home:before {
+    content: "\e91a";
+}
+
+.icon-instagram:before {
+    content: "\e91b";
+}
+
+.icon-list:before {
+    content: "\e91c";
+}
+
+.icon-logo:before {
+    content: "\e90b";
+}
+
+.icon-map:before {
+    content: "\e90c";
+}
+
+.icon-phone:before {
+    content: "\e90d";
+}
+
+.icon-plane:before {
+    content: "\e90e";
+}
+
+.icon-plus:before {
+    content: "\e90f";
+}
+
+.icon-search:before {
+    content: "\e910";
+}
+
+.icon-share:before {
+    content: "\e911";
+}
+
+.icon-shield:before {
+    content: "\e912";
+}
+
+.icon-tiktok:before {
+    content: "\e913";
+}
+
+.icon-users:before {
+    content: "\e914";
+}
+
+.icon-whatsapp:before {
+    content: "\e915";
+}

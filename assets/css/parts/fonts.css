@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-BlackItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-BlackItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-BlackItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Bold.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Bold.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Bold.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Black.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Black.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Black.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraBoldItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraBoldItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraBoldItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraBold.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraBold.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraBold.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraLight.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraLight.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraLight.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-BoldItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-BoldItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-BoldItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-LightItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-LightItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-LightItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Italic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Italic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Italic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -81,8 +81,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraLightItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ExtraLightItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraLightItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ExtraLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -90,8 +90,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Light.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Light.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Light.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -99,8 +99,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-SemiBold.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-SemiBold.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-SemiBold.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -108,8 +108,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-MediumItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-MediumItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-MediumItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -117,8 +117,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Medium.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Medium.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Medium.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -126,8 +126,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Regular.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Regular.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Regular.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -135,8 +135,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-SemiBoldItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-SemiBoldItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-SemiBoldItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -144,8 +144,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ThinItalic.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-ThinItalic.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ThinItalic.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -153,8 +153,8 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Thin.woff2') format('woff2'),
-        url('https://martinezk97.github.io/miabogado/fonts/google/kanit-black/Kanit-Thin.woff') format('woff');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Thin.woff2') format('woff2'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/google/kanit-black/Kanit-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
