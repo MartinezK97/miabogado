@@ -48,7 +48,7 @@ header {
 }*/
 
 .iso {
-    background-image: url(http://miabogado.uy/img/logo.svg);
+    background-image: url(https://martinezk97.github.io/miabogado/img/logo.svg);
 } */
 
 
@@ -116,7 +116,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(http://miabogado.uy/img/portada.webp);
+    background-image: url(https://martinezk97.github.io/miabogado/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -129,7 +129,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(http://miabogado.uy/img/mtss.jpg);
+    background-image: url(https://martinezk97.github.io/miabogado/img/mtss.jpg);
 }
 
 
@@ -416,8 +416,8 @@ header {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    /* background-image: url(http://miabogado.uy/img/bg_1.webp); */
-    background-image: url(http://miabogado.uy/img/mtss.jpg);
+    /* background-image: url(https://martinezk97.github.io/miabogado/img/bg_1.webp); */
+    background-image: url(https://martinezk97.github.io/miabogado/img/mtss.jpg);
     background-attachment: fixed;
     background-size: auto 150%;
     background-position: 50%;
@@ -497,7 +497,7 @@ header {
 
 
 .knowSimulators{
-    background-image: url(http://miabogado.uy/img/background/calculos.webp);
+    background-image: url(https://martinezk97.github.io/miabogado/img/background/calculos.webp);
     background-attachment: fixed;
     background-size:100% auto !important;
 
@@ -564,7 +564,7 @@ header {
 
 .blog-section{
     min-height: 100vh;
-    background-image: url(http://miabogado.uy/img/background/blog.webp);
+    background-image: url(https://martinezk97.github.io/miabogado/img/background/blog.webp);
     background-size: 100% auto;
     display: grid;
     align-content: center;
