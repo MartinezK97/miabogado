@@ -168,7 +168,7 @@ a {
 .history {
     width: 100vw;
     min-height: calc(100vh - 5rem);
-    background-image: url(../img/laboral.jpg);
+    background-image: url(http://miabogado.uy/img/laboral.jpg);
     background-attachment: fixed;
     background-position: 50%;
     background-size: cover;

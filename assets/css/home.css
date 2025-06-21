@@ -4,26 +4,6 @@
     --gray: #eee;
 }
 
-
-.rule {
-    width: 1px;
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    z-index: 999;
-    display: none;
-}
-
-.rule.left {
-    left: calc((100vw - 1200px) / 2);
-    background-color: red;
-}
-
-.rule.right {
-    right: calc((100vw - 1200px) / 2);
-    background-color: fuchsia;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -68,7 +48,7 @@ header {
 }*/
 
 .iso {
-    background-image: url(../img/logo.svg);
+    background-image: url(http://miabogado.uy/img/logo.svg);
 } */
 
 
@@ -136,7 +116,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(../img/portada.webp);
+    background-image: url(http://miabogado.uy/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -149,7 +129,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(../img/mtss.jpg);
+    background-image: url(http://miabogado.uy/img/mtss.jpg);
 }
 
 
@@ -436,8 +416,8 @@ header {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    /* background-image: url(../img/bg_1.webp); */
-    background-image: url(../img/mtss.jpg);
+    /* background-image: url(http://miabogado.uy/img/bg_1.webp); */
+    background-image: url(http://miabogado.uy/img/mtss.jpg);
     background-attachment: fixed;
     background-size: auto 150%;
     background-position: 50%;
@@ -517,13 +497,13 @@ header {
 
 
 .knowSimulators{
-    background-image: url(../img/calc.jpg);
+    background-image: url(http://miabogado.uy/img/background/calculos.webp);
     background-attachment: fixed;
-    background-size: cover;
+    background-size:100% auto !important;
+
     min-height: 100vh;
     display: grid;
     align-content: center;
-    background-size: cover;
     position: relative;
 }
 
@@ -538,6 +518,7 @@ header {
 .knowSimulators .container{
     border: solid 1px #fff3;
     padding: 3rem;
+    width: clamp(200px, calc(100vw - 4rem), 1200px);
     backdrop-filter: blur(10px);
     margin: 2rem auto ;
     max-height: max-content;
@@ -547,7 +528,6 @@ header {
     box-shadow: 0 0 15px -5px #000;
     position: relative;
     z-index: 1;
-    max-width: calc(100vw - 2rem);
 }
 
 
@@ -580,6 +560,62 @@ header {
     font-weight: 500;
 
 
+}
+
+.blog-section{
+    min-height: 100vh;
+    background-image: url(http://miabogado.uy/img/background/blog.webp);
+    background-size: 100% auto;
+    display: grid;
+    align-content: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.blog-section:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #ffcd0030;
+    z-index: 0;
+}
+
+.blog-section .container{
+    width: clamp(200px, calc(100vw - 4rem), 1200px);
+    background: #fff3;
+    backdrop-filter: blur(25px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: solid 1px #0001;
+    box-shadow: 0 0 15px -5px #000;
+    position: relative;
+    z-index: 1;
+}
+.blog-section .container h2{
+    color: var(--blue);
+    font-size: clamp(2rem, 2.5vw, 2.75rem);
+}
+.blog-section .container h2 + span {
+    color: var(--blue);
+    font-size: clamp(1.5rem, 1.75vw, 2rem);
+}
+.blog-section p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+.blog-section .benefits {
+    margin: 2rem ;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+.blog-section .container .cta{
+    background-color: var(--yellow);
+    font-size: 1.15rem;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 2rem;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    color: var(--blue);
+    display: block;
 }
 
 

@@ -18,8 +18,8 @@
         → derecho de familia                x
         → arrendamientos                    x
 
-    • ./agobado-en-ciudad-de-la-costa       x
-    • ./agobado-en-montevideo               x
+    • http://miabogado.uy/agobado-en-ciudad-de-la-costa       x
+    • http://miabogado.uy/agobado-en-montevideo               x
 
     
 10. Crear meta titles para:
@@ -30,8 +30,8 @@
         → derecho de familia
         → arrendamientos
 
-    • ./agobado-en-ciudad-de-la-costa
-    • ./agobado-en-montevideo  
+    • http://miabogado.uy/agobado-en-ciudad-de-la-costa
+    • http://miabogado.uy/agobado-en-montevideo  
 
 
 11. Crear meta descriptions para:
@@ -42,8 +42,8 @@
         → derecho de familia
         → arrendamientos
 
-    • ./agobado-en-ciudad-de-la-costa
-    • ./agobado-en-montevideo 
+    • http://miabogado.uy/agobado-en-ciudad-de-la-costa
+    • http://miabogado.uy/agobado-en-montevideo 
 
 12. Crear animaciones y efectos de scroll
 

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icons/icomoon.eot?saj4iv');
-    src: url('../fonts/icons/icomoon.eot?saj4iv#iefix') format('embedded-opentype'),
-        url('../fonts/icons/icomoon.ttf?saj4iv') format('truetype'),
-        url('../fonts/icons/icomoon.woff?saj4iv') format('woff'),
-        url('../fonts/icons/icomoon.svg?saj4iv#icomoon') format('svg');
+    src: url('http://miabogado.uy/fonts/icons/icomoon.eot?saj4iv');
+    src: url('http://miabogado.uy/fonts/icons/icomoon.eot?saj4iv#iefix') format('embedded-opentype'),
+        url('http://miabogado.uy/fonts/icons/icomoon.ttf?saj4iv') format('truetype'),
+        url('http://miabogado.uy/fonts/icons/icomoon.woff?saj4iv') format('woff'),
+        url('http://miabogado.uy/fonts/icons/icomoon.svg?saj4iv#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;

@@ -1,4 +1,4 @@
-menu{
+#menu{
     position: fixed;
     top:0;
     right: 0;
@@ -19,7 +19,11 @@ menu{
     display: grid;
 }
 
-menu button{
+#menu.open{
+    transform:translateX(0);
+}
+
+#menu button{
     position: absolute;
     top: 1rem;
     left: -3.5rem;
@@ -33,7 +37,7 @@ menu button{
     place-items: center;
 }
 
-menu a{
+#menu a{
     color: #fff;
 
 }
