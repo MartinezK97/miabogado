@@ -28,7 +28,7 @@ if (isset($_POST['save'])) {
 
     $saved = save($data);
     if ($saved) {
-        header('location: http://miabogado.uy/?success=true');
+        header('location: https://martinezk97.github.io/miabogado/?success=true');
     }
 }
 

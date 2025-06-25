@@ -18,8 +18,8 @@
         → derecho de familia                x
         → arrendamientos                    x
 
-    • http://miabogado.uy/agobado-en-ciudad-de-la-costa       x
-    • http://miabogado.uy/agobado-en-montevideo               x
+    • https://martinezk97.github.io/miabogado/agobado-en-ciudad-de-la-costa       x
+    • https://martinezk97.github.io/miabogado/agobado-en-montevideo               x
 
     
 10. Crear meta titles para:
@@ -30,8 +30,8 @@
         → derecho de familia
         → arrendamientos
 
-    • http://miabogado.uy/agobado-en-ciudad-de-la-costa
-    • http://miabogado.uy/agobado-en-montevideo  
+    • https://martinezk97.github.io/miabogado/agobado-en-ciudad-de-la-costa
+    • https://martinezk97.github.io/miabogado/agobado-en-montevideo  
 
 
 11. Crear meta descriptions para:
@@ -42,8 +42,8 @@
         → derecho de familia
         → arrendamientos
 
-    • http://miabogado.uy/agobado-en-ciudad-de-la-costa
-    • http://miabogado.uy/agobado-en-montevideo 
+    • https://martinezk97.github.io/miabogado/agobado-en-ciudad-de-la-costa
+    • https://martinezk97.github.io/miabogado/agobado-en-montevideo 
 
 12. Crear animaciones y efectos de scroll
 
@@ -81,24 +81,24 @@ Servicios:
 URL: miabogado.uy
 
   Blog
-→ http://miabogado.uy/blog
+→ https://martinezk97.github.io/miabogado/blog
 
   Servicios
-→ http://miabogado.uy/servicios/
-→ http://miabogado.uy/servicios/derecho-laboral/
-→ http://miabogado.uy/servicios/derecho-civil/
-→ http://miabogado.uy/servicios/derecho-de-familia/
-→ http://miabogado.uy/servicios/arrendamientos/
+→ https://martinezk97.github.io/miabogado/servicios/
+→ https://martinezk97.github.io/miabogado/servicios/derecho-laboral/
+→ https://martinezk97.github.io/miabogado/servicios/derecho-civil/
+→ https://martinezk97.github.io/miabogado/servicios/derecho-de-familia/
+→ https://martinezk97.github.io/miabogado/servicios/arrendamientos/
 
   URLs para posicionamiernto
-→ http://miabogado.uy/abogado-en-montevideo/
-→ http://miabogado.uy/abogado-laboral-en-montevideo/
-→ http://miabogado.uy/abogado-civil-en-montevideo/
-→ http://miabogado.uy/abogado-de-familia-en-montevideo/
-→ http://miabogado.uy/arrendamientos-en-montevideo/
+→ https://martinezk97.github.io/miabogado/abogado-en-montevideo/
+→ https://martinezk97.github.io/miabogado/abogado-laboral-en-montevideo/
+→ https://martinezk97.github.io/miabogado/abogado-civil-en-montevideo/
+→ https://martinezk97.github.io/miabogado/abogado-de-familia-en-montevideo/
+→ https://martinezk97.github.io/miabogado/arrendamientos-en-montevideo/
 
-→ http://miabogado.uy/abogado-en-ciudad-de-la-costa/
-→ http://miabogado.uy/abogado-laboral-en-ciudad-de-la-costa/
-→ http://miabogado.uy/abogado-civil-en-ciudad-de-la-costa/
-→ http://miabogado.uy/abogado-de-familia-en-ciudad-de-la-costa/
-→ http://miabogado.uy/abogado-de-familia-en-ciudad-de-la-costa/
+→ https://martinezk97.github.io/miabogado/abogado-en-ciudad-de-la-costa/
+→ https://martinezk97.github.io/miabogado/abogado-laboral-en-ciudad-de-la-costa/
+→ https://martinezk97.github.io/miabogado/abogado-civil-en-ciudad-de-la-costa/
+→ https://martinezk97.github.io/miabogado/abogado-de-familia-en-ciudad-de-la-costa/
+→ https://martinezk97.github.io/miabogado/abogado-de-familia-en-ciudad-de-la-costa/
