@@ -287,6 +287,64 @@ h1{
     padding: 0.5rem;
     margin-top:0;
 }
+
+#calculadoraIRPF .discount{
+    border-bottom: solid 1px #eee;
+}
+
+#calculadoraDeIRPF .range-data {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 1rem;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+#calculadoraDeIRPF .range-data > span{
+    background-color: #fff6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border: solid 1px #0003;
+}
+
+
+#calculadoraDeIRPF .discount{
+    padding: 0.5rem;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+}
+#calculadoraDeIRPF .discount .exceced,
+#calculadoraDeIRPF .discount .range,
+#calculadoraDeIRPF .discount .amount
+{
+    text-align: center;
+    padding: 0;
+}
+
+#calculadoraDeIRPF .discount .exceced p,
+#calculadoraDeIRPF .discount .range p,
+#calculadoraDeIRPF .discount .amount p
+{
+    padding: 1rem 0 0.5rem;
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+#calculadoraDeIRPF .discount .exceced span,
+#calculadoraDeIRPF .discount .range span,
+#calculadoraDeIRPF .discount .amount span
+{
+    border-top: solid 1px #0004;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0 0.75rem;
+}
+
+
 .content-results{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -42,11 +42,11 @@
 
 @keyframes parallax_blog {
     from {
-        background-position: 0% 0;
+        background-position: 50% 0;
     }
 
     to {
-        background-position: 0% -80vh;
+        background-position: 55% -80vh;
     }
 }
 
@@ -242,7 +242,7 @@
 
 .blog-section {
     background-size: auto 150% !important;
-    animation: parallax_simulator linear;
+    animation: parallax_blog linear;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
 }

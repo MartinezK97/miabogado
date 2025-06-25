@@ -42,4 +42,8 @@
 
 }
 
-
+@media(width > 990px){
+    #menu{
+        display:none;
+    }
+}

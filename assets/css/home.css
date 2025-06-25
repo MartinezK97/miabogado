@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
 :root {
     --blue: #1a3a5f;
     --yellow: #ffcd00;
@@ -20,18 +21,13 @@ body::-webkit-scrollbar {
 
 * {
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Archivo", serif;
+    line-height: 1.25;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.young-serif-regular {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 /* 
 header {
@@ -48,8 +44,12 @@ header {
 }*/
 
 .iso {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/logo.svg);
-} */
+    background-image: url(http://miabogado.uy/assets/img/logo.svg);
+}
+
+.color-yellow{
+    color: var(--yellow);
+}
 
 
 #fixed-wpp-btn {
@@ -116,7 +116,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/portada.webp);
+    background-image: url(http://miabogado.uy/assets/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -129,7 +129,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/mtss.webp);
+    background-image: url(http://miabogado.uy/assets/img/mtss.webp);
 }
 
 
@@ -262,19 +262,24 @@ header {
     grid-gap: 0.5rem;
 }
 
-.benefits p {
+.benefits p,
+.benefits h3,
+.benefits h4{
     margin: 0;
     padding: 0;
     display:grid;
     grid-template-columns: min-content auto;
     align-content: center ;
     grid-gap: 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    align-content: center;
 }
 
-.benefits p i {
+.benefits  i.icon-check {
     color: green;
     margin-right: 0.5rem;
-    align-self: centerº;
+    align-self: center;
 }
 
 .content-all-services {
@@ -333,21 +338,21 @@ header {
 
 .content-service {
     position: relative;
-    height: max-content;
+    height: 100%;
     width: 100%;
     transition: 0.3s ease;
 }
 
 .content-service:hover{
-    transform:scale(1.025);
+    transform:scale(1.015);
     z-index: 2;
-    box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 15px -5px #000;
 }
 
-.content-service.one{ transform-origin: 0 0;}
-.content-service.two{ transform-origin: 100% 0;}
-.content-service.three{ transform-origin: 0 100%;}
-.content-service.fourt{ transform-origin: 100% 100%;}
+.content-service:nth-child(1){transform-origin: 0 0;}
+.content-service.two{ transform-origin: 0 100%;}
+.content-service.three{ transform-origin:100% 0;}
+.content-service.fourt{ transform-origin: 0 0;}
 
 .service-header {
     background-color: var(--blue);
@@ -416,10 +421,10 @@ header {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/mtss.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/fder.webp);
     background-attachment: fixed;
-    background-size: auto 150%;
-    background-position: 50%;
+    background-size: auto 125%;
+    background-position: 0 50%;
     padding: 3rem 3rem 7rem;
     position: relative;
     display: grid;
@@ -496,7 +501,8 @@ header {
 
 
 .knowSimulators{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/calculos_desktop.webp);
+    
     background-attachment: fixed;
     background-size:100% auto !important;
 
@@ -563,7 +569,7 @@ header {
 
 .blog-section{
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/blog.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/technology.webp);
     background-size: 100% auto;
     display: grid;
     align-content: center;
@@ -575,46 +581,63 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: #ffcd0030;
+    background-color: #00000030;
     z-index: 0;
 }
 
 .blog-section .container{
-    width: clamp(200px, calc(100vw - 4rem), 1200px);
-    background: #fff3;
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    background: #0003;
     backdrop-filter: blur(25px);
-    padding: 2rem;
+    padding: 2rem 3rem;
     border-radius: 15px;
-    border: solid 1px #0001;
-    box-shadow: 0 0 15px -5px #000;
+    border: solid 1px #fff2;
+    box-shadow:inset 2px 2px 30px -4px #fff6,inset -2px -2px 20px  #0006, 2px 2px 10px #000;
     position: relative;
     z-index: 1;
 }
 .blog-section .container h2{
-    color: var(--blue);
+    color: var(--yellow);
     font-size: clamp(2rem, 2.5vw, 2.75rem);
+    text-align: center;
 }
 .blog-section .container h2 + span {
-    color: var(--blue);
-    font-size: clamp(1.5rem, 1.75vw, 2rem);
+    color: var(--yellow);
+    font-size: clamp(1.25rem, 1.7vw, 2rem);
+    text-align: center;
 }
 .blog-section p {
     font-size: clamp(1rem, 1.25vw, 1.5rem);
+    color: #fff;
 }
 .blog-section .benefits {
-    margin: 2rem ;
     font-size: clamp(1rem, 1.25vw, 1.5rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    place-content: center;
+    width: max-content;
+    margin: 2rem 0;
 }
+
+.blog-section .benefits h3{
+    color: #fff;
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+    
+}
+
+
 .blog-section .container .cta{
-    background-color: var(--yellow);
-    font-size: 1.15rem;
-    padding: 0.75rem 2rem;
-    font-weight: 500;
-    border-radius: 10px;
-    margin-top: 2rem;
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    background: var(--yellow);
     color: var(--blue);
     display: block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    max-width: max-content;
+    margin: 2rem 0 0;
+    font-weight: 500;
+    max-width: max-content;
 }
 
 
@@ -640,6 +663,7 @@ header {
     margin: 0 2rem;
     height: min-content;
     padding: 0;
+    grid-gap: 1rem;
     max-width: 100%;
     display: grid;
     text-align: center;
@@ -691,7 +715,7 @@ header {
 /*** STEPS ***/
 .content-steps {
     /* border-left: solid 2px #fff; */
-    margin: 0 auto;
+    margin: 2rem auto;
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -702,24 +726,54 @@ header {
 
 
 .step {
-    /* border: solid 1px red; */
     position: relative;
     border-radius: 10px;
-    /* background-color: #fff; */
-    margin-top: 10px;
-    margin: 0.5rem auto;
+    /* margin: 0.5rem auto; */
     overflow: hidden;
-    position: relative;
-    overflow: visible;
     width: calc(100% - 1.5rem);
-    margin-top: 1rem;
-transition: .3s ease;
-    border: solid 1px #eee;
+    margin: 1rem auto 0.5rem;
+    transition: .3s ease-in-out;
     transform-origin: 50% 0;
+    min-height: max-content;
+    display: grid;
+    height: 100%;
+    align-content: baseline;
+    overflow: visible;
+}
+.step:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 3rem);
+    height: 3px;
+    background-color: var(--yellow);
+    right: calc(-50% - 2rem);
+    top: 0.825rem;
+    /* border: solid 1px var(--blue); */
+    /* box-shadow: 0 0 7px var(--blue); */
 }
 
+.step:after {
+    content: "1";
+    position: absolute;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--yellow);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+    display: grid;
+    place-items: center;
+    left: calc(50% - 1rem);
+    top: 0;
+
+    /* box-shadow: 0 0 7px var(--blue); */
+    border: solid 1px var(--yellow);
+}
 .step:hover{
     transform: scale(1.05);
+    filter: drop-shadow(0px 1px 10px #0005);
 }
 
 .step i {
@@ -757,8 +811,10 @@ transition: .3s ease;
     padding: 1rem 2rem;
     clip-path: polygon(0 1rem, calc(50% - 1rem) 1rem, 50% 0%, calc(50% + 1rem) 1rem, 100% 1rem, 100% 100%, 0 100%);
     padding-top: 2rem;
-    margin-top: 1rem;
+    margin-top: 2.25rem;
     text-align: center;
+    height:5rem;
+    align-content: center;
 }
 
 
@@ -805,40 +861,11 @@ transition: .3s ease;
     background-color: #fff;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 5px #0002;
+    height: 100%;
 }
 
 
-.step:before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 3rem);
-    height: 3px;
-    background-color: var(--yellow);
-    right: calc(-50% - 2rem);
-    top: -1rem;
-    /* border: solid 1px var(--blue); */
-    /* box-shadow: 0 0 7px var(--blue); */
-}
 
-.step:after {
-    content: "1";
-    position: absolute;
-    width: 1.75rem;
-    height: 1.75rem;
-    border-radius: 50%;
-    text-align: center;
-    background-color: var(--yellow);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--blue);
-    display: grid;
-    place-items: center;
-    left: calc(50% - 1rem);
-    top: -1.75rem;
-
-    /* box-shadow: 0 0 7px var(--blue); */
-    border: solid 1px var(--yellow);
-}
 
 
 .step:nth-child(2):after {
@@ -894,6 +921,9 @@ transition: .3s ease;
     padding: 2rem;
     background-color: var(--blue);
     padding-bottom: 5rem;
+    box-shadow: 0 -30px 25px -25px #000;
+        position: relative;
+        z-index: 1;
 }
 
 .testimonios .title-section {
@@ -942,23 +972,66 @@ transition: .3s ease;
     border-left: solid 5px var(--yellow);
 }
 
-.comment * {
+.comment .person{
+    /* border: solid 1px red; */
+    display: grid;
+    grid-template-columns: clamp(60px, 4rem, 200px) auto;
+    width: 100%;
+    align-content: center;
+}
+
+.comment .person .content-img{
+    width: 3rem;
+    height: 3rem;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment .person .content-img img {
+    width: 100%;
+}
+
+.starts{
+    color: var(--yellow);
+    font-size: 1.3rem;
+}
+
+/* .comment * {
     color: #000;
-}
+} */
 
-.comment .name {
-    font-weight: 600;
+.comment p{
+    margin: 1rem 0 0.5rem;
 }
-
-.comment span {
+    .comment .publicated {
     color: #444;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.comment .location {
+    color: #444;
+    font-weight: 600;
+    color:#444;
+    display: block;
+    margin: 0.5rem 0 0;
+    margin-top: 1rem;
+}
+
+.comment .location:before{
+    content: "-en ";
+    font-weight: 400;
 }
 
 
 @media (width < 760px) {
 
+
+    
     .container {
-        max-width: calc(100vw - 4rem);
+        max-width: calc(100vw - 2rem);
     }
 
     .services {
@@ -1135,6 +1208,7 @@ transition: .3s ease;
         padding: 1rem 2rem;
         clip-path: polygon(1.5rem 0, 100% 0, 100% 100%, 1.5rem 100%, 0 50%);
         border-radius: 10px;
+        height: 3rem;
     }
 
     .step h3>* {
@@ -1150,6 +1224,21 @@ transition: .3s ease;
         background-color: transparent;
         padding-top: 2rem;
         min-height: 100px;
+    }
+
+    .knowSimulators {
+        background-image: url(http://miabogado.uy/assets/img/background/calculos-mobile.webp);
+        background-attachment: fixed;
+        background-size: 100% auto !important;
+    }
+
+
+    .knowSimulators .container{
+        padding: 2rem;
+    }
+
+    .blog-section .container{
+        padding: 1.25rem;
     }
 
     /* Eliminar "en que podemos ayudarte" de la vista */

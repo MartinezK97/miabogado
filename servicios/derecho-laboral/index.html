@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Abogado</title>
-    <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/service.css">
+    <link rel="shortcut icon" href="https://miabogado.uy/assets/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/service.css">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/fonts.css">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/icons.css">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/header.css">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/menu.css">
+    <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/footer.css">
     <!-- Font awesome -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -15,14 +21,55 @@
 </head>
 
 <body>
-    <div class="rule left"></div>
-    <div class="rule right"></div>
+    <!-- Cabecera del sitio -->
     <header>
-        <a href="#">
-            <img src="https://martinezk97.github.io/miabogado/assets/img/logo.svg" alt="" class="logo iso">
-            <span class="brandname">MiAbogado</span>
-        </a>
+        <div class="container">
+            <a href="http://miabogado.uy/" title="Volver al inicio" aria-label="Volver al inicio">
+                <i class="icon-logo logo"></i>
+                <span class="brandname">Mi Abogado</span>
+            </a>
+            <nav id="header-menu">
+                <a href="http://miabogado.uy/">Inicio</a>
+                <a href="http://miabogado.uy/servicios/">Servicios</a>
+                <a href="http://miabogado.uy/#operativa">Operativa</a>
+                <a href="http://miabogado.uy/#tesimonios">Testimonios</a>
+                <a href="http://miabogado.uy/simulador/">Simulador</a>
+                <a href="http://miabogado.uy/contactos/">Contactos</a>
+            </nav>
+        </div>
     </header>
+    <!-- Menu Mobile -->
+    <menu id="menu">
+        <button class="btn-menu"><i class="icon-bars"></i></button>
+        <a href="http://miabogado.uy/" title="Ir al inicio">Inicio</a>
+        <a href="http://miabogado.uy/servicios/" title="Conocé nuestros Servicios">Servicios</a>
+        <a href="http://miabogado.uy/#operativa" title="Conocé Nuestra Operativa">Operativa</a>
+        <a href="http://miabogado.uy/#testimonios" title="Ver Reseñas de Clientes Satisfechos">Testimonios</a>
+        <a href="http://miabogado.uy/simulador/" title="Simulá un pago laboral">Simulador</a>
+        <a href="http://miabogado.uy/blog/" title="Blog de Noticias y Novedades">Blog</a>
+        <a href="http://miabogado.uy/contacto/" title="Ver Información De Contacto">Contactos</a>
+    </menu>
+    <!-- Portada principal -->
+    <div class="portada">
+        <div class="container">
+            <div class="tag">+90 casos de éxito en 2025</div>
+            <h1>
+                <span>DERECHO LABORAL <br>en Uruguay</span>
+            </h1>
+            <div class="services">
+                <span>Despido injustificado</span>
+                <span>Acoso laboral</span>
+                <span>Trabajo informal</span>
+                <span>Deudas</span>
+            </div>
+            <p style="font-size: 1.5rem;font-weight: 600;">+20 años de trayectoria, avalan nuestro trabajo.</p>
+            <!-- Call to action -->
+            <a href="#contacto" class="cta" title="Envíanos tu consulta"><i class="icon-check"></i>
+                Defendé tus derechos HOY</a>
+        </div>
+    </div><!-- fin portada -->
+
+
     <section class="content-all">
         <h1>Derecho Laboral</h1>
         <p>¿Que soluciones brinda un abogado laboral en Uruguay?</p>
@@ -108,46 +155,48 @@
     <section class="contact" id="contacto">
         <h2 class="title-section">Contacto</h2>
         <p>Estamos para asesorarte. Completa el formulario y te responderemos a la brevedad</p>
-
+    
         <div class="contact-container">
             <div class="contact-info">
                 <h3>Información de contacto</h3>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <i class="icon-map contact-icon"></i>
                         <div>
-                            <h4>Dirección</h4>
-                            <p>Av. 18 de Julio 1234, Montevideo</p>
+                            <h4>Ubicación</h4>
+                            <p>- Montevideo.</p>
+                            <p>- Ciudad de la Costa.</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <i class="icon-phone contact-icon"></i>
                         <div>
                             <h4>Teléfono</h4>
-                            <p>+598 1234 5678</p>
+                            <p>+598 98 760 446</p>
+                            <p>+598 98 760 446</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
+                        <i class="icon-email contact-icon"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>info@estudiojuridico.com</p>
+                            <p>consultas@miabogado.uy</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-clock contact-icon"></i>
+                        <i class="icon-clock contact-icon"></i>
                         <div>
                             <h4>Horario</h4>
-                            <p>Lun-Vie: 9:00 - 18:00</p>
+                            <p>Lunes a Viernes<br>de 10:00 a 18:00hs</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Formulario de contacto -->
-            <div class="contact-form">
+            <div class="contact-form" id="formulario-de-contacto">
                 <h3>Envíanos un mensaje</h3>
-                <form action="https://martinezk97.github.io/miabogado/consultas/guardar.php" method="post">
+                <form action="http://miabogado.uy/consultas/guardar.php" method="post">
                     <div class="form-group">
                         <label for="name">Nombre completo</label>
                         <input type="text" id="name" name="name" required>
@@ -164,55 +213,71 @@
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit" name="save" class="btn"><i class="fa fa-paper-plane"></i> Enviar
+                    <button type="submit" name="save" class="btn"><i class="icon-plane"></i> Enviar
                         mensaje</button>
                 </form>
             </div>
-
+    
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">Estudio <span>Jurídico</span></div>
+                <div class="footer-logo"><i class="icon-logo"></i><span>Mi Abogado</span></div>
                 <p>Especialistas en derecho laboral, familiar, civil y arrendamientos. Brindamos soluciones legales
                     efectivas con profesionalismo y compromiso.</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/61577640778155/" title="Visitanos en Facebook"><i
+                            class="icon-facebook"></i></a>
+                    <a href="http://miabogado.uy" title="Visitanos en Instagram"><i class="icon-instagram"></i></a>
+                    <a href="http://miabogado.uy" title="Visitanos en Tiktok"><i class="icon-tiktok"></i></a>
+                    <a href="http://miabogado.uy" title="Envíanos un email"><i class="icon-email"></i></a>
                 </div>
             </div>
-
+    
             <div class="footer-links">
-                <h4>Enlaces rápidos</h4>
+                <p>Enlaces rápidos</p>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#laboral">Abogado laboral</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="http://miabogado.uy/inicio" title="Ir al inicio">Inicio</a></li>
+                    <li><a href="http://miabogado.uy/servicios" title="Ir a servicios">Servicios</a></li>
+                    <li><a href="http://miabogado.uy/simulador" title="Ir al simulador">Simulador</a></li>
+                    <li><a href="http://miabogado.uy/blog" title="Ir al Blog">Blog</a></li>
+                    <li><a href="http://miabogado.uy/contacto" title="Ir a la seccion contacto">Contacto</a></li>
                 </ul>
             </div>
-
+    
             <div class="footer-links">
-                <h4>Áreas de práctica</h4>
+                <p>Áreas de Práctica</p>
                 <ul>
-                    <li><a href="derecho-laboral.html">Derecho laboral</a></li>
-                    <li><a href="derecho-familia.html">Derecho de familia</a></li>
-                    <li><a href="derecho-civil.html">Derecho civil</a></li>
-                    <li><a href="arrendamientos.html">Arrendamientos</a></li>
+                    <li><a title="Ir a la página: Derecho Laboral"
+                            href="http://miabogado.uy/servicios/derecho-laboral/">Derecho Laboral</a></li>
+                    <li><a title="Ir a la página: Derecho de Familia"
+                            href="http://miabogado.uy/servicios/derecho-familia/">Derecho de Familia</a></li>
+                    <li><a title="Ir a la página: Derecho Civil" href="http://miabogado.uy/servicios/derecho-civil/">Derecho
+                            Civil</a></li>
+                    <li><a title="Ir a la página: Arrendamientos"
+                            href="http://miabogado.uy/servicios/arrendamientos/">Arrendamientos</a></li>
                 </ul>
             </div>
         </div>
-
+    
         <div class="copyright">
-            <p>&copy; 2023 Estudio Jurídico. Todos los derechos reservados. Montevideo, Uruguay.</p>
-            <p>Diseño y desarrollo: <a href="#">Mart Solutions</a></p>
+            <p>&copy; 2025 Mi Abogado. Todos los derechos reservados. Montevideo, Uruguay.</p>
+            <p>
+                Diseño y desarrollo:
+                <b><a title="Contacta al desarrollador de este sitio." href="mailto:kevinmartinez08.97@hotmail.com"
+                        target="_blank" rel="noopener noreferer">Mart Solutions</a></b>
+            </p>
         </div>
     </footer>
+    <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank"
+        rel="noopener noreferer">
+        <span>¿En que podemos ayudarte?</span>
+        <i class="icon-whatsapp"></i>
+    </a>
+    <script src="http://miabogado.uy/assets/js/menu.js"></script>
 
 </body>
 
