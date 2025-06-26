@@ -10,7 +10,7 @@ qr = qrcode.QRCode(
 )
 
 # URL destino (sin fecha de expiración)
-url = "https://martinezk97.github.io/miabogado/"
+url = "http://miabogado.uy/"
 
 # Generar código QR
 qr.add_data(url)

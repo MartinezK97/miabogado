@@ -272,8 +272,8 @@
 
 .comment{
     animation: comment linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes comment {
@@ -287,6 +287,44 @@
         scale: 1;
     }
 }
+
+.sdf p{
+    border: solid 1px red;
+    animation: shadowText linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+    filter: drop-shadow(0px 2px 1px #f00);
+}
+
+@keyframes shadowText{
+    0%{
+        filter: drop-shadow(0px 2px 1px #f00);
+    }
+    20%{
+        filter: drop-shadow(0px 0px 1px #f00);
+    }
+    60%{
+        filter: drop-shadow(0px -2px 1px #f00);
+    }
+    100%{
+        filter: drop-shadow(0px -2px 1px #f00);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -349,7 +387,8 @@
         .step:nth-child(4) {z-index: 1;}
 
         .step:nth-child(2),
-        .step:nth-child(3) ,.step:nth-child(4)
+        .step:nth-child(3) ,
+        .step:nth-child(4)
         {
             animation: step2 linear;
             animation-timeline: view();

@@ -39,10 +39,11 @@
 
 #menu a{
     color: #fff;
-
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
 }
 
-@media(width > 990px){
+@media(width >= 990px){
     #menu{
         display:none;
     }

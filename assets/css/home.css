@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap'); */
 :root {
     --blue: #1a3a5f;
     --yellow: #ffcd00;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 
 * {
     box-sizing: border-box;
-    font-family: "Archivo", serif;
+    font-family: "Archivo", sans;
     line-height: 1.25;
 }
 
@@ -44,7 +44,7 @@ header {
 }*/
 
 .iso {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/logo.svg);
+    background-image: url(http://miabogado.uy/assets/img/logo.svg);
 }
 
 .color-yellow{
@@ -116,7 +116,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/portada.webp);
+    background-image: url(http://miabogado.uy/assets/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -129,7 +129,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/mtss.webp);
+    background-image: url(http://miabogado.uy/assets/img/mtss.webp);
 }
 
 
@@ -421,7 +421,7 @@ header {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/fder.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/fder.webp);
     background-attachment: fixed;
     background-size: auto 125%;
     background-position: 0 50%;
@@ -438,16 +438,19 @@ header {
     background: #0009;
 }
 
+.sdf .container{
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    padding: 2rem;
+    text-align: center;
+}
+
 .sdf p {
     font-size: clamp(3rem, 4vw, 5rem);
     color: #fff;
     z-index: 1;
     position: relative;
-    /* backdrop-filter: blur(15px); */
-    /* background-image: linear-gradient(to bottom right, #0002, #fff2, #0002); */
-    /* padding: 2rem 5rem; */
     border-radius: 20px;
-    /* box-shadow: -1px -1px 10px #fff3, 1px 1px 10px #0005; */
+    filter: drop-shadow(2px 4px 6px #0008);
     font-weight: 600;
 }
 
@@ -501,7 +504,7 @@ header {
 
 
 .knowSimulators{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos_desktop.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/calculos_desktop.webp);
     
     background-attachment: fixed;
     background-size:100% auto !important;
@@ -523,7 +526,7 @@ header {
 .knowSimulators .container{
     border: solid 1px #fff3;
     padding: 3rem;
-    width: clamp(200px, calc(100vw - 4rem), 1200px);
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
     backdrop-filter: blur(10px);
     margin: 2rem auto ;
     max-height: max-content;
@@ -556,20 +559,24 @@ header {
 .knowSimulators a {
     background:var(--yellow);
     color: var(--blue);
-    display: block;
-    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    place-items: center;
+    grid-gap:1rem;
+    padding: 1rem 1.75rem;
     border-radius: 10px;
     font-size: clamp(1rem, 1.25vw, 1.25rem);
     max-width: max-content;
     margin:2rem  0 0 ;
-    font-weight: 500;
+    font-weight: 600;
+
 
 
 }
 
 .blog-section{
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/technology.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/technology.webp);
     background-size: 100% auto;
     display: grid;
     align-content: center;
@@ -609,6 +616,7 @@ header {
 .blog-section p {
     font-size: clamp(1rem, 1.25vw, 1.5rem);
     color: #fff;
+    line-height: 1.75;
 }
 .blog-section .benefits {
     font-size: clamp(1rem, 1.25vw, 1.5rem);
@@ -658,7 +666,7 @@ header {
     display: block;
     max-width: 100%;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin: 0 2rem;
     height: min-content;
@@ -733,12 +741,12 @@ header {
     width: calc(100% - 1.5rem);
     margin: 1rem auto 0.5rem;
     transition: .3s ease-in-out;
-    transform-origin: 50% 0;
     min-height: max-content;
     display: grid;
     height: 100%;
     align-content: baseline;
     overflow: visible;
+    transform-origin: -1.5rem -2rem;
 }
 .step:before {
     content: "";
@@ -864,10 +872,6 @@ header {
     height: 100%;
 }
 
-
-
-
-
 .step:nth-child(2):after {
     content: "2";
 }
@@ -884,37 +888,6 @@ header {
     background: transparent;
     box-shadow: none;
 }
-/* .step h3:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: #eee;
-    top: 1rem;
-} */
-
-/* .step h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: var(--blue);
-    top: 1rem;
-    border-radius: 10px 0 0 ;
-}
-
-.step h3::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    background: var(--blue);
-    top: 1rem;
-    border-radius: 10px 0 0;
-} */
 
 .testimonios {
     /* border-radius: 50px 50px 0 0; */
@@ -969,7 +942,10 @@ header {
     border-radius: 15px;
     padding: 2rem;
     color: #000;
-    border-left: solid 5px var(--yellow);
+    /* border-left: solid 5px var(--yellow); */
+    display: grid;
+    grid-template-rows: 3rem auto 2rem;
+    align-content: space-between;
 }
 
 .comment .person{
@@ -996,19 +972,23 @@ header {
 .starts{
     color: var(--yellow);
     font-size: 1.3rem;
+    text-shadow:0 0 5px #0002;
 }
 
-/* .comment * {
-    color: #000;
-} */
+.comment .person {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
 
 .comment p{
     margin: 1rem 0 0.5rem;
 }
     .comment .publicated {
-    color: #444;
+    color: #4f4f4f;
     font-size: 0.9rem;
     display: block;
+    margin-top:0.5rem ;
+        font-weight: 500;
 }
 
 .comment .location {
@@ -1017,12 +997,22 @@ header {
     color:#444;
     display: block;
     margin: 0.5rem 0 0;
-    margin-top: 1rem;
 }
 
 .comment .location:before{
-    content: "-en ";
+    /* content: "-en "; */
+    content: "\e90c";
     font-weight: 400;
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    color: #aaa;
 }
 
 
@@ -1032,11 +1022,12 @@ header {
     
     .container {
         max-width: calc(100vw - 2rem);
+        padding: 0;
     }
 
     .services {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.5rem 1rem;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap: 0.5rem 1rem !important;
     }
 
     .services span {
@@ -1059,6 +1050,10 @@ header {
         grid-template-columns: 1fr;
     }
 
+    .sdf .container {
+        width: clamp(200px, calc(100vw - 2rem), 1200px);
+        padding: 0;
+    }
 
     .sdf .statistics {
         grid-template-columns: repeat(2, 1fr);
@@ -1103,7 +1098,13 @@ header {
         width: calc(100% - 1.5rem);
         /* clip-path: polygon(1.5rem 0, 100% 0, 100% 100%, 1.5rem 100%, 0 50%); */
         margin-top: 1rem;
+            filter: none !important;
     }
+
+        .step :hover{
+            transform: scale(1.01);
+        }
+
 
     .step i {
         color: #fff;
@@ -1227,7 +1228,7 @@ header {
     }
 
     .knowSimulators {
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos-mobile.webp);
+        background-image: url(http://miabogado.uy/assets/img/background/calculos-mobile.webp);
         background-attachment: fixed;
         background-size: 100% auto !important;
     }
@@ -1240,6 +1241,10 @@ header {
     .blog-section .container{
         padding: 1.25rem;
     }
+
+        .blog-section .container .cta {
+            margin: 2rem auto 0;
+        }
 
     /* Eliminar "en que podemos ayudarte" de la vista */
         #fixed-wpp-btn:after {

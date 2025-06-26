@@ -40,7 +40,7 @@ header a .brandname {
 
 
 .iso {
-    background-image: url(https://martinezk97.github.io/miabogado/img/logo.svg);
+    background-image: url(http://miabogado.uy/img/logo.svg);
 }
 
 header .container{
@@ -119,6 +119,6 @@ header .container nav a.color-yellow:hover{
 
 @media(width < 990px) {
     header .container nav {
-        display: none;
+        display: none !important;
     }
 }
