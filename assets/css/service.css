@@ -29,7 +29,7 @@ a {
 .portada{
     width: 100vw;
     min-height: calc(100vh - 5rem);
-    background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-desktop.webp);
+    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-desktop.webp);
     background-size: 120% auto;
     background-position: 0% 30%;
     margin-top: 5rem;
@@ -48,7 +48,7 @@ a {
 }
 
 .portada.laboral {
-    background-image: url(http://miabogado.uy/assets/img/background/laboral-section-desktop.jpg);
+    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/laboral-section-desktop.jpg);
 }
 .portada .container{
     width: clamp(200px, calc(100% - 2rem), 1200px);
@@ -250,7 +250,7 @@ a {
     }
     .portada{
         padding: 0;
-        background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-mobile.webp);
+        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-mobile.webp);
             background-size: auto 130%;
             background-position: 0% 30%;
     }
