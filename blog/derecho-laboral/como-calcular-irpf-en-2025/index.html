@@ -7,21 +7,19 @@
     <meta name="theme-color" content="#1a3a5f">
 
     <!-- Precarga de CSS crítico -->
+    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css">
         <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css">
         <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css">
         <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css">
         <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/blog.css">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css">
     </noscript>
 
     <!-- Carga diferida de CSS no crítico -->
@@ -52,103 +50,6 @@
     <!-- Robots y Viewport -->
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Css Crítico -->
-    <style>
-        :root {
-            --blue: #1a3a5f;
-            --yellow: #ffcd00;
-            --gray: #eee;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #eee;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            transition: scroll 0.3s ease;
-        }
-
-        body::-webkit-scrollbar {
-            display: none;
-        }
-
-        * {
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .young-serif-regular {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        header {
-            background-color: var(--blue);
-            padding: 1rem;
-            font-size: 18px;
-            color: var(--yellow);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 9;
-
-        }
-
-        header a {
-            /* border: solid 1px; */
-            display: grid;
-            grid-template-columns: 3rem max-content;
-            align-content: center;
-            place-items: center;
-            grid-gap: 1rem;
-            /* border: solid 1px; */
-            max-width: max-content;
-            margin: 0 auto;
-        }
-
-        header a .logo {
-            /* border: solid 1px red; */
-            width: 3rem;
-            height: 3rem;
-
-        }
-
-        header a .brandname {
-            font-weight: 700;
-            font-size: 2rem;
-            font-family: "Zen Antique Soft", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        #fixed-wpp-btn {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            background-color: green;
-            display: block;
-            z-index: 9;
-            color: #fff;
-            min-width: clamp(4rem, 5vw, 5rem);
-            max-width: clamp(4rem, 5vw, 5rem);
-            min-height: clamp(4rem, 5vw, 5rem);
-            max-height: clamp(4rem, 5vw, 5rem);
-            display: grid;
-            place-items: center;
-            font-size: clamp(2.5rem, 2.5vw, 3rem);
-            border-radius: 150px;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -157,28 +58,24 @@
         <div class="container">
             <a href="https://martinezk97.github.io/miabogado/" title="Volver al inicio" aria-label="Volver al inicio">
                 <i class="icon-logo logo"></i>
-                <!-- <img src="https://martinezk97.github.io/miabogado/assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy"> -->
                 <span class="brandname">Mi Abogado</span>
             </a>
             <nav id="header-menu">
-                <a href="#home">Inicio</a>
-                <a href="#home">Servicios</a>
-                <a href="#home">Operativa</a>
-                <a href="#home">Testimonios</a>
-                <a href="#home">Simuladores</a>
-                <a href="#home">Contactos</a>
+                <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
+                <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+                <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
+                <a href="https://martinezk97.github.io/miabogado/blog/" title="Blog de Noticias y Novedades">Blog</a>
+                <a href="https://martinezk97.github.io/miabogado/contacto/" title="Ver Información De Contacto">Contactos</a>
             </nav>
         </div>
     </header>
     <menu id="menu">
         <button class="btn-menu"><i class="icon-bars"></i></button>
-        <a href="" title="Ir al inicio">Inicio</a>
-        <a href="" title="Ver Servicios">Servicios</a>
-        <a href="" title="Conocé Nuestra Operativa">Operativa</a>
-        <a href="" title="Ver Reseñas de Clientes Satisfechos">Testimonios</a>
-        <a href="" title="Simulá un pago laboral">Simulador</a>
-        <a href="" title="Blog de Noticias y Novedades">Blog</a>
-        <a href="" title="Ver Información De Contacto">Contactos</a>
+        <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
+        <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+        <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
+        <a href="https://martinezk97.github.io/miabogado/blog/" title="Blog de Noticias y Novedades">Blog</a>
+        <a href="https://martinezk97.github.io/miabogado/contacto/" title="Ver Información De Contacto">Contactos</a>
     </menu>
     <div class="categorys">
         <a href="#" class="selected">Derecho Laboral</a>

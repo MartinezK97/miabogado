@@ -1,14 +1,3 @@
-/* @font-face {
-    font-family: 'icomoon';
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?saj4iv');
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?saj4iv#iefix') format('embedded-opentype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf?saj4iv') format('truetype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff?saj4iv') format('woff'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg?saj4iv#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-} */
 @font-face {
     font-family: 'icomoon';
     src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?9znxyn');
@@ -16,6 +5,19 @@
         url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf?9znxyn') format('truetype'),
         url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff?9znxyn') format('woff'),
         url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg?9znxyn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot');
+    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot') format('embedded-opentype'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf') format('truetype'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff') format('woff'),
+        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;

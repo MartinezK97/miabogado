@@ -48,102 +48,7 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Css Crítico -->
-    <style>
-        :root {
-            --blue: #1a3a5f;
-            --yellow: #ffcd00;
-            --gray: #eee;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #eee;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            transition: scroll 0.3s ease;
-        }
-
-        body::-webkit-scrollbar {
-            display: none;
-        }
-
-        * {
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .young-serif-regular {
-            font-family: "Young Serif", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        header {
-            background-color: var(--blue);
-            padding: 1rem;
-            font-size: 18px;
-            color: var(--yellow);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 9;
-
-        }
-
-        header a {
-            /* border: solid 1px; */
-            display: grid;
-            grid-template-columns: 3rem max-content;
-            align-content: center;
-            place-items: center;
-            grid-gap: 1rem;
-            /* border: solid 1px; */
-            max-width: max-content;
-            margin: 0 auto;
-        }
-
-        header a .logo {
-            /* border: solid 1px red; */
-            width: 3rem;
-            height: 3rem;
-
-        }
-
-        header a .brandname {
-            font-weight: 700;
-            font-size: 2rem;
-            font-family: "Zen Antique Soft", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        #fixed-wpp-btn {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            background-color: green;
-            display: block;
-            z-index: 9;
-            color: #fff;
-            min-width: clamp(4rem, 5vw, 5rem);
-            max-width: clamp(4rem, 5vw, 5rem);
-            min-height: clamp(4rem, 5vw, 5rem);
-            max-height: clamp(4rem, 5vw, 5rem);
-            display: grid;
-            place-items: center;
-            font-size: clamp(2.5rem, 2.5vw, 3rem);
-            border-radius: 150px;
-
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -152,28 +57,25 @@
         <div class="container">
             <a href="https://martinezk97.github.io/miabogado/" title="Volver al inicio" aria-label="Volver al inicio">
                 <i class="icon-logo logo"></i>
-                <!-- <img src="https://martinezk97.github.io/miabogado/assets/img/logo.svg" alt="logo" title="Mi Abogado" class="logo iso" loading="lazy"> -->
                 <span class="brandname">Mi Abogado</span>
             </a>
             <nav id="header-menu">
-                <a href="#home">Inicio</a>
-                <a href="#home">Servicios</a>
-                <a href="#home">Operativa</a>
-                <a href="#home">Testimonios</a>
-                <a href="#home">Simuladores</a>
-                <a href="#home">Contactos</a>
+                <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
+                <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+                <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
+                <a href="https://martinezk97.github.io/miabogado/#tesimonios" title="Ir a la página de Blog">Blog</a>
+                <a href="https://martinezk97.github.io/miabogado/contactos/" title="Ir a la página de contactos">Contactos</a>
             </nav>
         </div>
     </header>
+    <!-- Menu Mobile -->
     <menu id="menu">
         <button class="btn-menu"><i class="icon-bars"></i></button>
-        <a href="" title="Ir al inicio">Inicio</a>
-        <a href="" title="Ver Servicios">Servicios</a>
-        <a href="" title="Conocé Nuestra Operativa">Operativa</a>
-        <a href="" title="Ver Reseñas de Clientes Satisfechos">Testimonios</a>
-        <a href="" title="Simulá un pago laboral">Simulador</a>
-        <a href="" title="Blog de Noticias y Novedades">Blog</a>
-        <a href="" title="Ver Información De Contacto">Contactos</a>
+        <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
+        <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+        <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
+        <a href="https://martinezk97.github.io/miabogado/blog/" title="Blog de Noticias y Novedades">Blog</a>
+        <a href="https://martinezk97.github.io/miabogado/contacto/" title="Ver Información De Contacto">Contactos</a>
     </menu>
     <div class="categorys">
         <a href="#" class="selected">Derecho Laboral</a>
@@ -238,10 +140,12 @@
         <p>Pero Juan lo calculó en segundos, al utilizar nuestro <a class="calc-btn" href="https://martinezk97.github.io/miabogado/simulador/calculadora-de-aguinaldo/">Simulador de Aguinaldos</a></p>
         <p>Hacé como Juan y evitá sorpresas. </p>
     </div>
+    
+
+    <!-- Seccion Contactos -->
     <section class="contact" id="contacto">
         <h2 class="title-section">Contacto</h2>
         <p>Estamos para asesorarte. Completa el formulario y te responderemos a la brevedad</p>
-    
         <div class="contact-container">
             <div class="contact-info">
                 <h3>Información de contacto</h3>
@@ -249,7 +153,7 @@
                     <div class="contact-item">
                         <i class="icon-map contact-icon"></i>
                         <div>
-                            <h4>Ubicación</h4>
+                            <p>Ubicación</p>
                             <p>- Montevideo.</p>
                             <p>- Ciudad de la Costa.</p>
                         </div>
@@ -257,7 +161,7 @@
                     <div class="contact-item">
                         <i class="icon-phone contact-icon"></i>
                         <div>
-                            <h4>Teléfono</h4>
+                            <p>Teléfono</p>
                             <p>+598 98 760 446</p>
                             <p>+598 98 760 446</p>
                         </div>
@@ -265,14 +169,14 @@
                     <div class="contact-item">
                         <i class="icon-email contact-icon"></i>
                         <div>
-                            <h4>Email</h4>
+                            <p>Email</p>
                             <p>consultas@miabogado.uy</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="icon-clock contact-icon"></i>
                         <div>
-                            <h4>Horario</h4>
+                            <p>Horario</p>
                             <p>Lunes a Viernes<br>de 10:00 a 18:00hs</p>
                         </div>
                     </div>
@@ -281,7 +185,7 @@
     
             <!-- Formulario de contacto -->
             <div class="contact-form" id="formulario-de-contacto">
-                <h3>Envíanos un mensaje</h3>
+                <p>Envíanos un mensaje</p>
                 <form action="https://martinezk97.github.io/miabogado/consultas/guardar.php" method="post">
                     <div class="form-group">
                         <label for="name">Nombre completo</label>
@@ -311,55 +215,53 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo"><i class="icon-logo"></i><span class="brandname">Mi Abogado</span></div>
+                <div class="footer-logo"><i class="icon-logo"></i><span>Mi Abogado</span></div>
                 <p>Especialistas en derecho laboral, familiar, civil y arrendamientos. Brindamos soluciones legales
                     efectivas con profesionalismo y compromiso.</p>
                 <div class="social-icons">
-                    <a href="#" title="Visitanos en Facebook"><i class="icon-facebook"></i></a>
-                    <a href="#" title="Visitanos en Instagram"><i class="icon-instagram"></i></a>
-                    <a href="#" title="Visitanos en Tiktok"><i class="icon-tiktok"></i></a>
-                    <a href="#" title="Envíanos un email"><i class="icon-email"></i></a>
+                    <a href="https://www.facebook.com/61577640778155/" title="Visitanos en Facebook"><i
+                            class="icon-facebook"></i></a>
+                    <a href="http://miabogado.uy" title="Visitanos en Instagram"><i class="icon-instagram"></i></a>
+                    <a href="http://miabogado.uy" title="Visitanos en Tiktok"><i class="icon-tiktok"></i></a>
+                    <a href="http://miabogado.uy" title="Envíanos un email"><i class="icon-email"></i></a>
                 </div>
             </div>
-    
             <div class="footer-links">
                 <p>Enlaces rápidos</p>
                 <ul>
-                    <li><a href="#inicio" title="Ir al inicio">Inicio</a></li>
-                    <li><a href="#servicios" title="Ir a servicios">Servicios</a></li>
-                    <li><a href="#como-procedemos" title="Conocé nuestro procedimiento">Procedimiento</a></li>
-                    <li><a href="#testimonios" title="Ir a testimonios">Testimonios</a></li>
-                    <li><a href="#contacto" title="Ir a la seccion contacto">Contacto</a></li>
+                    <li><a href="https://martinezk97.github.io/miabogado/" title="Ir al inicio">Inicio</a></li>
+                    <li><a href="https://martinezk97.github.io/miabogado/servicios" title="Ir a servicios">Servicios</a></li>
+                    <li><a href="https://martinezk97.github.io/miabogado/simulador" title="Simulá un pago laboral">Simulador</a></li>
+                    <li><a href="https://martinezk97.github.io/miabogado/blog" title="Ir al Blog">Blog</a></li>
+                    <li><a href="https://martinezk97.github.io/miabogado/contacto" title="Ir a la seccion contacto">Contacto</a></li>
                 </ul>
             </div>
-    
             <div class="footer-links">
-                <p>Áreas de práctica</p>
+                <p>Áreas de Práctica</p>
                 <ul>
-                    <li><a title="Ir a la página: Derecho Laboral" href="https://martinezk97.github.io/miabogado/servicios/derecho-laboral/">Derecho
-                            laboral</a></li>
-                    <li><a title="Ir a la página: Derecho de Familia" href="https://martinezk97.github.io/miabogado/servicios/derecho-familia/">Derecho de
-                            familia</a></li>
-                    <li><a title="Ir a la página: Derecho Civil" href="https://martinezk97.github.io/miabogado/servicios/derecho-civil/">Derecho civil</a>
-                    </li>
-                    <li><a title="Ir a la página: Arrendamientos" href="https://martinezk97.github.io/miabogado/servicios/arrendamientos/">Arrendamientos</a>
-                    </li>
+                    <li><a title="Ir a la página de Derecho Laboral"
+                            href="https://martinezk97.github.io/miabogado/servicios/derecho-laboral/">Derecho Laboral</a></li>
+                    <li><a title="Ir a la página de Derecho de Familia"
+                            href="https://martinezk97.github.io/miabogado/servicios/derecho-familia/">Derecho de Familia</a></li>
+                    <li><a title="Ir a la página de Derecho Civil"
+                            href="https://martinezk97.github.io/miabogado/servicios/derecho-civil/">Derecho Civil</a></li>
+                    <li><a title="Ir a la página de Arrendamientos"
+                            href="https://martinezk97.github.io/miabogado/servicios/arrendamientos/">Arrendamientos</a></li>
                 </ul>
             </div>
         </div>
-    
         <div class="copyright">
             <p>&copy; 2025 Mi Abogado. Todos los derechos reservados. Montevideo, Uruguay.</p>
             <p>Diseño y desarrollo: <b><a title="Contacta al desarrollador de este sitio."
-                        href="mailto:kevinmartinez08.97@hotmail.com">Mart Solutions</a></b></p>
+                        href="mailto:kevinmartinez08.97@hotmail.com" target="_blank" rel="noopener noreferer">Mart
+                        Solutions</a></b></p>
         </div>
     </footer>
     <a href="https://wa.me/+59898760446" title="¿En qué podemos ayudarte?" id="fixed-wpp-btn" target="_blank"
-        rel="noopener noreferer">
+        rel="noopener noreferrer">
         <span>¿En que podemos ayudarte?</span>
         <i class="icon-whatsapp"></i>
     </a>
-
 </body>
 
 </html>
