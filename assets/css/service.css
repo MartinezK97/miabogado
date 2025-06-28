@@ -29,7 +29,7 @@ a {
 .portada{
     width: 100vw;
     min-height: calc(100vh - 5rem);
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-desktop.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-desktop.webp);
     background-size: 120% auto;
     background-position: 0% 30%;
     margin-top: 5rem;
@@ -48,7 +48,7 @@ a {
 }
 
 .portada.laboral {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/laboral-section-desktop.jpg);
+    background-image: url(http://miabogado.uy/assets/img/background/laboral-section-desktop.jpg);
 }
 .portada .container{
     width: clamp(200px, calc(100% - 2rem), 1200px);
@@ -103,19 +103,37 @@ a {
     animation-range: entry 0% cover 100%;
 }
 
-#servicios{
-    /* background-color: var(--blue); */
+.area-derecho:nth-child(odd){
+    background-color: var(--blue);
 }
-#servicios .container{
+.area-derecho .container{
     width: clamp(200px, calc(100vw - 2rem), 1200px);
     margin: 0 auto;
     padding: 2rem;
 }
 
-.container h2{
+.area-derecho h2{
     color: var(--blue);
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4.5vw, 4rem);
     text-align: center;
+    margin: 3rem auto 0;
+    padding-bottom: 2rem;
+    width: max-content;
+
+    position: relative;
+}
+
+
+.area-derecho h2:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: var(--yellow);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .container .cat h3 {
@@ -151,14 +169,14 @@ a {
     border-radius: 15px;
 }
 
-.container .cat .content-services article{
+.container .cat .content-services article,
+    .container .cat .content-services div{
     background-color: var(--blue);
-    height: 100%;
     display: grid;
     align-content: space-evenly;
     box-shadow: 0 0 10px -5px #0007;
     border-radius: 10px 10px 3rem 10px;
-    padding: 0;
+    padding: 2rem;
     overflow: hidden;
     display: grid;
     align-content: center;
@@ -167,11 +185,15 @@ a {
     min-width: 290px;
     margin-bottom: 1rem;
     display: grid;
-    min-height: 40vh;
     align-self: self-start;
     position: relative;
+    display: grid;
+    grid-template-rows:4rem auto;
+    grid-gap: 1rem;
 }
-.container .cat .content-services article .tag{
+
+.container .cat .content-services article .tag,
+    .container .cat .content-services div .tag{
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -211,6 +233,9 @@ a {
     font-size: 1.25rem;
     /* border: solid 1px red; */
     width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .container .cat .content-services article p{
@@ -218,9 +243,11 @@ a {
     margin-top:0;
     color: #fff;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
-.summary{
+.cta-area{
     background-color: #fff;
     padding: 2px;
     text-align: center;
@@ -229,11 +256,66 @@ a {
     margin: 2rem auto;
     padding: 2rem;
 }
-
-.summary h4{
-    font-size: clamp(1.25rem, 4vw, 2rem);
-    padding: 0 3rem;
+.cta-area .benefit-highlight{
+    display: grid;
+    font-size: 1.2rem;
+    font-weight: 500;
+    grid-gap: 0.5rem;
 }
+
+
+
+.area-derecho:nth-child(odd) .container .cat h3 {
+    color: var(--yellow);
+}
+
+.area-derecho:nth-child(odd) .container .cat .content-services article,
+.area-derecho:nth-child(odd) .container .cat .content-services div{
+    background-color: #fff;
+}
+
+.area-derecho:nth-child(odd) .container .cat .content-services h4 {
+    color: var(--blue);
+}
+
+.area-derecho:nth-child(odd) .container .cat .content-services p {
+    color: #000;
+}
+
+.area-derecho:nth-child(odd) .container .cat .content-services article .tag:after,
+.area-derecho:nth-child(odd) .container .cat .content-services article .tag:before {
+    content: "";
+    position: absolute;
+    /* inset: 0; */
+    background-color: #fff;
+    border-radius: 50%;
+}
+.area-derecho:nth-child(odd) .cta-area{
+    background-color: #fff2;
+}
+
+.area-derecho:nth-child(odd) .cta-area p
+{
+    color: #fff;
+}
+
+.cta-button{
+    background-color: var(--yellow);
+    color: var(--blue);
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    margin:2rem auto 1rem;
+    font-weight: 600;
+    display: block;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: max-content max-content ;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+
 
 @keyframes portada_parallax {
     from{
@@ -250,7 +332,7 @@ a {
     }
     .portada{
         padding: 0;
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-mobile.webp);
+        background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-mobile.webp);
             background-size: auto 130%;
             background-position: 0% 30%;
     }
@@ -268,8 +350,8 @@ a {
         border: none;
         padding: 0;
     }
-        .container .cat, #servicios .container {
-            padding: 0;
+        .container .cat, .area-derecho .container {
+            padding:1rem 0;
         }
         .container .cat .content-services {
             grid-template-columns: repeat(2, 1fr);

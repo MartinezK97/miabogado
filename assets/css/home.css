@@ -43,7 +43,7 @@ header {
 }*/
 
 .iso {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/logo.svg);
+    background-image: url(http://miabogado.uy/assets/img/logo.svg);
 }
 
 .color-yellow{
@@ -115,7 +115,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/portada.webp);
+    background-image: url(http://miabogado.uy/assets/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -128,7 +128,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/mtss.webp);
+    background-image: url(http://miabogado.uy/assets/img/mtss.webp);
 }
 
 
@@ -420,7 +420,7 @@ header {
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/fder.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/fder.webp);
     background-attachment: fixed;
     background-size: auto 125%;
     background-position: 0 50%;
@@ -503,7 +503,7 @@ header {
 
 
 .knowSimulators{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos_desktop.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/calculos_desktop.webp);
     
     background-attachment: fixed;
     background-size:100% auto !important;
@@ -575,7 +575,7 @@ header {
 
 .blog-section{
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/technology.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/technology.webp);
     background-size: 100% auto;
     display: grid;
     align-content: center;
@@ -1227,7 +1227,7 @@ header {
     }
 
     .knowSimulators {
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos-mobile.webp);
+        background-image: url(http://miabogado.uy/assets/img/background/calculos-mobile.webp);
         background-attachment: fixed;
         background-size: 100% auto !important;
     }
