@@ -31,12 +31,13 @@ input{
     outline: none;
 }
 
+
+
 h1{
-    margin-top: 5rem;
-    padding-top: 7rem;
+    padding-top: 0rem;
     max-width: max-content;
     color: var(--blue);
-    margin: 5rem auto 2rem ;
+    /* margin: 5rem auto 2rem ; */
 }
 
 .content-simulator{
@@ -52,6 +53,16 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
+    margin-top: 5rem;
+}
+.content-simulator .container{
+    
+}
+
+.content-simulator .container p{
+    font-size: 1rem;
+    font-weight:400;
+    
 }
 
 .content-simulator .important{
@@ -64,8 +75,6 @@ h1{
 
 
 .content-discounts{
-    /* opacity: 0.5; */
-    /* border: solid 1px red; */
     padding: 0 1rem;
 }
 
@@ -274,11 +283,6 @@ h1{
     margin-left: 2rem ;
 }
 
-.content-simulator p{
-    font-weight: 600;
-    color: var(--yellow);
-    font-size: 1.15rem;
-}
 
 .discount{
     border-bottom:solid 1px #aaa;
@@ -432,6 +436,29 @@ h1{
     color: var(--blue);
 }
 
+.charts{
+    min-width: 100vw;
+    min-height: calc(100vh - 4rem);
+}
+.charts .container{
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.charts .container article{
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0005;
+    min-height:600px;
+    overflow: hidden;
+}
+
+
+
 
 @media (width < 760px){
     input{
@@ -490,4 +517,9 @@ h1{
             border-radius: 0 0 10px 0;
             transform-origin: 0 0;
         }
+
+        .charts .container{
+            grid-template-columns: 1fr;
+        }
+
 }

@@ -43,6 +43,11 @@
     padding: 0.5rem 0;
 }
 
+#menu a.color-yellow{
+    color:var(--yellow) ;
+}
+
+
 @media(width >= 990px){
     #menu{
         display:none;

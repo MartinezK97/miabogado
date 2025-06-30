@@ -1,23 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?9znxyn');
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot?9znxyn#iefix') format('embedded-opentype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf?9znxyn') format('truetype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff?9znxyn') format('woff'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg?9znxyn#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot');
-    src: url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.eot') format('embedded-opentype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.ttf') format('truetype'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.woff') format('woff'),
-        url('https://martinezk97.github.io/miabogado/assets/fonts/icons/icomoon.svg') format('svg');
+    src: url('http://miabogado.uy/assets/fonts/icons/icomoon.eot?kcmbad');
+    src: url('http://miabogado.uy/assets/fonts/icons/icomoon.eot?kcmbad#iefix') format('embedded-opentype'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.ttf?kcmbad') format('truetype'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.woff?kcmbad') format('woff'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.svg?kcmbad#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -67,110 +54,134 @@
     content: "\e906";
 }
 
-.icon-check:before {
+.icon-car-accident:before {
     content: "\e907";
 }
 
-.icon-clock:before {
+.icon-check:before {
     content: "\e908";
 }
 
-.icon-comments:before {
+.icon-clock:before {
     content: "\e909";
 }
 
-.icon-danger:before {
+.icon-comments:before {
     content: "\e90a";
 }
 
-.icon-email:before {
+.icon-danger:before {
     content: "\e90b";
 }
 
-.icon-facebook:before {
+.icon-email:before {
     content: "\e90c";
 }
 
-.icon-family:before {
+.icon-facebook:before {
     content: "\e90d";
 }
 
-.icon-gavel:before {
+.icon-family:before {
     content: "\e90e";
 }
 
-.icon-hand:before {
+.icon-file-glass:before {
     content: "\e90f";
 }
 
-.icon-hands-slash:before {
+.icon-file-pen:before {
     content: "\e910";
 }
 
-.icon-home:before {
+.icon-file-shield:before {
     content: "\e911";
 }
 
-.icon-house-key:before {
+.icon-gavel:before {
     content: "\e912";
 }
 
-.icon-instagram:before {
+.icon-hand:before {
     content: "\e913";
 }
 
-.icon-list:before {
+.icon-hand-house:before {
     content: "\e914";
 }
 
-.icon-logo:before {
+.icon-hands-slash:before {
     content: "\e915";
 }
 
-.icon-map:before {
+.icon-home:before {
     content: "\e916";
 }
 
-.icon-news:before {
+.icon-house-key:before {
     content: "\e917";
 }
 
-.icon-phone:before {
+.icon-instagram:before {
     content: "\e918";
 }
 
-.icon-plane:before {
+.icon-list:before {
     content: "\e919";
 }
 
-.icon-plus:before {
+.icon-logo:before {
     content: "\e91a";
 }
 
-.icon-search:before {
+.icon-map:before {
     content: "\e91b";
 }
 
-.icon-share:before {
+.icon-news:before {
     content: "\e91c";
 }
 
-.icon-shield:before {
+.icon-phone:before {
     content: "\e91d";
 }
 
-.icon-tiktok:before {
+.icon-plane:before {
     content: "\e91e";
 }
 
-.icon-tools:before {
+.icon-plus:before {
     content: "\e91f";
 }
 
-.icon-users:before {
+.icon-search:before {
     content: "\e920";
 }
 
-.icon-whatsapp:before {
+.icon-share:before {
     content: "\e921";
+}
+
+.icon-shield:before {
+    content: "\e922";
+}
+
+.icon-singature-contract:before {
+    content: "\e923";
+}
+
+.icon-tiktok:before {
+    content: "\e924";
+}
+
+.icon-tools:before {
+    content: "\e925";
+}
+
+.icon-users:before {
+    content: "\e926";
+}
+
+.icon-whatsapp:before {
+    content: "\e927";
 }

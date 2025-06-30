@@ -2,6 +2,7 @@
     --blue: #1a3a5f;
     --yellow: #ffcd00;
     --gray: #eee;
+    --green: #327b02;
 }
 
 body {
@@ -19,6 +20,7 @@ body::-webkit-scrollbar {
 * {
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.75;
 }
 
 a {
@@ -26,10 +28,14 @@ a {
     text-decoration: none;
 }
 
+.color-green{
+    color: var(--green);
+}
+
 .portada{
     width: 100vw;
     min-height: calc(100vh - 5rem);
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-desktop.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-desktop.webp);
     background-size: 120% auto;
     background-position: 0% 30%;
     margin-top: 5rem;
@@ -48,7 +54,7 @@ a {
 }
 
 .portada.laboral {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/laboral-section-desktop.jpg);
+    background-image: url(http://miabogado.uy/assets/img/background/laboral-section-desktop.jpg);
 }
 .portada .container{
     width: clamp(200px, calc(100% - 2rem), 1200px);
@@ -106,6 +112,10 @@ a {
 .area-derecho:nth-child(odd){
     background-color: var(--blue);
 }
+.area-derecho.normal {
+    background-color: #eee !important;
+}
+
 .area-derecho .container{
     width: clamp(200px, calc(100vw - 2rem), 1200px);
     margin: 0 auto;
@@ -114,7 +124,7 @@ a {
 
 .area-derecho h2{
     color: var(--blue);
-    font-size: clamp(2rem, 4.5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 2.5rem);
     text-align: center;
     margin: 3rem auto 0;
     padding-bottom: 2rem;
@@ -170,7 +180,7 @@ a {
 }
 
 .container .cat .content-services article,
-    .container .cat .content-services div{
+.container .cat .content-services div{
     background-color: var(--blue);
     display: grid;
     align-content: space-evenly;
@@ -178,18 +188,49 @@ a {
     border-radius: 10px 10px 3rem 10px;
     padding: 2rem;
     overflow: hidden;
-    display: grid;
     align-content: center;
     align-self: center;
     flex: auto;
-    min-width: 290px;
+    min-width: calc((100% - 2rem) / 3);
     margin-bottom: 1rem;
-    display: grid;
     align-self: self-start;
     position: relative;
-    display: grid;
     grid-template-rows:4rem auto;
     grid-gap: 1rem;
+}
+
+.area-derecho.normal .container .cat .content-services article,
+.area-derecho.normal .container .cat .content-services div {
+background-color: #fff ;
+}
+.container .cat .content-services a{
+    background-color: var(--yellow);
+    color: var(--blue);
+        display: grid;
+        align-content: space-evenly;
+        box-shadow: 0 0 10px -5px #0007;
+        border-radius: 10px;
+        padding: 2rem;
+        overflow: hidden;
+        align-content: center;
+        align-self: center;
+        flex: auto;
+        min-width: calc((100% - 2rem) / 3);
+        margin-bottom: 1rem;
+        align-self: self-start;
+        position: relative;
+        grid-auto-rows: max-content;
+        grid-gap: 1rem;
+}
+.container .cat .content-services a i{
+    font-size: clamp(7rem, 10vw, 8rem);
+    display: block;
+    text-align: center;
+}
+.container .cat .content-services a span{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .container .cat .content-services article .tag,
@@ -251,7 +292,6 @@ a {
     background-color: #fff;
     padding: 2px;
     text-align: center;
-    border-radius: 15px;
     box-shadow: 0 0 10px #0005;
     margin: 2rem auto;
     padding: 2rem;
@@ -315,8 +355,21 @@ a {
     align-items: center;
 }
 
+.area-derecho.normal .container .cat .content-services article h4,
+.area-derecho.normal .container .cat .content-services div h4{
+    color: var(--blue);
+}
+
+.area-derecho.normal .container .cat .content-services article p,
+.area-derecho.normal .container .cat .content-services div p {
+    color: #000;
+}
 
 
+.area-derecho.normal .container .cat .content-services article .tag:after,
+.area-derecho.normal .container .cat .content-services article .tag:before {
+    background-color: #fff;
+}
 @keyframes portada_parallax {
     from{
         background-position: 0% 0%;
@@ -326,13 +379,179 @@ a {
     }
 }
 
+
+
+.content-all {
+    margin-top: 6rem;
+}
+
+.content-all .container {
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0005;
+    padding: 2rem 8rem;
+
+}
+
+.content-all .container h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--blue);
+}
+
+.content-all .container h2 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    color: var(--blue);
+    margin-top: 3rem;
+}
+
+.image {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    place-items: center;
+    max-width: min-content;
+    filter: drop-shadow(0 0 15px #0004);
+}
+
+.image article {
+    display: grid;
+    align-content: space-around;
+}
+
+.image article i {
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--blue);
+    background-color: var(--yellow);
+    margin: 5px;
+    width: clamp(7rem, 7vw, 8rem);
+    height: clamp(6rem, 6vw, 7rem);
+    align-self: center;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 0.3s ease;
+    transform-origin: 50% 50%;
+}
+
+.image article i:hover {
+    transform: scale(1.05);
+}
+
+.image article:nth-child(2) {
+    margin-left: -2rem;
+}
+
+.image article:nth-child(3) {
+    margin-left: -2rem;
+}
+
+.image article:nth-child(3) i {
+    font-size: clamp(6rem, 7vw, 7rem);
+    width: clamp(8rem, 12vw, 11rem);
+    height: clamp(7rem, 10vw, 10rem);
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+
+
+.cta-area {
+    padding: 3rem 2rem 1rem 2rem;
+    box-shadow: 0 0 10px #0005;
+    margin: 2rem auto;
+    text-align: center;
+    clip-path: polygon(0 2rem, calc(50% - 2rem) 2rem, 50% 0, calc(50% + 2rem) 2rem, 100% 2rem, 100% 100%, 0 100%);
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.cta-area .cta {
+    background-color: var(--yellow);
+    color: var(--blue);
+    display: grid;
+    max-width: max-content;
+    margin: 1rem auto;
+    font-weight: 600;
+    grid-template-columns: max-content max-content;
+    grid-gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+
+.container .statistics{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem auto;
+}
+
+.container .statistics article{
+    padding: 2rem clamp(1rem, 3vw, 3rem);
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.container .statistics article p{
+    font-size: clamp(1.15rem, 4vw, 3rem);
+    font-weight: 600;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.container .statistics article span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
+}
+.similars{
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0005;
+    padding: 3rem 2rem;
+    grid-gap: 1rem;
+}
+
+.similars h3{
+    color: var(--blue);
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 2rem;
+}
+
+.similars a {
+    background-color: var(--blue);
+    color: var(--yellow);
+    font-weight: 600;
+    display: block;
+    max-width: max-content;
+    margin: 1rem auto;
+    padding: 1rem clamp(1rem, 6vw, 3rem);
+    border-radius: 10px;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    display: grid;
+    grid-template-columns: max-content max-content;
+    place-content: center;
+    grid-gap: 10px;
+}
+
 @media(width < 760px){ 
     *::-webkit-scrollbar{
         display: none;
     }
     .portada{
         padding: 0;
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-mobile.webp);
+        background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-mobile.webp);
         background-size: auto 130%;
         background-position: 0% 30%;
     }
@@ -350,12 +569,45 @@ a {
         border: none;
         padding: 0;
     }
-        .container .cat, .area-derecho .container {
-            padding:1rem 0;
-        }
-        .container .cat .content-services {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    .container .cat, .area-derecho .container {
+        padding:1rem 0;
+    }
+    .container .cat .content-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .container .cat .content-services article,
+    .container .cat .content-services div ,
+        .container .cat .content-services a 
+    {
+        min-width: 280px;
+    }
+
+    .content-all .container{
+        padding: 2rem 1rem;
+    }
+
+    .content-all .container .cta-area{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .content-all .container .cta-area .cta {
+        padding: 1rem;
+    }
+
+    .similars{
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    .similars h3{
+        grid-column: 1/2;
+    }
+
+    .similars a{
+        min-width: 100%;
+    }
+
 }
 
 

@@ -109,14 +109,13 @@ h1{
     max-width: 1200px;
     margin: 0.5rem auto 0;
     display: grid;
-    grid-template-columns: clamp(150px, 30%, 300px) auto;
+    grid-template-columns: clamp(150px, calc(100vw / 6), 240px) auto;
     overflow: hidden;
 }
 
 .new .content-img{
-    border: solid 1px red;
     grid-row: 1/5;
-    width: calc(100% + 2rem);
+    width: clamp(150px, calc(100vw / 6), 240px);
     height: calc(100% + 2rem);
     margin-top: -1rem;
     margin-left: -2rem;
@@ -302,10 +301,15 @@ h1{
         grid-template-columns: 1fr;
     }
 
+    .new .content-img{
+        width: calc(100% + 4rem);
+        max-height: 30vh;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), 49% 100%, 0 calc(100% - 1.5rem));
+    }
     .new img{
         grid-row: 1/2;
-        margin: -1rem -2rem;
-        width: calc(100% + 4rem);
+        /* margin: -1rem -2rem; */
+        width: 100%;
     }
     
     .new .title {
@@ -333,9 +337,6 @@ h1{
             width: 100%;
         }
 
-        #fixed-wpp-btn span{
-            display: none;
-        }
 }
 
 /*Animaciones*/

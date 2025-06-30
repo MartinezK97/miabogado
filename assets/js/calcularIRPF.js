@@ -2,7 +2,7 @@ let irpfConfig = null;
 
 async function cargarIRPF() {
     try {
-        const res = await fetch("https://martinezk97.github.io/miabogado/assets/json/irpf.json");
+        const res = await fetch("http://miabogado.uy/assets/json/irpf.json");
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         const data = await res.json();
         irpfConfig = data;
@@ -32,12 +32,10 @@ function init(){
     const nominal =  document.getElementById("irpf_nominal").value
     const irpf = calcularIRPF(nominal);
     console.log(irpf)
-    if(irpf){
-        console.log((irpf.steps).lenght)
-        for(i=0; i < irpf.steps.length; i++){
+    // console.log(irpf.steps.length)
+        for(i=0; i < irpf['steps'].length; i++){
             document.getElementById("range-"+(i + 1)).style.display = "grid";
             console.log("step "+ i)
-        }
     }
 }
 

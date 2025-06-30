@@ -6,105 +6,466 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a3a5f">
     <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="https://martinezk97.github.io/miabogado/assets/img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="http://miabogado.uy/assets/img/logo.svg" type="image/x-icon">
     <!-- Carga diferida de CSS no crítico -->
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" as="style" media="print" onload="this.media='all'">
-    <script defer src="https://martinezk97.github.io/miabogado/assets/js/menu.js"></script>
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/icons.css" as="style" media="print" onload="this.media='all'">
+    <script defer src="http://miabogado.uy/assets/js/menu.js"></script>
     <!-- Configuración básica -->
     <title>Abogado Laboral en Montevideo | Mi Abogado</title>
     <meta name="title" content="Abogado Laboral en Montevideo | Mi Abogado">
     <meta name="description" content="Abogado Laboral en Montevideo y Ciudad de la Costa. Defensa legal especializada en derecho laboral, civil, familia y arrendamientos. Consulta gratuita Defendé tus derechos HOY!">
     <meta name="keywords" content="abogado laboral en montevideo, abogado en ciudad de la costa, derecho laboral, derecho civil, derecho de familia, arrendamientos, abogado uruguay, ">
     <meta name="author" content="Kevin Martínez">
-    <link rel="canonical" href="https://martinezk97.github.io/miabogado/">
+    <link rel="canonical" href="http://miabogado.uy/">
     <!-- Precarga de CSS crítico -->
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" as="font" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/icons.css" as="font" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="http://miabogado.uy/assets/css/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/home.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css">
-        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/blog.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/icons.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/fonts.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/home.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/header.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/menu.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/parts/footer.css">
+        <link rel="stylesheet" href="http://miabogado.uy/assets/css/blog.css">
     </noscript>
+        <style>
+            :root {
+                --blue: #1a3a5f;
+                --yellow: #ffcd00;
+                --gray: #eee;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #eee;
+                overflow-x: hidden;
+                scroll-behavior: smooth;
+                transition: scroll 0.3s ease;
+            }
+
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            * {
+                box-sizing: border-box;
+                font-family: "Archivo", serif;
+                line-height: 1.25;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            header {
+                background-color: var(--blue);
+                padding: 1rem;
+                font-size: 18px;
+                color: var(--yellow);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 9;
+            }
+
+            header a {
+                /* border: solid 1px; */
+                display: grid;
+                grid-template-columns: 3rem max-content;
+                align-content: center;
+                place-items: center;
+                grid-gap: 1rem;
+                /* border: solid 1px; */
+                max-width: max-content;
+                margin: 0 auto;
+            }
+
+            header a .logo {
+                /* border: solid 1px red; */
+                width: 3rem;
+                height: 3rem;
+                font-size: 3rem;
+            }
+
+            header a .brandname {
+                font-weight: 700;
+                font-size: 2.75rem;
+                font-family: "Kanit", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            header .container{
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: max-content auto;
+                align-content: center;
+                place-items: center ;
+                max-height: min-content;
+                max-height: min-content;
+            }
+
+            header .container nav{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                max-width: min-content;
+                grid-gap: 0.5rem;
+                margin: 0 0 auto auto ;
+                align-items: center;
+                height: min-content;
+                align-items: center ;
+                align-self: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            header .container nav a{
+                display: block;
+                padding: 0.5rem 1.5rem ;
+                font-weight: 500;
+                align-self: center ;
+                color: #fff;
+                transition: 0.3s ease;
+                transform-origin: 0 50%;
+                padding-bottom: 5px;
+                align-self: center;
+                border-radius: 5px;
+                font-size: clamp(1rem, 1.15vw, 1.15rem);
+                border: none;
+            }
+
+            header .container nav a:hover {
+                background: var(--yellow);
+                    color: var(--blue);
+            }
+
+            header .container nav a.color-yellow {
+                color: var(--yellow) ;
+            }
+
+            header .container nav a.color-yellow:hover{
+                color: var(--blue);
+            }
+
+            .color-primary{
+                color:var(--primary);
+            }
+            
+            #fixed-wpp-btn {
+                position: fixed;
+                bottom: 1rem;
+                right: 1rem;
+                max-width: max-content;
+                display: grid;
+                grid-template-columns:max-content 5rem;
+                z-index: 9;
+                border-radius: 150px;
+                filter:drop-shadow(-1px -1px 1px #fff) drop-shadow(0px 5px 10px #0009) ;
+                transition: 0.3s ease;
+            }
+
+            #fixed-wpp-btn:hover {
+                transform: scale(1.015);
+            }
+
+            #fixed-wpp-btn:hover span,
+            #fixed-wpp-btn:hover i
+            {
+                background-color:#075e54;
+                color: #ece5dd;
+            }
+
+            #fixed-wpp-btn span{
+                color: #1c4602;
+                padding: 1rem 1rem 1rem 2rem;
+                text-align: center;
+                font-size: 1rem;
+                background-color: #25d366;
+                max-height: min-content;
+                align-self: center;
+                margin: 0;
+                display: block;
+                border-radius: 150px 0 0 150px;
+                font-weight: 600;
+                margin-right: -1rem;
+                transition: 0.3s ease;
+            }
+
+            #fixed-wpp-btn i {
+                background-color: #25d366;
+                font-size: 3rem;
+                width: 5rem;
+                height: 5rem;
+                display: block;
+                display: grid;
+                align-items: center;
+                text-align: center;
+                border-radius: 150px;
+                transition: 0.3s ease;
+                color: #1c4602;
+            }
+
+
+
+            /* Portada */
+            .portada {
+                /* border: solid 1px red; */
+                z-index: 2;
+                width: 100vw;
+                max-width: 100vw;
+                height: 100vh;
+                overflow-x: hidden;
+                background-image: url(http://miabogado.uy/assets/img/background/portada-blog-desktop.webp);
+                background-size: 100%;
+                background-position: 50% 60%;
+                display: grid;
+                align-content: center;
+                padding: 5rem 2rem 0;
+                /* padding: 5rem 2rem 0 23.5rem; */
+                position: relative;
+                background-attachment: fixed;
+                /* border: solid 2px cyan; */
+            }
+
+            .laboral-montevideo .portada{
+                background-image: url(http://miabogado.uy/assets/img/mtss.webp);
+            }
+
+
+            .portada:before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                background-color: rgba(0, 0, 0, 0.661);
+            }
+
+            .portada .tag {
+                backdrop-filter: blur(5px);
+                color: #fff;
+                padding: 0.75rem 2rem;
+                border-radius: 10px;
+                max-width: max-content;
+                box-shadow: 1px 1px 8px -1px #000, -1px -1px 10px -3px #fff;
+                font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+                background-color: #0002;
+            }
+
+            .portada h1 {
+                font-size: clamp(1.75rem, 2.75vw, 4rem);
+                margin: 0;
+                margin-top: 1rem;
+                text-align: left;
+                padding: 0;
+            }
+
+            .portada h1 .blur {
+                /* border: solid 1px; */
+                display: block;
+                line-height: 1.5;
+                border-top: solid 1px #fff2;
+                padding: 0.5rem 0;
+                margin-top: 1rem;
+                /* border-radius: 10px; */
+                /* width: max-content; */
+                width: 100%;
+                max-width: 100%;
+                box-shadow: 100%;
+                display: block;
+
+                width: max-content;
+                /* backdrop-filter: blur(10px); */
+                font-size: 75%;
+                /* margin: 2rem 0 0; */
+                display: block;
+                color: #eee;
+
+            }
+
+            .portada h1,
+            .portada p {
+                color: #fff;
+                line-height: 1.5;
+            }
+
+            .portada p {
+                font-size: clamp(1rem, 1.25vw, 1.75rem);
+                margin: 0;
+                pad: 0;
+                width: 100%;
+                max-width: max-content;
+                margin-top: 1.25rem;
+            }
+
+            .portada .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                /* border: solid 1px #fff; */
+                width: 100%;
+            }
+
+            .services {
+                display: grid;
+                grid-template-columns: repeat(4, max-content);
+                grid-gap: 0rem;
+                max-width: max-content;
+                margin-top: 1.5rem;
+            }
+
+            .services span {
+                display: inline-block;
+                padding: 0.125rem 1.25rem;
+                font-size: clamp(0.9rem, 1.25vw, 1.45rem);
+                border-radius: 0px;
+                font-weight: 600;
+                border-left: solid 1px;
+                color: #fff;
+                color: var(--yellow);
+            }
+
+            .services span:last-child {
+                border-right: solid 1px;
+            }
+
+
+            .portada .cta {
+                background-color: var(--yellow);
+                color: #453b00;
+                font-size:clamp(1rem, 1.75vw, 1.5rem);
+                padding: 0.75rem 2rem;
+                border-radius: 10px;
+                /* color: var(--yellow); */
+                max-width: max-content;
+                border: solid 1px;
+                margin-top: 2rem;
+                font-weight: 600;
+                display: grid;
+                grid-template-columns:min-content max-content;
+                align-content: center;
+                grid-gap: 0.75rem;
+                place-items: center;
+                place-content: center ;
+            }
+            @media(width < 760px){
+                    .portada {
+                
+                        width: 100vw;
+                        max-width: 100vw;
+                        height: 100vh;
+                        overflow-x: hidden;
+                        background-image: url(http://miabogado.uy/assets/img/background/portada-blog-mobile.webp);
+                        background-size: auto 100%;
+                        background-position: 80% 0%;
+                        display: grid;
+                        align-content: center;
+                        padding: 5rem 2rem 0;
+                        /* padding: 5rem 2rem 0 23.5rem; */
+                        position: relative;
+                        background-attachment: fixed;
+                        /* border: solid 2px cyan; */
+                    }   
+            }
+
+        </style>
 </head>
 <body>
     <!-- Cabecera del sitio -->
     <header>
         <div class="container">
-            <a href="https://martinezk97.github.io/miabogado/" title="Volver al inicio" aria-label="Volver al inicio">
+            <a href="http://miabogado.uy/" title="Volver al inicio" aria-label="Volver al inicio">
                 <i class="icon-logo logo"></i>
                 <span class="brandname">Mi Abogado</span>
             </a>
             <nav id="header-menu">
-                <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
-                <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
-                <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
-                <a href="https://martinezk97.github.io/miabogado/blog/" title="Ir a la página de Blog">Blog</a>
-                <a href="https://martinezk97.github.io/miabogado/contactos/" title="Ir a la página de contactos">Contactos</a>
+                <a href="http://miabogado.uy/" title="Ir a la página de Inicio">Inicio</a>
+                <a href="http://miabogado.uy/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+                <a href="http://miabogado.uy/simulador/" title="Simulá un pago laboral">Simulador</a>
+                <a href="http://miabogado.uy/blog/"  class="color-yellow" title="Recargar esta página">Blog</a>
+                <a href="http://miabogado.uy/contactos/" title="Ir a la página de contactos">Contactos</a>
             </nav>
         </div>
     </header>
     <!-- Menu Mobile -->
     <menu id="menu">
-        <button class="btn-menu"><i class="icon-bars"></i></button>
-        <a href="https://martinezk97.github.io/miabogado/" class="color-yellow" title="Recarga la página">Inicio</a>
-        <a href="https://martinezk97.github.io/miabogado/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
-        <a href="https://martinezk97.github.io/miabogado/simulador/" title="Simulá un pago laboral">Simulador</a>
-        <a href="https://martinezk97.github.io/miabogado/blog/" title="Blog de Noticias y Novedades">Blog</a>
-        <a href="https://martinezk97.github.io/miabogado/contacto/" title="Ver Información De Contacto">Contactos</a>
+        <button class="btn-menu" title="Abrir el menu deslizable"><i class="icon-bars"></i></button>
+        <a href="http://miabogado.uy/" title="Recarga la página">Inicio</a>
+        <a href="http://miabogado.uy/servicios/" title="Conocé nuestros servicios legales">Servicios</a>
+        <a href="http://miabogado.uy/simulador/" title="Simulá un pago laboral">Simulador</a>
+        <a href="http://miabogado.uy/blog/" class="color-yellow" title="Recargar esta página">Blog</a>
+        <a href="http://miabogado.uy/contacto/" title="Ver Información De Contacto">Contactos</a>
     </menu>
 
+    <div class="portada">
+        <div class="container">
+            <div class="tag">+1 post semanal</div>
+            <h1>
+                BLOG DE DERECHO URUGUAYO
+            </h1>
+            <div class="services">
+                <span>Derecho Laboral</span>
+                <span>Derecho Civil</span>
+                <span>Derecho de Familia</span>
+                <span>Arrendamientos</span>
+            </div>
+            <p style="font-size: 1.5rem;font-weight: 600;">+20 años ayudando a contruir historias.</p>
+            <!-- Call to action -->
+            <a href="#contacto" class="cta" title="Envíanos tu consulta"><i class="icon-news"></i>
+                Conocé nuestro contenido</a>
+        </div>
+    </div><!-- fin portada -->
 
-    <h1>Blog en Derecho Uruguayo</h1>
+    <h1>Publicaciones más Relevantes</h1>
 
     <!-- Navbar -->
-    <div class="categorys">
+    <!-- <div class="categorys">
        <a href="#" class="selected">Derecho Laboral</a>
         <a href="#">Derecho Civil</a>
         <a href="#">Derecho de Familia</a>
         <a href="#">Arrendamientos</a>
-    </div>
+    </div> -->
 
     <!-- Contenedor de posts -->
     <div class="grid">
         <!-- Post 1 -->
         <div class="new">
             <div class="content-img">
-                <img src="https://martinezk97.github.io/miabogado/assets/img/blog/derecho-laboral/mi-aguinaldo.jpg" alt="Persona calculando su aguinaldo">
+                <img src="http://miabogado.uy/assets/img/blog/derecho-laboral/mi-aguinaldo.jpg" alt="Persona calculando su aguinaldo">
             </div>
             <h2 class="title">
-                <a href="https://martinezk97.github.io/miabogado/blog/derecho-laboral/como-calcular-IRPF-2025/">IRPF ¿cómo se calcula?</a>
+                <a href="http://miabogado.uy/blog/derecho-laboral/como-calcular-IRPF-2025/">IRPF ¿cómo se calcula?</a>
                 <span class="date">16/05/2025</span>
             </h2>
             <p>Guía definitiva para entender de manera sencilla como calcular las retenciones de IRPF en Uruguay en 2025 con ejemplos prácticos.</p>
-            <a href="https://martinezk97.github.io/miabogado/blog/derecho-laboral/como-calcular-IRPF-en-2025/" class="more"><i class="icon-plus"></i> Leer más </a>
+            <a href="http://miabogado.uy/blog/derecho-laboral/como-calcular-IRPF-en-2025/" class="more"><i class="icon-plus"></i> Leer más </a>
         </div>
 
         <!-- Post 2 -->
         <div class="new">
             <div class="content-img">
-                <img src="https://martinezk97.github.io/miabogado/assets/img/mtss.webp" alt="Fachada del Ministerio de Trabajo Uruguay">
+                <img src="http://miabogado.uy/assets/img/mtss.webp" alt="Fachada del Ministerio de Trabajo Uruguay">
             </div>
             <h2 class="title">
                 <a href="#">¿Cómo calcular mi aguinaldo?</a>
                 <span class="date">16/05/2025</span>
             </h2>
             <p>Guía práctica sobre como calcular tu aguinaldo. Anticipa el monto que debes percibir el dia del pago.</p>
-            <a href="https://martinezk97.github.io/miabogado/blog/derecho-laboral/como-calcular-mi-aguinaldo/" class="more"><i class="icon-plus"></i> Leer más</a>
+            <a href="http://miabogado.uy/blog/derecho-laboral/como-calcular-mi-aguinaldo/" class="more"><i class="icon-plus"></i> Leer más</a>
         </div>
 
         <!-- Post 3 -->
         <div class="new">
             <div class="content-img">
-                <img src="https://martinezk97.github.io/miabogado/assets/img/mtss.webp" alt="">
+                <img src="http://miabogado.uy/assets/img/mtss.webp" alt="">
             </div>
             <h2 class="title">
                 <a href="#">Diferencias entre Licencia y Salario Vacacional</a>
@@ -116,12 +477,27 @@
 
         <!-- Post 4 -->
         <div class="new">
-            <img src="https://martinezk97.github.io/miabogado/assets/img/blog/derecho-laboral/como-calcular-mi-licencia.webp" alt="">
+            <div class="content-img">
+                <img src="http://miabogado.uy/assets/img/blog/accidente.webp" alt="">
+            </div>
             <h2 class="title">
-                <a href="#">¿Cómo calcular mi licencia?</a>
+                <a href="#">¿Cómo reclamar una indemnización por accidente de tránsito en Uruguay?</a>
                 <span class="date">16/05/2025</span>
             </h2>
-            <p>El aguinaldo, en Uruguay, es es decimotercer sueldo que se abona semestralmente en los meses de...</p>
+            <p>Si sufriste un accidente de tránsito en Uruguay y tuviste lesiones, tenés derecho a una indemización. ¿Ya sabes como se cobra? Enterate acá!</p>
+            <a href="#" class="more"><i class="icon-plus"></i> Leer más </a>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="new">
+            <div class="content-img">
+                <img src="http://miabogado.uy/assets/img/blog/sucesion.webp" alt="">
+            </div>
+            <h2 class="title">
+                <a href="#">¿Como se abre una sucesión en Uruguay?</a>
+                <span class="date">16/05/2025</span>
+            </h2>
+            <p>Es dificil cuando un ser querido parte, pero no podemos dejar atrás el legado que han construído durante muchos años. Pero.. ¿cómo continuar su historia siendo heredero? Te lo cuento en este post.</p>
             <a href="#" class="more"><i class="icon-plus"></i> Leer más </a>
         </div>
     </div>
@@ -130,7 +506,7 @@
 
     <!-- Contactos -->
     <section class="contact" id="contacto">
-        <h2 class="title">Contacto</h2>
+        <h2 class="title-section">¿Necesitas un ABOGADO en Montevideo?</h2>
         <p>Estamos para asesorarte. Completa el formulario y te responderemos a la brevedad</p>
     
         <div class="contact-container">
@@ -173,7 +549,7 @@
             <!-- Formulario de contacto -->
             <div class="contact-form" id="formulario-de-contacto">
                 <h3>Envíanos un mensaje</h3>
-                <form action="https://martinezk97.github.io/miabogado/consultas/guardar.php" method="post">
+                <form action="http://miabogado.uy/consultas/guardar.php" method="post">
                     <div class="form-group">
                         <label for="name">Nombre completo</label>
                         <input type="text" id="name" name="name" required>
@@ -229,10 +605,10 @@
             <div class="footer-links">
                 <p>Áreas de práctica</p>
                 <ul>
-                    <li><a title="Ir a la página: Derecho Laboral" href="https://martinezk97.github.io/miabogado/servicios/derecho-laboral/">DerechoLaboral</a></li>
-                    <li><a title="Ir a la página: Derecho de Familia" href="https://martinezk97.github.io/miabogado/servicios/derecho-familia/">Derecho de Familia</a></li>
-                    <li><a title="Ir a la página: Derecho Civil" href="https://martinezk97.github.io/miabogado/servicios/derecho-civil/">Derecho Civil</a></li>
-                    <li><a title="Ir a la página: Arrendamientos" href="https://martinezk97.github.io/miabogado/servicios/arrendamientos/">Arrendamientos</a>
+                    <li><a title="Ir a la página: Derecho Laboral" href="http://miabogado.uy/servicios/derecho-laboral/">DerechoLaboral</a></li>
+                    <li><a title="Ir a la página: Derecho de Familia" href="http://miabogado.uy/servicios/derecho-familia/">Derecho de Familia</a></li>
+                    <li><a title="Ir a la página: Derecho Civil" href="http://miabogado.uy/servicios/derecho-civil/">Derecho Civil</a></li>
+                    <li><a title="Ir a la página: Arrendamientos" href="http://miabogado.uy/servicios/arrendamientos/">Arrendamientos</a>
                     </li>
                 </ul>
             </div>
