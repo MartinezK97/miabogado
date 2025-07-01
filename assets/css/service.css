@@ -35,7 +35,7 @@ a {
 .portada{
     width: 100vw;
     min-height: calc(100vh - 5rem);
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-desktop.webp);
+    background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-desktop.webp);
     background-size: 120% auto;
     background-position: 0% 30%;
     margin-top: 5rem;
@@ -54,7 +54,7 @@ a {
 }
 
 .portada.laboral {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/laboral-section-desktop.jpg);
+    background-image: url(http://miabogado.uy/assets/img/background/laboral-section-desktop.jpg);
 }
 .portada .container{
     width: clamp(200px, calc(100% - 2rem), 1200px);
@@ -181,7 +181,7 @@ a {
 
 .container .cat .content-services article,
 .container .cat .content-services div{
-    background-color: var(--blue);
+    background-color: #fff;
     display: grid;
     align-content: space-evenly;
     box-shadow: 0 0 10px -5px #0007;
@@ -250,7 +250,7 @@ background-color: #fff ;
     content: "";
     position: absolute;
     /* inset: 0; */
-    background-color: var(--blue);
+    background-color: #fff;
     border-radius: 50%;
 }
 
@@ -268,7 +268,7 @@ background-color: #fff ;
 
 
 .container .cat .content-services article h4{
-    color: var(--yellow);
+    color: var(--blue);
     padding: 1rem;
     margin: 1rem 0;
     font-size: 1.25rem;
@@ -282,7 +282,7 @@ background-color: #fff ;
 .container .cat .content-services article p{
     padding: 0 1rem 1rem;
     margin-top:0;
-    color: #fff;
+    color: #000;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -511,7 +511,7 @@ background-color: #fff ;
 }
 .similars{
     width: clamp(200px, calc(100vw - 2rem), 1200px);
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
@@ -545,13 +545,25 @@ background-color: #fff ;
     grid-gap: 10px;
 }
 
+.li{
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0.25rem 0;
+}
+.li p{
+    margin:0;
+        padding:0;
+}
 @media(width < 760px){ 
     *::-webkit-scrollbar{
         display: none;
     }
     .portada{
         padding: 0;
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/portada-servicios-mobile.webp);
+        background-image: url(http://miabogado.uy/assets/img/background/portada-servicios-mobile.webp);
         background-size: auto 130%;
         background-position: 0% 30%;
     }
@@ -597,7 +609,7 @@ background-color: #fff ;
 
     .similars{
         grid-template-columns: 1fr;
-        grid-gap: 0.5rem;
+        grid-gap: 0;
     }
 
     .similars h3{

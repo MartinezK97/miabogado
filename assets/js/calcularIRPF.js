@@ -2,7 +2,7 @@ let irpfConfig = null;
 
 async function cargarIRPF() {
     try {
-        const res = await fetch("https://martinezk97.github.io/miabogado/assets/json/irpf.json");
+        const res = await fetch("http://miabogado.uy/assets/json/irpf.json");
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         const data = await res.json();
         irpfConfig = data;
@@ -29,79 +29,56 @@ window.onload = async function () {
 };
 
 function init(){
-    const nominal =  document.getElementById("irpf_nominal").value
+    console.log("Init run")
+    const nominal =  parseFloat(document.getElementById("irpf_nominal").value)
+    if(nominal == 0 || nominal == null){
+        console.log("El nominal es invalido")
+        return false;
+    }
     const irpf = calcularIRPF(nominal);
     console.log(irpf)
-    // console.log(irpf.steps.length)
-        for(i=0; i < irpf['steps'].length; i++){
-            document.getElementById("range-"+(i + 1)).style.display = "grid";
-            console.log("step "+ i)
+
+    if(irpf){
+        document.getElementById('nominal_amount').innerHTML = num(nominal.toFixed(2));
+        var nominal_BPC = parseFloat(irpf.nominal_en_BPC)
+        document.getElementById("total_bpc").innerHTML = (nominal_BPC.toFixed(2) + " BPC")
+        
+        if (irpf.steps) {
+            // Obtener las claves numéricas del objeto
+            const stepKeys = Object.keys(irpf.steps)
+                .filter(key => !isNaN(key))  // Solo claves numéricas
+                .sort((a, b) => a - b);     // Orden ascendente
+
+            // Iterar usando las claves
+            for (var i = 0; i < stepKeys.length; i++) {
+                const stepKey = stepKeys[i];
+                var elem = document.getElementById("range-" + (i + 1));
+                var exceso = document.querySelector("#range-" + (i + 1) + " .exceced p");
+                var tasa = document.querySelector("#range-" + (i + 1) + " .range p");
+                var retencion = document.querySelector("#range-" + (i + 1) + " .amount p");
+                elem.style.display = 'grid';
+                exceso.innerHTML = "$" + num(irpf.steps[stepKey].exceso);
+                tasa.innerHTML = (irpf.steps[stepKey].tasa) + "%";
+                // retencion.innerHTML = "$" + num(irpf.steps[stepKey].amount);
+                retencion.innerHTML = "$" + num(irpf.steps[stepKey].amount);
+                console.log("Índice:", i, "Clave real:", stepKey);
+                console.log("Contenido:", irpf.steps[stepKey]);
+            }
+        }
+
+        document.querySelector("#total_discount_amount").innerHTML = num(irpf.total_discount)
+        document.querySelector("#monto_liquido").innerHTML = num(nominal - irpf.total_discount)
+        
+
     }
+
+   
+
 }
 
-// function calcularIRPF(ingresoBruto) {
-//     document.getElementById("range-2").style.display = 'none';
-//     document.getElementById("range-3").style.display = 'none';
-//     document.getElementById("range-4").style.display = 'none';
-//     document.getElementById("range-5").style.display = 'none';
-//     document.getElementById("range-6").style.display = 'none';
-//     document.getElementById("range-7").style.display = 'none';
-//     document.getElementById("range-8").style.display = 'none';
-
-//     var nominal = document.getElementById("irpf_nominal").value 
-//     const bpc = irpfConfig.bpc;
-//     const ranges = irpfConfig.ranges; // Debe estar ordenado de menor a mayor
-//     let totalImpuesto = 0;
-//     let tramoSuperior = null;
-//     console.log(nominal / bpc)
-
-//     // 1. Calcular impuesto por cada tramo acumulativo
-//     for (const tramo of ranges) {
-//         const limiteInferior = tramo.from * bpc;
-//         const limiteSuperior = tramo.to * bpc;
-
-//         // Si el ingreso no supera el límite inferior del tramo, saltar
-//         if (nominal <= limiteInferior) break;
-
-//         // Calcular el monto gravable en este tramo
-//         const excedente = Math.min(nominal, limiteSuperior) - limiteInferior;
-//         const impuestoTramo = excedente * (tramo.rate / 100);
-//         console.log("Excedente: $" + excedente)
-//         console.log("Retencion: " + tramo.rate + "%")
-//         console.log("Descuento: $" + impuestoTramo )
-
-//         totalImpuesto += impuestoTramo;
-//         tramoSuperior = tramo; // Último tramo aplicado
-//         console.log("$" + impuestoTramo + " en la franja: ", (1 + ranges.indexOf(tramo)) )
-//         var rangeid = "range-" + (1 +  ranges.indexOf(tramo))
-//         document.getElementById(rangeid).style.display = 'grid';
-//         if(nominal <= (bpc * 7)){
-//             document.querySelector("#" + rangeid + " .exceced p").innerHTML = "$"+ num(7 * bpc)
-
-//         }else{
-//             document.querySelector("#" + rangeid + " .exceced p").innerHTML = "$"+num(excedente)
-//         }
-//         document.querySelector("#" + rangeid +" .amount p" ).innerHTML = "$"+num(impuestoTramo)
-//     }
-
-//     // 2. Si no se aplicó ningún tramo, usar el primero (ej: ingresos < 15 BPC)
-//     if (tramoSuperior === null) {
-//         tramoSuperior = ranges[0];
-//     }
-
-//     return {
-//         "price_bpc": bpc,
-//         "min_bpc": tramoSuperior.from,
-//         "min_amount": tramoSuperior.from * bpc,
-//         "max_bpc": tramoSuperior.to,
-//         "max_amount": tramoSuperior.to * bpc,
-//         "rate": tramoSuperior.rate,
-//         "discount_amount": totalImpuesto, // Total acumulado de todos los tramos
-//     };
-// }
 
 function calcularIRPF(nominal) {
-   
+
     const bpc = irpfConfig.bpc;
     const ranges = irpfConfig.ranges; // Debe estar ordenado de menor a mayor
     var nominalEnBPC = (nominal / bpc);
@@ -114,6 +91,7 @@ function calcularIRPF(nominal) {
     }
 
     if(nominal < mni){ return false;}
+
     var total_discount = 0;
     for(var i=0; i < ranges.length; i++){
             var minAmount = ranges[i].from * bpc

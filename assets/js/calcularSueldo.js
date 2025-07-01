@@ -3,7 +3,7 @@ let irpfConfig = null;
 
 async function cargarIRPF() {
     try {
-        const res = await fetch("https://martinezk97.github.io/miabogado/assets/json/irpf.json");
+        const res = await fetch("http://miabogado.uy/assets/json/irpf.json");
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         const data = await res.json();
         irpfConfig = data;
@@ -113,7 +113,7 @@ function drawChartAllDiscounts(dataArray) {
                 maxLines: 10
               },
             is3D:true,
-            colors: ['#5d0000', '#b83d3d', '#ffbdbd', '#ffbdbd', '#145d00'],
+            colors: ['#5d0000', '#b83d3d', '#8f3600', '#ffbdbd', '#145d00'],
             sliceVisibilityThreshold: 0,
             chartArea: {
                 left: "10%",          // Sin margen izquierdo

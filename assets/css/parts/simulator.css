@@ -42,9 +42,8 @@ h1{
 
 .content-simulator{
     width: 100%;
-    width: clamp(200px, calc(100% - 4rem), 1200px);
+    width: clamp(200px, calc(100% - 2rem), 1200px);
     /* max-width: 1200px; */
-    margin: 2rem auto;
     min-height: 200px;
     background-color: #fff;
     box-shadow: 0 0 15px -8px #000;
@@ -53,7 +52,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
-    margin-top: 5rem;
+    margin: 7rem auto 0;
 }
 .content-simulator .container{
     
@@ -192,18 +191,23 @@ h1{
 }
 
 
-/* .content-simulator .inputs div:hover input,
-.content-simulator .inputs div input:focus
-{
-    border:solid 1px var(--blue);
+.bpc{
+    background-color: #eee;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5rem;
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns:max-content auto;
+    grid-gap: 1rem;
 }
 
-.content-simulator .inputs div:hover span,
-.content-simulator .inputs div > input:focus + span 
-{
-    color: var(--blue);
+.bpc > *{
+    padding: 0.25rem;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 0.8rem;
 }
- */
+ 
  .content-simulator .nominal-amount {
     border-radius: 10px;
     box-shadow: 0 0 15px -5px #000;
@@ -343,9 +347,10 @@ h1{
 #calculadoraDeIRPF .discount .amount span
 {
     border-top: solid 1px #0004;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #333;
     padding: 0 0.75rem;
+    display: block;
 }
 
 
@@ -431,7 +436,10 @@ h1{
 
 
 
-.container-others-simulators>div>a:nth-child(2),.container-others-simulators>div>a:nth-child(3){
+.container-others-simulators>div>a:nth-child(2),
+.container-others-simulators>div>a:nth-child(3),
+.container-others-simulators>div>a:nth-child(6),
+    .container-others-simulators>div>a:nth-child(7){
     background-color: var(--yellow);
     color: var(--blue);
 }
@@ -522,4 +530,7 @@ h1{
             grid-template-columns: 1fr;
         }
 
+        #calculadoraDeIRPF .range-data>span{
+            font-size: 0.7rem;
+        }
 }
