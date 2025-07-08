@@ -1,0 +1,103 @@
+{
+  "name": "Mi Abogado",
+  "short_name": "Abogado",
+  "start_url": "https://miabogado.uy/",
+  "id": "miabogado.uy",
+  "description": "Abogados especialistas en Uruguay",
+  "theme_color": "#1a3a5f",
+  "display": "standalone",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://miabogado.uy/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://miabogado.uy/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuestros Servicios",
+      "short_name": "servicios",
+      "url": "https://miabogado.uy/servicios/"
+    },
+    {
+      "name": "Derecho Laboral",
+      "short_name": "Laboral",
+      "url": "https://miabogado.uy/servicios/derecho-laboral/"
+    },
+    {
+      "name": "Derecho Civil",
+      "short_name": "Civil",
+      "url": "https://miabogado.uy/servicios/derecho-civil/"
+    },
+    {
+      "name": "Derecho de Familia",
+      "short_name": "Familia",
+      "url": "https://miabogado.uy/servicios/derecho-de-familia/"
+    },
+    {
+      "name": "Arrendamientos",
+      "short_name": "Arrendamientos",
+      "url": "https://miabogado.uy/servicios/arrendamientos/"
+    },
+    {
+      "name": "Simuladores",
+      "short_name": "Simuladores",
+      "url": "https://miabogado.uy/simulador/"
+    },
+    {
+      "name": "Simulador de Aguinaldo",
+      "short_name": "Aguinaldo",
+      "url": "https://miabogado.uy/simulador/calcular-mi-aguinaldo/"
+    },
+    {
+      "name": "Simulador de Sueldo",
+      "short_name": "Sueldo",
+      "url": "https://miabogado.uy/simulador/calcular-mi-sueldo/"
+    },
+    {
+      "name": "Simulador de IRPF",
+      "short_name": "IRPF",
+      "url": "https://miabogado.uy/simulador/calcular-irpf/"
+    },
+    {
+      "name": "Blog de Noticias",
+      "short_name": "Noticias",
+      "url": "https://miabogado.uy/blog/"
+    },
+    {
+      "name": "Contactate con nosotros",
+      "short_name": "Contactos",
+      "url": "https://miabogado.uy/contactos/"
+    }
+  ],
+  "lang": "es-UY",
+  "orientation": "portrait",
+  "background_color": "#1a3a5f",
+  "screenshots": [
+    {
+      "src": "https://miabogado.uy/assets/screenshots/home-720x1280.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://miabogado.uy/assets/screenshots/dashboard-1280x720.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": [
+    "legal",
+    "business",
+    "services"
+  ]
+}

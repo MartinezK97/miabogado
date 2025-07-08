@@ -4,106 +4,6 @@
     --gray: #eee;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #eee;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    transition: scroll 0.3s ease;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-
-* {
-    box-sizing: border-box;
-    font-family: "Archivo", sans;
-    line-height: 1.25;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-/* 
-header {
-    background-color: var(--blue);
-    padding: 1rem;
-    font-size: 18px;
-    color: var(--yellow);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-
-}*/
-
-.iso {
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/logo.svg);
-}
-
-.color-yellow{
-    color: var(--yellow);
-}
-
-
-#fixed-wpp-btn {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    max-width: max-content;
-    display: grid;
-    grid-template-columns:max-content 5rem;
-    z-index: 9;
-    border-radius: 150px;
-    filter:drop-shadow(-1px -1px 1px #fff) drop-shadow(0px 5px 10px #0009) ;
-    transition: 0.3s ease;
-}
-
-#fixed-wpp-btn:hover {
-    transform: scale(1.015);
-}
-
-#fixed-wpp-btn:hover span,
-#fixed-wpp-btn:hover i
-{
-    background-color:#075e54;
-    color: #ece5dd;
-}
-
-#fixed-wpp-btn span{
-    color: #1c4602;
-    padding: 1rem 1rem 1rem 2rem;
-    text-align: center;
-    font-size: 1rem;
-    background-color: #25d366;
-    max-height: min-content;
-    align-self: center;
-    margin: 0;
-    display: block;
-    border-radius: 150px 0 0 150px;
-    font-weight: 600;
-    margin-right: -1rem;
-    transition: 0.3s ease;
-}
-
-#fixed-wpp-btn i {
-    background-color: #25d366;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    display: block;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    border-radius: 150px;
-    transition: 0.3s ease;
-    color: #1c4602;
-}
 
 
 
@@ -115,7 +15,7 @@ header {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/portada.webp);
+    background-image: url(https://miabogado.uy/assets/img/portada.webp);
     background-size: cover;
     background-position: 50%;
     display: grid;
@@ -128,7 +28,7 @@ header {
 }
 
 .laboral-montevideo .portada{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/mtss.webp);
+    background-image: url(https://miabogado.uy/assets/img/mtss.webp);
 }
 
 
@@ -164,17 +64,13 @@ header {
     border-top: solid 1px #fff2;
     padding: 0.5rem 0;
     margin-top: 1rem;
-    /* border-radius: 10px; */
-    /* width: max-content; */
     width: 100%;
     max-width: 100%;
     box-shadow: 100%;
     display: block;
 
     width: max-content;
-    /* backdrop-filter: blur(10px); */
     font-size: 75%;
-    /* margin: 2rem 0 0; */
     display: block;
     color: #eee;
 
@@ -198,7 +94,6 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* border: solid 1px #fff; */
     width: 100%;
 }
 
@@ -249,9 +144,6 @@ header {
     color: green;
 }
 
-
-
-
 .benefits {
     /* border: solid 1px red; */
     padding: 0;
@@ -291,7 +183,6 @@ header {
     max-width: max-content;
     margin: 0 auto !important;
     max-width: 1200px;
-    /* border: solid 1px; */
 }
 
 .content-all-services>h2 {
@@ -316,7 +207,6 @@ header {
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 0 15px -5px #0005;
-    /* border: solid; */
     padding-top: 3rem;
     overflow: hidden;
 }
@@ -345,7 +235,7 @@ header {
 .content-service:hover{
     transform:scale(1.015);
     z-index: 2;
-    box-shadow: 0 0 15px -5px #000;
+    box-shadow: 0 0 10px #0005;
 }
 
 .content-service:nth-child(1){transform-origin: 0 0;}
@@ -362,14 +252,12 @@ header {
     text-align: center;
     display: grid;
     grid-template-columns: auto max-content;
-    /* border: solid 1px red; */
     position: absolute;
     top: 0;
 }
 
 .service-icon {
     position: absolute;
-    /* border: solid 1px #000; */
     height: max-content;
     color: #eee;
     font-size: 12rem;
@@ -383,7 +271,6 @@ header {
 }
 
 .service-header h3 {
-    /* border: solid 1px red; */
     text-align: left;
     margin: 0;
     color: #fff;
@@ -408,19 +295,12 @@ header {
     color: var(--blue);
     font-weight: 600;
     margin: 2rem 0 auto auto;
-
 }
-
-
-
-
-
-
 
 .sdf {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/fder.webp);
+    background-image: url(https://miabogado.uy/assets/img/background/fder.webp);
     background-attachment: fixed;
     background-size: 100% auto;
     background-position: 0 50%;
@@ -453,7 +333,6 @@ header {
     font-weight: 600;
 }
 
-
 .sdf .statistics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -485,29 +364,15 @@ header {
     font-weight: 600;
 }
 
-
-
-
-
-
-
 .max-size {
     max-width: 1200px;
     margin: auto auto;
 }
 
-
-
-
-
-
-
 .knowSimulators{
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos_desktop.webp);
-    
+    background-image: url(https://miabogado.uy/assets/img/background/calculos_desktop.webp);
     background-attachment: fixed;
     background-size:100% auto !important;
-
     min-height: 100vh;
     display: grid;
     align-content: center;
@@ -568,14 +433,11 @@ header {
     max-width: max-content;
     margin:2rem  0 0 ;
     font-weight: 600;
-
-
-
 }
 
 .blog-section{
     min-height: 100vh;
-    background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/technology.webp);
+    background-image: url(https://miabogado.uy/assets/img/background/technology.webp);
     background-size: 100% auto;
     display: grid;
     align-content: center;
@@ -634,7 +496,6 @@ header {
     
 }
 
-
 .blog-section .container .cta{
     background: var(--yellow);
     color: var(--blue);
@@ -648,7 +509,6 @@ header {
     max-width: max-content;
 }
 
-
 .content-process {
     box-shadow: -1px 0 10px;
     position: relative;
@@ -658,7 +518,6 @@ header {
     padding-bottom: 4rem;
     min-height: 100vh;
 }
-
 
 .content-process .btn {
     background: var(--yellow);
@@ -785,7 +644,7 @@ header {
 }
 
 .step i {
-    color: rgba(255, 230, 0, 0.174);
+    color: #eee;
     position: absolute;
     font-size: clamp(4rem, 8vw, 7rem);
     z-index: 0;
@@ -1072,8 +931,8 @@ header {
     }
 
     /*** STEPS ***/
+
     .content-steps {
-        /* border-left: solid 2px #fff; */
         margin: 0 auto;
         position: relative;
         display: grid;
@@ -1081,30 +940,21 @@ header {
         grid-gap: 1rem;
         padding: 2rem;
     }
-
-
-
     .step {
-        /* border: solid 1px red; */
         position: relative;
         border-radius: 10px;
-        /* background-color: #fff; */
         margin-top: 10px;
         margin: 0.5rem auto;
         overflow: hidden;
         position: relative;
         overflow: visible;
         width: calc(100% - 1.5rem);
-        /* clip-path: polygon(1.5rem 0, 100% 0, 100% 100%, 1.5rem 100%, 0 50%); */
         margin-top: 1rem;
-            filter: none !important;
+        filter: none !important;
     }
-
-        .step :hover{
-            transform: scale(1.01);
-        }
-
-
+    .step :hover{
+        transform: scale(1.01);
+    }
     .step i {
         color: #fff;
         position: absolute;
@@ -1113,16 +963,15 @@ header {
         margin: auto 0 auto auto;
         right: 0;
         bottom: 0;
-
     }
-
     .step h3,
     .step p {
         z-index: 1;
         position: relative;
     }
-
-
+    .step:hover {
+        transform: scale(1);
+    }
     .step:before {
         content: "";
         position: absolute;
@@ -1131,10 +980,7 @@ header {
         background-color: var(--yellow);
         left: -1.5rem;
         top: 1rem;
-        /* border: solid 1px var(--blue); */
-        /* box-shadow: 0 0 7px var(--blue); */
     }
-
     .step:after {
         content: "1";
         position: absolute;
@@ -1152,47 +998,37 @@ header {
         top: 0;
         bottom: 0;
         margin: 0.75rem auto;
-        /* box-shadow: 0 0 7px var(--blue); */
         border: solid 1px var(--yellow);
     }
-
     .step:nth-child(1) {
         border-radius: 25px 25px 0 25px;
         margin: 0 0 auto auto;
     }
-
     .step:nth-child(2) {
         border-radius: 25px 25px 25px 0;
         margin: 0 0 auto auto;
     }
-
     .step:nth-child(3) {
         border-radius: 25px 0 25px 25px;
         margin: 0 0 auto auto;
     }
-
     .step:nth-child(4) {
         border-radius: 0 25px 25px 25px;
         margin: 0 0 auto auto;
     }
-
     .step:nth-child(2):after {
         content: "2";
     }
-
     .step:nth-child(3):after {
         content: "3";
     }
-
     .step:nth-child(4):after {
         content: "4";
     }
-
     .step:nth-child(4):before {
         background: transparent;
         box-shadow: none;
     }
-
     .step h3 {
         margin: 0;
         padding: 0;
@@ -1201,7 +1037,6 @@ header {
         padding: 0;
         max-width: 0;
         display: grid;
-        /* grid-template-columns: 2rem max-content; */
         background-color: var(--blue);
         color: var(--yellow);
         min-width: calc(100%);
@@ -1210,7 +1045,6 @@ header {
         border-radius: 10px;
         height: 3rem;
     }
-
     .step h3>* {
         color: var(--blue);
         margin: 0;
@@ -1218,49 +1052,43 @@ header {
         background-color: transparent;
         display: block;
     }
-
     .step p {
         padding: 0 2rem;
         background-color: transparent;
         padding-top: 2rem;
         min-height: 100px;
     }
-
     .knowSimulators {
-        background-image: url(https://martinezk97.github.io/miabogado/assets/img/background/calculos-mobile.webp);
+        background-image: url(https://miabogado.uy/assets/img/background/calculos-mobile.webp);
         background-attachment: fixed;
         background-size: 100% auto !important;
     }
-
-
     .knowSimulators .container{
         padding: 2rem;
     }
-
     .blog-section .container{
         padding: 1.25rem;
     }
+    .blog-section .container .cta {
+        margin: 2rem auto 0;
+    }
 
-        .blog-section .container .cta {
-            margin: 2rem auto 0;
-        }
-
+    
     /* Eliminar "en que podemos ayudarte" de la vista */
-        #fixed-wpp-btn:after {
-            content: "";
-            position: absolute;
-            inset: -1.25rem;
-            border-radius: 100px;
-            animation: wpp infinite 4s ease;
-            z-index: -1;
-        }
-
-        #fixed-wpp-btn{
-            grid-template-columns: 1fr;
-        }
-                #fixed-wpp-btn span {
-                    display: none;
-                }
+    #fixed-wpp-btn:after {
+        content: "";
+        position: absolute;
+        inset: -1.25rem;
+        border-radius: 100px;
+        animation: wpp infinite 4s ease;
+        z-index: -1;
+    }
+    #fixed-wpp-btn{
+        grid-template-columns: 1fr;
+    }
+    #fixed-wpp-btn span {
+        display: none;
+    }
 
 
 }

@@ -1,12 +1,7 @@
 <?php
 
-
-
-
-
-
 if (isset($_POST['save'])) {
-    echo $_SERVER['URI'];
+    // echo $_SERVER['URI'];
 
 
     echo "Guardar consulta";
@@ -22,13 +17,15 @@ if (isset($_POST['save'])) {
 
     //Validar la informacion enviada
     if (!validate($data)) {
-        echo " <br>La informacion no es valida. ";
+        header('location: https://miabogado.uy/no-recibimos-tu-mensaje/');
         exit;
     }
 
     $saved = save($data);
     if ($saved) {
-        header('location: https://martinezk97.github.io/miabogado/?success=true');
+        header('location: https://miabogado.uy/recibimos-tu-mensaje/');
+    }else{
+        header('location: https://miabogado.uy/no-recibimos-tu-mensaje/');
     }
 }
 
@@ -37,9 +34,26 @@ function validate($params)
 {
     $isValid = true;
 
+    //Validare el nombre del cliente
     if (!isset($params['name']) || empty($params['name']) || is_numeric($params['name'])) {
         $isValid = false;
     }
+
+    //Validar el numero de teléfono
+    if (!isset($params['phone']) || empty($params['phone']) || !is_numeric($params['phone'])) {
+        $isValid = false;
+    }
+
+    //Validar el correo electrónico
+    if(!isset($params['email']) ||  filter_var($params['email'], FILTER_SANITIZE_EMAIL)){
+        $isValid = false;
+    }
+
+    //Validar el correo electrónico
+    if (!isset($params['message']) ||  strlen($params['message']) > 255) {
+        $isValid = false;
+    }
+
 
     return $isValid;
 }
