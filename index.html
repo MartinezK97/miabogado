@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="#1a3a5f">
         <meta name="robots" content="index, follow">
-        
+
         <!-- SEO Critico -->
         <title>Abogado en Montevideo | Primera Consulta Gratis | MiAbogado.uy</title>
         <meta name="description" content="¿Necesitas un abogado en Montevideo? Defendemos tus derechos laborales, civiles y familiares. Tu primer consulta es gratuita. ¡Contáctanos ahora!">
@@ -36,7 +36,7 @@
         <meta name="twitter:description" content="Defendemos tus derechos laborales, civiles y familiares. Primera consulta gratuita.">
         <meta name="twitter:image" content="https://martinezk97.github.io/miabogado/assets/img/og/homepage/home.webp">
         <meta name="twitter:image:alt" content="Mi Abogado.uy - Servicios Legales en Uruguay">
-        
+
         <!-- Favicon (versión moderna) -->
         <link rel="icon" href="https://martinezk97.github.io/miabogado/assets/img/favicon/favicon.ico" sizes="any">
         <link rel="icon" href="https://martinezk97.github.io/miabogado/assets/img/favicon/favicon.svg" type="image/svg+xml">
@@ -44,7 +44,7 @@
         <link rel="manifest" href="https://martinezk97.github.io/miabogado/assets/img/favicon/site.webmanifest">
         <meta name="apple-mobile-web-app-title" content="Mi Abogado">
         <meta name="msapplication-TileColor" content="#1a3a5f">
-        
+
         <!-- Preconexiones para mejorar velocidad -->
         <link rel="preconnect" href="https://www.googletagmanager.com">
         <link rel="preconnect" href="https://analytics.ahrefs.com">
@@ -199,9 +199,23 @@
             .color-primary{
                 color:var(--primary);
             }
-            
+
             #menu:not(.open){
                 transform: translateX(100%);
+            }
+            
+            #menu .btn-menu{
+                position: absolute;
+                top: 1rem;
+                left: -3.5rem;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                font-size: 1.5rem;
+                width: 3rem;
+                height: 3rem;
+                display: grid;
+                place-items: center;
             }
 
             #fixed-wpp-btn {
@@ -398,11 +412,12 @@
             }
 
         </style>
-        
+
         <!-- Carga diferida de CSS no crítico -->
-        <!-- <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- <link rel="preload" as="image" href="https://martinezk97.github.io/miabogado/assets/img/background/home-desktop.webp" type="image/webp" fetchpriority="high">
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -410,46 +425,65 @@
         <noscript>
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css">
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css">
-            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/home.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/home.css">
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css">
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css">
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css">
             <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/animations.css">
         </noscript> -->
-        <!-- ✅ CRÍTICO: Carga optimizada de CSS esencial -->
-        <!-- Unificá y minificá estos archivos en critical.css -->
-    <!-- 🔁 Preload imagen crítica de fondo para mejorar LCP -->
-    <link rel="preload" as="image" href="https://martinezk97.github.io/miabogado/assets/img/background/home-desktop.webp" type="image/webp" fetchpriority="high">
-        <link rel="preload" as="style" href="https://martinezk97.github.io/miabogado/assets/css/critical.min.css" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- Precarga de CSS crítico -->
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css" as="style">
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" as="style">
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css" as="style">
+        <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/parts/home.css" as="style">
+        
+        <!-- <link rel="preload" href="https://martinezk97.github.io/miabogado/assets/css/critical.min.css" as="style" fetchpriority="high"> -->
+
+
+        <!-- Carga diferida de CSS no crítico con técnica moderna -->
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/animations.css" media="print" onload="this.media='all'">
+
+        <!-- CSS esencial para renderización inicial -->
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css">
+        <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/home.css">
+
+        <!-- NOSCRIPT FALLBACK optimizado -->
         <noscript>
-            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/critical.min.css">
+            <!-- Solo cargar lo esencial para usuarios sin JS -->
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/header.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/home.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/fonts.css">
+
+            <!-- Cargar el resto normalmente -->
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/icons.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/menu.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/parts/footer.css">
+            <link rel="stylesheet" href="https://martinezk97.github.io/miabogado/assets/css/animations.css">
         </noscript>
-        <!-- critical.css debe contener fonts.css, icons.css, header.css, home.css -->
-        
-    
-        
-        <!-- ✅ CSS NO CRÍTICO: Carga diferida con JavaScript -->
+
+        <!-- Carga de CSS de baja prioridad después de renderizado inicial -->
         <script defer>
-            // Espera al DOM cargado para insertar los CSS secundarios
             document.addEventListener('DOMContentLoaded', function () {
-                const styles = [
-                    'icons.css',
-                    'fonts.css',
-                    'header.css',
-                    'home.css',
-                    'menu.css',
-                    'footer.css',
-                    'animations.css',
+                // Cargar CSS no crítico después de que la página sea interactiva
+                var lowPriorityCSS = [
+                    'https://martinezk97.github.io/miabogado/assets/css/parts/menu.css',
+                    'https://martinezk97.github.io/miabogado/assets/css/parts/footer.css',
+                    'https://martinezk97.github.io/miabogado/assets/css/animations.css'
                 ];
 
-                styles.forEach(file => {
-                    const link = document.createElement('link');
+                lowPriorityCSS.forEach(function (url) {
+                    var link = document.createElement('link');
                     link.rel = 'stylesheet';
-                    link.href = 'https://martinezk97.github.io/miabogado/assets/css/parts/' + file;
+                    link.href = url;
                     document.head.appendChild(link);
                 });
             });
         </script>
+
 
         <!-- Schema.org (LD+JSON) -->
         <script type="application/ld+json">
@@ -462,6 +496,12 @@
                         "name": "Mi Abogado",
                         "url": "https://martinezk97.github.io/miabogado/",
                         "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://martinezk97.github.io/miabogado/assets/img/favicon/favicon.png",
+                            "width": 48,
+                            "height": 48
+                        },
+                        "image": {
                             "@type": "ImageObject",
                             "url": "https://martinezk97.github.io/miabogado/assets/img/favicon/favicon.png",
                             "width": 48,
@@ -496,6 +536,37 @@
                                 "availableLanguage": [
                                     "Spanish"
                                 ]
+                            }
+                        ],
+                        "review": [
+                            {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Ana Pérez"
+                            },
+                            "datePublished": "2024-01-15",
+                            "reviewBody": "Excelente servicio, muy profesionales.",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            }
+                            },
+                            {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Carlos Gómez"
+                            },
+                            "datePublished": "2024-03-22",
+                            "reviewBody": "Buen producto, pero el envío tardó más de lo esperado.",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "4",
+                                "bestRating": "5"
+                            }
                             }
                         ],
                         "sameAs": [
@@ -630,11 +701,11 @@
         </script>
 
         <!-- Analitycs Platforms -->
-        
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0T26K7TXL9"></script>
         <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-0T26K7TXL9');</script>
-        
+
         <script>
             !function () {
                 var e = document.getElementsByTagName("head")[0], t = document.createElement("script");
@@ -642,12 +713,12 @@
                     t.onload = function () { beTracker.t({ hash: "ee58280d2ec13b0fd3a94f5041ed2b99" }) }
             }();
         </script>
-       
+
         <!-- Ahrefs -->
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="3JvnsLwvSiwt39V3sXT1qg" async></script>
 
         <!-- Política de Seguridad de Contenido (CSP) -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://analytics.ahrefs.com https://tracker.metricool.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://martinezk97.github.io/miabogado https://martinezk97.github.io/miabogado; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://analytics.ahrefs.com https://tracker.metricool.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: http://miabogado.uy https://miabogado.uy; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://analytics.ahrefs.com">
     </head>
 
     <body>
@@ -874,7 +945,7 @@
                         Me despidieron injustamente después de 10 años. Sentí que todo se caía. Gracias al equipo por recuperar lo que me correspondía. No solo gané mi caso, recuperé mi tranquilidad. ¡Los recomiendo de corazón!
                         <span class="publicated">- hace 21 horas</span>
                     </p>
-                    
+
                     <span class="location">Montevideo</span>
                 </div>
                 <div class="comment">
@@ -889,7 +960,7 @@
                         Tuve un problema con una herencia que parecía no tener solución y me generaba mucho estrés. Los abogados fueron claros, resolvieron el conflicto con el otro familiar de forma eficiente y me protegieron. Ahora puedo seguir adelante.
                         <span class="publicated">- hace 4 días</span>
                     </p>
-                    
+
                     <span class="location">Ciudad de la Costa</span>
                 </div>
                 <div class="comment">
@@ -935,7 +1006,7 @@
                             <div>
                                 <p>Ubicación</p>
                                 <p>Andes 1363, Montevideo.</p>
-                                
+
                             </div>
                         </div>
                         <div class="contact-item">
