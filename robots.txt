@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /consultas/
-Disallow: /recibimos-tu-mensaje/
-Disallow: /no-recibimos-tu-mensaje/

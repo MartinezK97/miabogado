@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- URLs de servicios -->
+  <url>
+    <loc>http://miabogado.uy/servicios/derecho-laboral/</loc>
+    <lastmod>2024-06-01</lastmod> <!-- Fecha de última actualización -->
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://miabogado.uy/servicios/derecho-de-familia/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://miabogado.uy/servicios/derecho-civil/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://miabogado.uy/servicios/arrendamientos/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Página principal de servicios -->
+  <url>
+    <loc>http://miabogado.uy/servicios/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority> <!-- Máxima prioridad -->
+  </url>
+</urlset>

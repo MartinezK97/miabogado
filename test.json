@@ -1,0 +1,254 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "http://miabogado.uy/#organizacion",
+            "name": "Mi Abogado",
+            "url": "http://miabogado.uy/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://miabogado.uy/assets/img/favicon/favicon.png",
+                "width": 48,
+                "height": 48
+            },
+            "description": "Tu aliado para conflictos legales.",
+            "telephone": "+59891618190",
+            "email": "contacto@miabogado.uy",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montevideo",
+                "addressRegion": "Montevideo",
+                "addressCountry": "UY",
+                "postalCode": "11100",
+                "streetAddress": "Andes 1363"
+            },
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "customer service",
+                    "telephone": "+59891618190",
+                    "areaServed": "UY",
+                    "availableLanguage": [
+                        "Spanish"
+                    ]
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "WhatsApp",
+                    "telephone": "+59891618190",
+                    "url": "https://wa.me/+59891618190",
+                    "availableLanguage": [
+                        "Spanish"
+                    ]
+                }
+            ],
+            "sameAs": [
+                "https://facebook.com/61578358522452/",
+                "https://instagram.com/miabogado.uy/",
+                "https://x.com/miabogado_uy/",
+                "https://www.linkedin.com/in/miabogadouy/",
+                "https://wa.me/+59891618190/"
+            ]
+        },
+        {
+            "@type": "LegalService",
+            "@id": "http://miabogado.uy/#servicio-legal",
+            "name": "Servicios Legales en Uruguay",
+            "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "Uruguay"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Áreas de Práctica",
+                "itemListElement": [
+                    {
+                        "@type": "Service",
+                        "name": "Derecho Laboral",
+                        "url": "http://miabogado.uy/servicios/derecho-laboral/",
+                        "description": "Despidos, reclamos salariales, accidentes laborales y más.",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "UYU",
+                            "description": "Consulta inicial gratuita"
+                        }
+                    },
+                    {
+                        "@type": "Service",
+                        "name": "Derecho de Familia",
+                        "url": "http://miabogado.uy/servicios/derecho-de-familia/",
+                        "description": "Divorcios, Herencias, Sucesiones, Custodia, Visitas y más",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "UYU",
+                            "description": "Consulta inicial gratuita"
+                        }
+                    },
+                    {
+                        "@type": "Service",
+                        "name": "Derecho Civil",
+                        "url": "http://miabogado.uy/servicios/derecho-civil/",
+                        "description": "Accidentes de tránsito, daños y perjuicios, responsabilidad civil y más",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "UYU",
+                            "description": "Consulta inicial gratuita"
+                        }
+                    },
+                    {
+                        "@type": "Service",
+                        "name": "Arrendamientos",
+                        "url": "http://miabogado.uy/servicios/arrendamientos/",
+                        "description": "Contratos, desalojos, soluciones para inquilinos morosos y más.",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "UYU",
+                            "description": "Consulta inicial gratuita"
+                        }
+                    }
+                ]
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "10:00",
+                    "closes": "18:00"
+                }
+            ],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -34.9061406,
+                "longitude": -56.1983463
+            },
+            "paymentAccepted": [
+                "Cash",
+                "Bank Transfer"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "http://miabogado.uy/#sitio-web",
+            "url": "http://miabogado.uy/",
+            "name": "Mi Abogado",
+            "description": "Abogados en Montevideo",
+            "publisher": {
+                "@id": "http://miabogado.uy/#organizacion"
+            }
+        },
+        {
+            "@type": "Blog",
+            "@id": "http://miabogado.uy/blog/#blog",
+            "url": "http://miabogado.uy/blog/",
+            "name": "Mi Abogado | Blog",
+            "description": "Noticias, artículos y consejos legales en Uruguay.",
+            "publisher": {
+                "@id": "http://miabogado.uy/#organizacion"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "http://miabogado.uy/blog/#home",
+            "url": "http://miabogado.uy/blog/",
+            "name": "Blog de Mi Abogado",
+            "description": "Página principal del blog con artículos legales.",
+            "isPartOf": {
+                "@id": "http://miabogado.uy/#sitio-web"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "http://miabogado.uy/assets/img/og/portada-blog.webp"
+            },
+            "about": {
+                "@id": "http://miabogado.uy/blog/#blog"
+            },
+            "publisher": {
+                "@id": "http://miabogado.uy/#organizacion"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "http://miabogado.uy/simuladores/#simuladores-home",
+            "url": "http://miabogado.uy/simuladores/",
+            "name": "Mi Abogado | Simuladores",
+            "description": "Simuladores de pagos laborales para empleados uruguayos.",
+            "publisher": {
+                "@id": "http://miabogado.uy/#organizacion"
+            },
+            "isPartOf": {
+                "@id": "http://miabogado.uy/#sitio-web"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "http://miabogado.uy/simulador/calcular-mi-sueldo/#app",
+            "name": "Calculadora de Sueldo",
+            "url": "http://miabogado.uy/simulador/calcular-mi-sueldo/",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "description": "Calculadora para conocer el sueldo líquido en Uruguay.",
+            "isPartOf": {
+                "@id": "http://miabogado.uy/simuladores/#simuladores-home"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "http://miabogado.uy/simulador/calcular-mi-aguinaldo/#app",
+            "name": "Calculadora de Aguinaldo",
+            "url": "http://miabogado.uy/simulador/calcular-mi-aguinaldo/",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "description": "Calculadora para conocer el aguinaldo líquido en Uruguay.",
+            "isPartOf": {
+                "@id": "http://miabogado.uy/simuladores/#simuladores-home"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "http://miabogado.uy/simulador/calcular-irpf/#app",
+            "name": "Calculadora de IRPF",
+            "url": "http://miabogado.uy/simulador/calcular-irpf/",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "description": "Calculadora para conocer las retenciones de IRPF en Uruguay.",
+            "isPartOf": {
+                "@id": "http://miabogado.uy/simuladores/#simuladores-home"
+            }
+        },
+
+        {
+            "@type": "FAQPage",
+            "@id": "http://miabogado.uy/#faqs",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Puedo reclamar derechos si trabajé en negro hace más de un año?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sí. La ley uruguaya permite reclamar deudas laborales hasta 2 años después de finalizada la relación (Art. 10, Ley 18.061). Incluye salarios adeudados e indemnizaciones."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cómo denuncio anónimamente a un empleador que no registra trabajadores?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Podés hacer denuncias confidenciales ante el MTSS llamando al 0800 7171 o vía web. No se revela tu identidad y pueden iniciar inspección."
+                    }
+                }
+            ]
+        }
+    ]
+}

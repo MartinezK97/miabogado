@@ -184,18 +184,32 @@ h1{
     max-width: calc(100% - 4rem);
     width: clamp(200px, 100%, 1200px);
     margin: 0 auto;
-    margin-top: 4.25rem;
+    margin-top: 6.5rem;
     background-color: #fff;
     padding: 1.75rem 5rem;
     border-radius: 10px;
     padding-bottom: 5rem;
 }
 
-.content h1{
+.content .fcp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.content .fcp h1{
     background-color: transparent;
     color: var(--blue);
     padding: 2rem;
     margin: 0;
+    grid-column: 1/3;
+}
+
+.content .fcp .content-img img{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content p{
@@ -287,11 +301,87 @@ h1{
     font-weight: 500;
 }
 
+.cta-area{
+    background-color: var(--blue);
+    padding: 5rem 3rem 2rem;
+    color: #fff;
+    text-align: center;
+    clip-path: polygon(50% 0, calc(50% + 2rem) 2rem, 100% 2rem, 100% 100%, 0 100%, 0 2rem, calc(50% - 2rem) 2rem);
+}
+.cta-area p:nth-child(1){
+    font-size: 1.25rem;
+}
+
+.border-top-gray{
+    border-top: solid 1px var(--gray);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.cta-area .cta{
+    display: block;
+    background-color: var(--yellow);
+    max-width: max-content;
+    margin: 2rem auto 0;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.faq .container{
+    width: clamp(280px, calc(100% - 2rem), 1200px);
+    margin: 2rem auto;
+}
+
+
+details {
+    border: 1px solid #ddd;
+    padding: 0.75rem 2rem;
+    background-color: #fff;
+    transition: 0.25s ease;
+}
+
+details:first-child {
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+details:last-child {
+    border-top: none;
+    border-radius:0 0 5px 5px;
+}
+summary {
+    font-weight: bold;
+    margin:0;
+    padding: 0.5em;
+    color: var(--blue);
+}
+
+details[open] {
+    padding: 0.75rem 2rem;
+    margin: 5px auto;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -5px #0005;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em; }
+
 
 @media(width < 760px){
-    .categorys::-webkit-scrollbar{
-        display: none;
+    .content .fcp{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
     }
+
+    .content .fcp h1{
+        grid-column: 1/2;
+    }
+
 
     .grid {
         grid-template-columns: 1fr;
