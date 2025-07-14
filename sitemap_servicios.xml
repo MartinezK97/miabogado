@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <!-- Directorio principal -->
-   <url><loc>https://martinezk97.github.io/miabogado/servicios/</loc></url>
+   <url><loc>http://miabogado.uy/servicios/</loc></url>
    
    <!-- Subcategorías (1 por especialidad) -->
-   <url><loc>https://martinezk97.github.io/miabogado/servicios/derecho-laboral/</loc></url>
-   <url><loc>https://martinezk97.github.io/miabogado/servicios/derecho-civil/</loc></url>
-   <url><loc>https://martinezk97.github.io/miabogado/servicios/derecho-de-familia/</loc></url>
-   <url><loc>https://martinezk97.github.io/miabogado/servicios/arrendamientos/</loc></url>
+   <url><loc>http://miabogado.uy/servicios/derecho-laboral/</loc></url>
+   <url><loc>http://miabogado.uy/servicios/derecho-civil/</loc></url>
+   <url><loc>http://miabogado.uy/servicios/derecho-de-familia/</loc></url>
+   <url><loc>http://miabogado.uy/servicios/arrendamientos/</loc></url>
    
    <!-- Páginas de servicios específicos -->
-   <!-- <url><loc>https://martinezk97.github.io/miabogado/servicios/derecho-laboral/indemnizacion-por-despido-en-uruguay/</loc></url> -->
+   <!-- <url><loc>http://miabogado.uy/servicios/derecho-laboral/indemnizacion-por-despido-en-uruguay/</loc></url> -->
 
 
 </urlset>

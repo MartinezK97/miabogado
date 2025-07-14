@@ -8,7 +8,7 @@ if (isset($_POST['save'])) {
 
     foreach ($params as $param) {
         if (!isset($_POST[$param]) || empty($_POST[$param])) {
-            header('Location: https://martinezk97.github.io/miabogado/consultas/no-recibimos-tu-mensaje/');
+            header('Location: http://miabogado.uy/consultas/no-recibimos-tu-mensaje/');
             exit;
         }
         $data[$param] = htmlspecialchars($_POST[$param]);
@@ -16,15 +16,15 @@ if (isset($_POST['save'])) {
 
     // Validar la información enviada
     if (!validate($data)) {
-        header('Location: https://martinezk97.github.io/miabogado/consultas/no-recibimos-tu-mensaje/');
+        header('Location: http://miabogado.uy/consultas/no-recibimos-tu-mensaje/');
         exit;
     }
 
     $saved = save($data);
     if ($saved) {
-        header('Location: https://martinezk97.github.io/miabogado/consultas/recibimos-tu-mensaje/');
+        header('Location: http://miabogado.uy/consultas/recibimos-tu-mensaje/');
     } else {
-        header('Location: https://martinezk97.github.io/miabogado/consultas/no-recibimos-tu-mensaje/');
+        header('Location: http://miabogado.uy/consultas/no-recibimos-tu-mensaje/');
     }
     exit;
 }

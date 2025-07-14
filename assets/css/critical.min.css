@@ -1,0 +1,466 @@
+:root {
+    --blue: #1a3a5f;
+    --yellow: #ffcd00;
+    --gray: #eee;
+    --max-width: 1200px;
+    --width: calc(100vw - 2rem);
+    --min-width: 280px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('http://miabogado.uy/assets/fonts/icons/icomoon.eot?kcmbad');
+    src: url('http://miabogado.uy/assets/fonts/icons/icomoon.eot?kcmbad#iefix') format('embedded-opentype'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.ttf?kcmbad') format('truetype'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.woff?kcmbad') format('woff'),
+        url('http://miabogado.uy/assets/fonts/icons/icomoon.svg?kcmbad#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Bold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Black.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-ExtraBold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Light.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-SemiBold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Medium.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Regular.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/kanit/Kanit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/* Fuente  */
+
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Black.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Bold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-ExtraLight.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-ExtraBold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Medium.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Light.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-SemiBold.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Regular.woff2') format('woff2'),
+        url('http://miabogado.uy/assets/fonts/google/archivo/Archivo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Archivo", sans;
+    line-height: 1.25;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+
+/* Backgrounds */
+.bg-yellow {
+    color: var(--yellow);
+}
+
+.bg-blue {
+    color: var(--blue);
+}
+
+.container {
+    width: clamp(var(--min-width), );
+}
+
+
+
+/* Colors */
+.color-yellow {
+    color: var(--yellow);
+}
+
+.color-blue {
+    color: var(--blue);
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dg {
+    display: grid;
+}
+
+.dig {
+    display: inline-grid;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Archivo", sans;
+    line-height: 1.25;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.color-yellow {
+    color: var(--yellow);
+}
+
+
+#fixed-wpp-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: max-content 5rem;
+    z-index: 9;
+    border-radius: 150px;
+    filter: drop-shadow(-1px -1px 1px #fff) drop-shadow(0px 5px 10px #0009);
+    transition: 0.3s ease;
+}
+
+#fixed-wpp-btn:hover {
+    transform: scale(1.015);
+}
+
+#fixed-wpp-btn:hover span,
+#fixed-wpp-btn:hover i {
+    background-color: #075e54;
+    color: #ece5dd;
+}
+
+#fixed-wpp-btn span {
+    color: #1c4602;
+    padding: 1rem 1rem 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #25d366;
+    max-height: min-content;
+    align-self: center;
+    margin: 0;
+    display: block;
+    border-radius: 150px 0 0 150px;
+    font-weight: 600;
+    margin-right: -1rem;
+    transition: 0.3s ease;
+}
+
+#fixed-wpp-btn i {
+    background-color: #25d366;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 150px;
+    transition: 0.3s ease;
+    color: #1c4602;
+}
+
+header {
+    background-color: var(--blue);
+    padding: 1rem;
+    font-size: 18px;
+    color: var(--yellow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+}
+
+header a {
+    /* border: solid 1px; */
+    display: grid;
+    grid-template-columns: 3rem max-content;
+    align-content: center;
+    place-items: center;
+    grid-gap: 1rem;
+    /* border: solid 1px; */
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+header a .logo {
+    /* border: solid 1px red; */
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+}
+
+header a .brandname {
+    font-weight: 700;
+    font-size: 2.75rem;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.iso {
+    background-image: url(http://miabogado.uy/img/logo.svg);
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-content: center;
+    place-items: center;
+    max-height: min-content;
+    max-height: min-content;
+}
+
+header .container nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: min-content;
+    grid-gap: 0.5rem;
+    margin: 0 0 auto auto;
+    align-items: center;
+    height: min-content;
+    align-items: center;
+    align-self: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .container nav a {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    align-self: center;
+    color: #fff;
+    transition: 0.3s ease;
+    transform-origin: 0 50%;
+    padding-bottom: 5px;
+    align-self: center;
+    border-radius: 5px;
+    font-size: clamp(1rem, 1.15vw, 1.15rem);
+    border: none;
+}
+
+header .container nav a:hover {
+    background: var(--yellow);
+    color: var(--blue);
+}
+
+header .container nav a.color-yellow {
+    color: var(--yellow);
+}
+
+header .container nav a.color-yellow:hover {
+    color: var(--blue);
+}
+
+@media(width < 1080px) {
+
+    header .container {
+        min-width: calc(100vw - 4rem);
+    }
+
+    header .brandname {
+        font-size: 1.85rem !important;
+    }
+
+    header .container nav a {
+        padding: 0.5rem 1rem;
+    }
+
+
+    header .container {
+        text-align: center;
+        max-width: max-content;
+        margin: 0 auto;
+        /* border: solid 1px red; */
+    }
+}
+
+@media(width < 990px) {
+    header .container nav {
+        display: none !important;
+    }
+}
