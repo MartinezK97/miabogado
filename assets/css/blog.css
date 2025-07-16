@@ -333,7 +333,14 @@ h1{
     width: clamp(280px, calc(100% - 2rem), 1200px);
     margin: 2rem auto;
 }
-
+.plus{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0005;
+    margin: 2rem auto;
+    max-width: max-content;
+    
+}
 
 details {
     border: 1px solid #ddd;
