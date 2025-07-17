@@ -2,7 +2,7 @@ let irpfConfig = null;
 
 async function cargarIRPF() {
     try {
-        const res = await fetch("https://martinezK97.github.io/miabogado/assets/json/irpf.json");
+        const res = await fetch("https://martinezk97.github.io/miabogado/assets/json/irpf.json");
         if (!res.ok) throw new Error("No se pudo cargar el archivo");
         const data = await res.json();
         irpfConfig = data;

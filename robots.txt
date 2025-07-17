@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /consultas/
-Disallow: /terminos-y-condiciones/
-Disallow: /politicas-de-privacidad/

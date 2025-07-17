@@ -32,11 +32,11 @@ a {
 }
 
 h1{
-    padding-top: 6rem;
-    margin-top: 4.35rem;
+    margin-top: 3rem;
     color: var(--blue);
     padding: 1rem 2rem;
     text-align: center;
+    font-size: clamp(2.25rem, 4.75vw, 3.25rem);
 }
 
 .categorys{
@@ -205,10 +205,12 @@ h1{
     grid-column: 1/3;
 }
 
-.content .fcp .content-img img{
+.content .content-img img{
     width: auto;
     max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -318,6 +320,12 @@ h1{
     margin-top: 2rem;
 }
 
+.cta-area ul{
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .cta-area .cta{
     display: block;
     background-color: var(--yellow);
@@ -328,6 +336,7 @@ h1{
     color: var(--blue);
     font-weight: 600;
 }
+
 
 .faq .container{
     width: clamp(280px, calc(100% - 2rem), 1200px);

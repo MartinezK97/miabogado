@@ -3,12 +3,12 @@
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://martinezK97.github.io/miabogado/#organization",
+            "@id": "https://martinezk97.github.io/miabogado/#organization",
             "name": "Mi Abogado",
-            "url": "https://martinezK97.github.io/miabogado/",
+            "url": "https://martinezk97.github.io/miabogado/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://martinezK97.github.io/miabogado/assets/img/favicon/favicon.png",
+                "url": "https://martinezk97.github.io/miabogado/assets/img/favicon/favicon.png",
                 "width": 48,
                 "height": 48
             },
@@ -53,7 +53,7 @@
         },
         {
             "@type": "LegalService",
-            "@id": "https://martinezK97.github.io/miabogado/#servicio-legal",
+            "@id": "https://martinezk97.github.io/miabogado/#servicio-legal",
             "name": "Servicios Legales en Uruguay",
             "serviceArea": {
                 "@type": "AdministrativeArea",
@@ -66,7 +66,7 @@
                     {
                         "@type": "Service",
                         "name": "Derecho Laboral",
-                        "url": "https://martinezK97.github.io/miabogado/servicios/derecho-laboral/",
+                        "url": "https://martinezk97.github.io/miabogado/servicios/derecho-laboral/",
                         "description": "Despidos, reclamos salariales, accidentes laborales y más.",
                         "offers": {
                             "@type": "Offer",
@@ -78,7 +78,7 @@
                     {
                         "@type": "Service",
                         "name": "Derecho de Familia",
-                        "url": "https://martinezK97.github.io/miabogado/servicios/derecho-de-familia/",
+                        "url": "https://martinezk97.github.io/miabogado/servicios/derecho-de-familia/",
                         "description": "Divorcios, Herencias, Sucesiones, Custodia, Visitas y más",
                         "offers": {
                             "@type": "Offer",
@@ -90,7 +90,7 @@
                     {
                         "@type": "Service",
                         "name": "Derecho Civil",
-                        "url": "https://martinezK97.github.io/miabogado/servicios/derecho-civil/",
+                        "url": "https://martinezk97.github.io/miabogado/servicios/derecho-civil/",
                         "description": "Accidentes de tránsito, daños y perjuicios, responsabilidad civil y más",
                         "offers": {
                             "@type": "Offer",
@@ -102,7 +102,7 @@
                     {
                         "@type": "Service",
                         "name": "Arrendamientos",
-                        "url": "https://martinezK97.github.io/miabogado/servicios/arrendamientos/",
+                        "url": "https://martinezk97.github.io/miabogado/servicios/arrendamientos/",
                         "description": "Contratos, desalojos, soluciones para inquilinos morosos y más.",
                         "offers": {
                             "@type": "Offer",
@@ -140,97 +140,97 @@
         },
         {
             "@type": "WebSite",
-            "@id": "https://martinezK97.github.io/miabogado/#website",
-            "url": "https://martinezK97.github.io/miabogado/",
+            "@id": "https://martinezk97.github.io/miabogado/#website",
+            "url": "https://martinezk97.github.io/miabogado/",
             "name": "Mi Abogado",
             "description": "Abogados en Montevideo",
             "publisher": {
-                "@id": "https://martinezK97.github.io/miabogado/#organization"
+                "@id": "https://martinezk97.github.io/miabogado/#organization"
             }
         },
         {
             "@type": "Blog",
-            "@id": "https://martinezK97.github.io/miabogado/blog/#blog",
-            "url": "https://martinezK97.github.io/miabogado/blog/",
+            "@id": "https://martinezk97.github.io/miabogado/blog/#blog",
+            "url": "https://martinezk97.github.io/miabogado/blog/",
             "name": "Mi Abogado | Blog",
             "description": "Noticias, artículos y consejos legales en Uruguay.",
             "publisher": {
-                "@id": "https://martinezK97.github.io/miabogado/#organization"
+                "@id": "https://martinezk97.github.io/miabogado/#organization"
             }
         },
         {
             "@type": "WebPage",
-            "@id": "https://martinezK97.github.io/miabogado/blog/#home",
-            "url": "https://martinezK97.github.io/miabogado/blog/",
+            "@id": "https://martinezk97.github.io/miabogado/blog/#home",
+            "url": "https://martinezk97.github.io/miabogado/blog/",
             "name": "Blog de Mi Abogado",
             "description": "Página principal del blog con artículos legales.",
             "isPartOf": {
-                "@id": "https://martinezK97.github.io/miabogado/#website"
+                "@id": "https://martinezk97.github.io/miabogado/#website"
             },
             "primaryImageOfPage": {
                 "@type": "ImageObject",
-                "url": "https://martinezK97.github.io/miabogado/assets/img/og/portada-blog.webp"
+                "url": "https://martinezk97.github.io/miabogado/assets/img/og/portada-blog.webp"
             },
             "about": {
-                "@id": "https://martinezK97.github.io/miabogado/blog/#blog"
+                "@id": "https://martinezk97.github.io/miabogado/blog/#blog"
             },
             "publisher": {
-                "@id": "https://martinezK97.github.io/miabogado/#organization"
+                "@id": "https://martinezk97.github.io/miabogado/#organization"
             }
         },
         {
             "@type": "WebPage",
-            "@id": "https://martinezK97.github.io/miabogado/simuladores/#simuladores-home",
-            "url": "https://martinezK97.github.io/miabogado/simuladores/",
+            "@id": "https://martinezk97.github.io/miabogado/simuladores/#simuladores-home",
+            "url": "https://martinezk97.github.io/miabogado/simuladores/",
             "name": "Mi Abogado | Simuladores",
             "description": "Simuladores de pagos laborales para empleados uruguayos.",
             "publisher": {
-                "@id": "https://martinezK97.github.io/miabogado/#organization"
+                "@id": "https://martinezk97.github.io/miabogado/#organization"
             },
             "isPartOf": {
-                "@id": "https://martinezK97.github.io/miabogado/#website"
+                "@id": "https://martinezk97.github.io/miabogado/#website"
             }
         },
         {
             "@type": "SoftwareApplication",
-            "@id": "https://martinezK97.github.io/miabogado/simulador/calcular-mi-sueldo/#app",
+            "@id": "https://martinezk97.github.io/miabogado/simulador/calcular-mi-sueldo/#app",
             "name": "Calculadora de Sueldo",
-            "url": "https://martinezK97.github.io/miabogado/simulador/calcular-mi-sueldo/",
+            "url": "https://martinezk97.github.io/miabogado/simulador/calcular-mi-sueldo/",
             "applicationCategory": "FinanceApplication",
             "operatingSystem": "Web",
             "description": "Calculadora para conocer el sueldo líquido en Uruguay.",
             "isPartOf": {
-                "@id": "https://martinezK97.github.io/miabogado/simuladores/#simuladores-home"
+                "@id": "https://martinezk97.github.io/miabogado/simuladores/#simuladores-home"
             }
         },
         {
             "@type": "SoftwareApplication",
-            "@id": "https://martinezK97.github.io/miabogado/simulador/calcular-mi-aguinaldo/#app",
+            "@id": "https://martinezk97.github.io/miabogado/simulador/calcular-mi-aguinaldo/#app",
             "name": "Calculadora de Aguinaldo",
-            "url": "https://martinezK97.github.io/miabogado/simulador/calcular-mi-aguinaldo/",
+            "url": "https://martinezk97.github.io/miabogado/simulador/calcular-mi-aguinaldo/",
             "applicationCategory": "FinanceApplication",
             "operatingSystem": "Web",
             "description": "Calculadora para conocer el aguinaldo líquido en Uruguay.",
             "isPartOf": {
-                "@id": "https://martinezK97.github.io/miabogado/simuladores/#simuladores-home"
+                "@id": "https://martinezk97.github.io/miabogado/simuladores/#simuladores-home"
             }
         },
         {
             "@type": "SoftwareApplication",
-            "@id": "https://martinezK97.github.io/miabogado/simulador/calcular-irpf/#app",
+            "@id": "https://martinezk97.github.io/miabogado/simulador/calcular-irpf/#app",
             "name": "Calculadora de IRPF",
-            "url": "https://martinezK97.github.io/miabogado/simulador/calcular-irpf/",
+            "url": "https://martinezk97.github.io/miabogado/simulador/calcular-irpf/",
             "applicationCategory": "FinanceApplication",
             "operatingSystem": "Web",
             "description": "Calculadora para conocer las retenciones de IRPF en Uruguay.",
             "isPartOf": {
-                "@id": "https://martinezK97.github.io/miabogado/simuladores/#simuladores-home"
+                "@id": "https://martinezk97.github.io/miabogado/simuladores/#simuladores-home"
             }
         },
 
         {
             "@type": "FAQPage",
-            "@id": "https://martinezK97.github.io/miabogado/#faqs",
+            "@id": "https://martinezk97.github.io/miabogado/#faqs",
             "mainEntity": [
                 {
                     "@type": "Question",
